@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<xml>
-		<ModInfo>
-			<Name value="VehicleAdjustments"/>
-			<Description value="Adjusts vehicle speeds and sets min speed to the same as max speed"/>
-			<Author value="GanTheGrey"/>
-			<Version value="1.0"/>
-			<Website value=""/>
-		</ModInfo>
-	</xml>
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="House of Grey" />
+		<Description value="House of Grey mod" />
+		<Author value="GanTheGrey" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

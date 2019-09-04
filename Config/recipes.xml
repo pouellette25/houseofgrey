@@ -1,4 +1,4 @@
-<modtest>
+<houseofgrey>
 	<append xpath="/recipes">
 		<recipe name="ammoArrowStone" count="1">
 			<ingredient name="resourceRockSmall" count="1"/>
@@ -16,4 +16,4 @@
 			<ingredient name="resourceScrapPolymers" count="1"/>
 		</recipe>
 	</append>
-</modtest>
+</houseofgrey>
