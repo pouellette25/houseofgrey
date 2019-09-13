@@ -1,6 +1,0 @@
-<houseofgrey>
-<set xpath="/blocks/block[@name='cntStorageGeneric']/property[@name='Class']/@value">CustomSecureLoot, Mods</set>
-    <append xpath="/blocks/block[@name='cntStorageGeneric']">
-        <property name="TakeDelay" value="15" />
-    </append>
-</houseofgrey>
