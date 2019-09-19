@@ -1,6 +1,6 @@
 ﻿<houseofgrey>
   <append xpath="/xui/ruleset">
-    <window_group name="workstation_semi_truck_workbench" controller="XUiC_VehicleWorkbenchWindowGroup, Mods">
+    <window_group name="workstation_EntitySemiTruck_workbench" controller="XUiC_VehicleWorkbenchWindowGroup, Mods">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="windowCraftingQueue"/>

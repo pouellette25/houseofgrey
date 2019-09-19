@@ -1,6 +1,7 @@
 using DMT;
 using Harmony;
-using System.Linq;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
@@ -16,71 +17,50 @@ class EntityVehiclePatch : IHarmony
         harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 
-    [HarmonyPatch(typeof(EntityVehicle))]
-    [HarmonyPatch("GetActivationCommands")]
-    private class PatchGetActivationCommands
+    [HarmonyPatch(typeof(XUiC_WorkstationGrid))]
+    [HarmonyPatch("OnOpen")]
+    private class PatchXUiC_WorkstationGridOnOpen
     {
-        static EntityActivationCommand[] Postfix(EntityActivationCommand[] __result, EntityVehicle __instance)
+        static bool Prefix(XUiC_WorkstationGrid __instance, XUiM_Workstation ___workstationData, XUiWindowGroup ___windowGroup)
         {
-            var commandsList = __result.ToList();
+            if (___windowGroup.Controller is XUiC_WorkstationWindowGroup) { return true; }
 
-            string _steamId = GamePrefs.GetString(EnumGamePrefs.PlayerId);
+            if (__instance.ViewComponent != null && !__instance.ViewComponent.IsVisible)
+            {
+                Debug.Log("PatchXUiC_WorkstationGridOnOpen Prefix: ViewComponent is good");
+                __instance.ViewComponent.OnOpen();
+                __instance.ViewComponent.IsVisible = true;
+            }
 
-            var workBenchCommand = new EntityActivationCommand("Work Bench", "wrench", true);
+            Debug.Log("PatchXUiC_WorkstationGridOnOpen Prefix: before cast");
 
-            var workBench = new BlockWorkstation();
-            workBench.SetBlockName(string.Format("{0}_{1}", __instance.EntityName.ToLower().Replace(" ", "_"), "workbench"));
-            workBench.Init();
+            //___workstationData = ((XUiC_VehicleWorkbenchWindowGroup)___windowGroup.Controller).WorkstationData;
 
-            Debug.Log(workBench.blockID);
+            var test = ((XUiC_VehicleWorkbenchWindowGroup)___windowGroup.Controller);
 
-            commandsList.Add(workBenchCommand);
+            Debug.Log(test);
 
-            return commandsList.ToArray();
+            __instance.IsDirty = true;
+            __instance.IsDormant = false;
+
+            return false;
         }
     }
 
-    [HarmonyPatch(typeof(EntityVehicle))]
-    [HarmonyPatch("OnEntityActivated")]
-    private class PatchOnEntityActivated
+    [HarmonyPatch(typeof(EntityFactory), "addEntityToGameObject")]
+    private class PatchEntityFactoryAddEntityToGameObject
     {
-        static bool Postfix(bool __result, EntityVehicle __instance, int _indexInBlockActivationCommands, Vector3i _tePos, EntityAlive _entityFocusing)
+        public static Entity Postfix(Entity __result, GameObject _gameObject, string _className)
         {
-            if(_indexInBlockActivationCommands == 10) // Open Workbench
+            if (__result == null)
             {
-                EntityPlayerLocal entityPlayerLocal = _entityFocusing as EntityPlayerLocal;
-                LocalPlayerUI uiForPlayer = LocalPlayerUI.GetUIForPlayer(entityPlayerLocal);
+                Type type = Type.GetType(_className + ", Mods");
 
-                try
+                if (type != null)
                 {
-                    var workstationName = string.Format("{0}_{1}", __instance.EntityName.ToLower().Replace(" ", "_"), "workbench");
-                    WorkstationData workstationData = CraftingManager.GetWorkstationData(workstationName);
-                    if (workstationData == null)
-                        return false;
-
-                    var te = __instance.world.GetTileEntity(0, _tePos);
-
-                    string _windowName = !(workstationData.WorkstationWindow != string.Empty) ? string.Format("workstation_{0}", workstationName) : workstationData.WorkstationWindow;
-                    if (uiForPlayer.windowManager.Contains(_windowName))
-                    {
-                        //((XUiC_WorkstationWindowGroup)((XUiWindowGroup)uiForPlayer.windowManager.GetWindow(_windowName)).Controller).SetTileEntity(te);
-                        //Debug.Log("Set Entity Called");
-                        try
-                        {
-                            uiForPlayer.windowManager.Open(_windowName, true, false, true);
-                        }
-                        catch (System.Exception ex)
-                        {
-                            Debug.LogError("Error opening window: " + ex.StackTrace);
-                        }
-                    }
-                }
-                catch (System.Exception ex)
-                {
-                    Debug.Log(ex.Message);
+                    return (Entity)_gameObject.AddComponent(type);
                 }
             }
-
 
             return __result;
         }

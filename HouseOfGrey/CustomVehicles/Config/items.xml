@@ -1,13 +1,13 @@
 ﻿<houseofgrey>
   <append xpath="/items">
-    <item name="Semi Truck">
+    <item name="vehicleSemiTruck">
       <property name="Extends" value="vehicleMinibikePlaceable" />
       <property name="CustomIcon" value="vehicleSemiTruck" />
       <property name="DescriptionKey" value="Once used to transport goods is now only useful to drive around and loot with!" />
       <property name="Meshfile" value="#@modfolder:Resources/SemiTruck.unity3d?SemiTruck.prefab" />
       <property name="EconomicValue" value="10000" />
       <property class="Action1">
-        <property name="Vehicle" value="Semi Truck" />
+        <property name="Vehicle" value="vehicleSemiTruck" />
         <property name="VehicleSize" value="8.9, 3.5, 4" />
       </property>
       <effect_group name="Base Effects">

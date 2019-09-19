@@ -30,8 +30,14 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>Dependencies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Dependencies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>Dependencies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>Dependencies\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
