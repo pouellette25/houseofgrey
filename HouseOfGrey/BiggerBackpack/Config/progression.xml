@@ -1,0 +1,64 @@
+﻿<houseofgrey>
+  <append xpath="/progression/perks">
+    <perk name="perkHoGPackMule" max_level="8" parent="skillStrengthGeneral" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
+      <level_requirements level="1">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="1" desc_key="reqStrengthLevel01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="reqStrengthLevel02"/>
+      </level_requirements>
+      <level_requirements level="3">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="3" desc_key="reqStrengthLevel03"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/>
+      </level_requirements>
+      <level_requirements level="6">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+      </level_requirements>
+      <level_requirements level="7">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="7" desc_key="reqStrengthLevel07"/>
+      </level_requirements>
+      <level_requirements level="8">
+        <requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="reqStrengthLevel08"/>
+      </level_requirements>
+      <!-- <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="1" desc_key="reqStrengthLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="reqStrengthLevel02"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="3" desc_key="reqStrengthLevel03"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="7" desc_key="reqStrengthLevel07"/></level_requirements> -->
+
+      <effect_group>
+        <passive_effect name="CarryCapacity" operation="base_add" value="6" level="1"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="12" level="2"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="18" level="3"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="24" level="4"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="30" level="5"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="36" level="6"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="42" level="7"/>
+        <passive_effect name="CarryCapacity" operation="base_add" value="48" level="8"/>
+
+        <!-- <passive_effect name="CarryCapacity" operation="base_add" value="4" level="1"/>
+			<passive_effect name="CarryCapacity" operation="base_add" value="9" level="2"/>
+			<passive_effect name="CarryCapacity" operation="base_add" value="15" level="3"/>
+			<passive_effect name="CarryCapacity" operation="base_add" value="21" level="4"/>
+			<passive_effect name="CarryCapacity" operation="base_add" value="27" level="5"/> -->
+
+        <effect_description level="1" desc_key="perkHoGPackMuleRank1Desc"/>
+        <effect_description level="2" desc_key="perkHoGPackMuleRank2Desc"/>
+        <effect_description level="3" desc_key="perkHoGPackMuleRank3Desc"/>
+        <effect_description level="4" desc_key="perkHoGPackMuleRank4Desc"/>
+        <effect_description level="5" desc_key="perkHoGPackMuleRank5Desc"/>
+        <effect_description level="6" desc_key="perkHoGPackMuleRank6Desc"/>
+        <effect_description level="7" desc_key="perkHoGPackMuleRank7Desc"/>
+        <effect_description level="8" desc_key="perkHoGPackMuleRank8Desc"/>
+      </effect_group>
+    </perk>
+  </append>
+
+  <remove xpath="/progression/perks/perk[@name='perkPackMule']" />
+
+</houseofgrey>

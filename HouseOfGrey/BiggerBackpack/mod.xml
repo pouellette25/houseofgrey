@@ -1,8 +1,8 @@
 <mod>
   <info>
     <author>GanTheGrey</author>
-    <name>Moveable Storage</name>
-    <description>Adds the ability to pickup storage containers</description>
+    <name>Bigger Backpack</name>
+    <description>Updates the backpack to 96 spaces!</description>
     <mod_version>1.0</mod_version>
     <game_version>17.4</game_version>
     <launcher_version>0.0.0</launcher_version>
