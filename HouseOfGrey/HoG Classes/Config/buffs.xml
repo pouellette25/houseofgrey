@@ -1,0 +1,66 @@
+﻿<houseofgrey>
+  <!--<append xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group">
+    --><!-- attMedic update --><!--
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="LT" value="2"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2.2">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="2"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2.4">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="3"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2.6">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="4"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2.8">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="5"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="3">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="6"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="3.2">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="7"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="3.4">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="8"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="3.6">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="9"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="4">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="10"/>
+    </triggered_effect>
+
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="LT" value="2"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.10">
+      <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.20">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="3"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.30">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="4"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.40">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="5"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.50">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="6"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.60">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="7"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.70">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="8"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="1.80">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="9"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicPerkIncrease" operation="set" value="2">
+      <requirement name="ProgressionLevel" progression_name="attMedic" operation="Equals" value="10"/>
+    </triggered_effect>
+  </append>-->
+</houseofgrey>

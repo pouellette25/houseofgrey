@@ -1,0 +1,4 @@
+<houseofgrey>
+  <!--<setattribute xpath="/controls/category_icon/rect/button" name="atlas">ItemIconAtlas</setattribute>
+  <setattribute xpath="/controls/skill_entry/panel/sprite[@name='groupIcon']" name="atlas">ItemIconAtlas</setattribute>-->
+</houseofgrey>

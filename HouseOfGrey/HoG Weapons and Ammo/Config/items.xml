@@ -1,0 +1,206 @@
+﻿<houseofgrey>
+  <set xpath="/items/item[@name='gunBowWooden']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowGlass,ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
+  <set xpath="/items/item[@name='gunBowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowGlass,ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
+  
+  <append xpath="/items">
+    <item name="wizardStaffWood">
+      <property name="Tags" value="wizard,weapon,ranged,bowDrawPenalty,archery"/>
+      <property name="HoldType" value="27"/>
+      <property name="Meshfile" value="#@modfolder:Resources/WoodStaff.unity3d?woodStaff_M"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Mwood"/>
+      <property name="RepairTools" value="resourceEssenceFire"/>
+      <property name="SellableToTrader" value="true"/>
+      <property name="EconomicValue" value="2000"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="Damage_type" value="Heat"/>
+      <property name="DegradationBreaksAfter" value="false"/>
+      <property name="SoundJammed" value="ItemNeedsRepair"/>
+      <property name="SoundDestroy" value="wooddestroy1"/>
+      <property name="CrosshairOnAim" value="true"/>
+      <!-- aimTest -->
+      <property name="CrosshairUpAfterShot" value="false"/>
+      <property name="Group" value="Ammo/Weapons"/>
+      <property name="ActionSkillGroup" value="Archery"/>
+      <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+      <property name="RepairExpMultiplier" value="5.5"/>
+      <property name="PickupJournalEntry" value="alternateAmmoTip"/>
+      <property name="Weight" value="20"/>
+      <property name="MeltTimePerUnit" value="10"/>
+
+      <property class="Action0">
+        <property name="Class" value="Staff, Mods"/>
+        <property name="Hitmask_override" value="Arrow"/>
+        <!-- <property name="UseMeleeCrosshair" value="true"/> -->
+        <property name="Delay" value="0"/>
+        <property name="Magazine_items" value="ammoFireBall,ammoIceBall"/>
+        <property name="Max_strain_time" value="0"/>
+        <property name="Sound_start" value=""/>
+        <!-- <property name="Sound_repeat" value="FireMediumLoop"/> -->
+        <property name="Sound_repeat" value=""/>
+        <property name="Sound_end" value=""/>
+        <property name="Sound_empty" value="weapon_empty"/>
+        <property name="Sound_reload" value=""/>
+        <property name="Sound_draw" value=""/>
+        <property name="Sound_cancel" value="torch_swoosh"/>
+        <!-- <property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/> -->
+        <property name="Particles_muzzle_fire" value="..."/>
+        <property name="Particles_muzzle_smoke" value="..."/>
+        <property name="ScopeOffset" value="-0.00062,0.088,0.065"/>
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="BarrelOffset" value="0,0,0"/>
+      </property>
+
+      <property class="Action1">
+        <property name="Class" value="Activate"/>
+        <property name="Delay" value="1"/>
+        <!-- <property name="UsePowerAttackAnimation" value="false"/> -->
+      </property>
+
+      <effect_group name="Base Effects">
+        <!-- gunCompoundBow -->
+        <passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
+        <passive_effect name="MaxRange" operation="base_set" value="100"/>
+        <passive_effect name="MagazineSize" operation="base_set" value="1"/>
+        <passive_effect name="EntityDamage" operation="base_add" value="4"/>
+        <passive_effect name="BlockDamage" operation="base_add" value="6"/>
+
+        <passive_effect name="SpreadDegreesVertical" operation="base_set" value=".3"/>
+        <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".3"/>
+        <passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.4"/>
+        <passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.4"/>
+        <passive_effect name="SpreadMultiplierWalking" operation="base_set" value="0.7"/>
+        <passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1"/>
+
+        <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+        <passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+        <!-- crosshair reset speed -->
+
+        <!-- SPEED -->
+        <passive_effect name="RoundsPerMinute" operation="base_set" value="80"/>
+        <!-- cast speed -->
+        <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="8"/>
+        <passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+        <!--<passive_effect name="KickDegreesVertical" operation="base_set" value="0,0"/>
+        <passive_effect name="KickDegreesHorizontal" operation="base_set" value="0,0"/>-->
+
+        <passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="500,2000,2000" tier="1,6,999"/>
+        <passive_effect name="ModSlots" operation="base_set" value="0,5,5" tier="1,6,999"/>
+        <passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+      </effect_group>
+    </item>
+
+    <item name="ammoArrowGlass">
+      <property name="Extends" value="ammoArrowStone"/>
+      <property name="DescriptionKey" value="ammoArrowGlassDesc" />
+
+      <effect_group name="Base Effects" tiered="false">
+        <!-- ammoArrowStone -->
+        <passive_effect name="EntityDamage" operation="base_set" value="25"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+        <passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+        <passive_effect name="ProjectileStickChance" operation="perc_set" value="0" />
+      </effect_group>
+      <effect_group tiered="false">
+        <requirement name="RandomRoll" seed_type="Random" min_max="10,100" operation="LTE" value="100" />
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding" />
+      </effect_group>
+    </item>
+
+    <item name="ammoIceBall">
+      <!--<property name="DisplayType" value="ammoArrow"/>-->
+      <property name="Tags" value="ranged,perkArchery"/>
+      <property name="Meshfile" value="#@modfolder:Resources/IceBall.unity3d?ammoIceBall.prefab"/>
+      <property name="StickyMeshfile" value="#@modfolder:Resources/IceBall.unity3d?ammoIceBall.prefab"/>
+      <property name="DescriptionKey" value="ammoIceBallDesc" />
+
+      <property name="HoldType" value="21"/>
+      <property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="IsSticky" value="true"/>
+      <property name="StickyOffset" value="0"/>
+      <property name="Material" value="Mwood"/>
+      <property name="Stacknumber" value="500"/>
+      <!-- STK ammo -->
+      <property name="FuelValue" value="0"/>
+      <property name="EconomicValue" value="12"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property class="Action1">
+        <property name="Class" value="Projectile"/>
+        <property name="Explosion.ParticleIndex" value="0"/>
+        <!-- no expl. -->
+        <property name="FlyTime" value="0"/>
+        <property name="Gravity" value="0"/>
+        <property name="LifeTime" value="12"/>
+      </property>
+      <property name="Group" value="Ammo/Weapons,Basics"/>
+      <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+
+      <effect_group name="Base Effects" tiered="false">
+        <!-- ammoArrowStone -->
+        <passive_effect name="EntityDamage" operation="base_set" value="25"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+        <passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+        <passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+      </effect_group>
+
+      <effect_group tiered="false" name="Staff: Attach to Weapon">
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IceBall.unity3d?ammoIceBall.prefab" parent_transform="Attachments/AmmoSlot"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePrefabFromEntity" prefab="ammoIceBall" parent_transform="Attachments/AmmoSlot"/>
+      </effect_group>
+    </item>
+
+    <item name="ammoFireBall">
+      <!--<property name="DisplayType" value="ammoArrow"/>-->
+      <property name="Tags" value="ranged,perkArchery,ammoFire"/>
+      <property name="Meshfile" value="#@modfolder:Resources/FireBall.unity3d?ammoFireBall.prefab"/>
+      <property name="StickyMeshfile" value="#@modfolder:Resources/FireBall.unity3d?ammoFireBall.prefab"/>
+      <property name="DescriptionKey" value="ammoFireBallDesc" />
+
+      <property name="HoldType" value="21"/>
+      <property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="IsSticky" value="true"/>
+      <property name="StickyOffset" value="0"/>
+      <property name="Material" value="Mwood"/>
+      <property name="Stacknumber" value="500"/>
+      <!-- STK ammo -->
+      <property name="FuelValue" value="0"/>
+      <property name="EconomicValue" value="12"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property class="Action1">
+        <property name="Class" value="Projectile"/>
+        <property name="Explosion.ParticleIndex" value="0"/>
+        <!-- no expl. -->
+        <property name="FlyTime" value="0"/>
+        <property name="Gravity" value="0"/>
+        <property name="LifeTime" value="12"/>
+      </property>
+      <property name="Group" value="Ammo/Weapons,Basics"/>
+      <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+
+      <effect_group name="Base Effects" tiered="false">
+        <!-- ammoArrowStone -->
+        <passive_effect name="EntityDamage" operation="base_set" value="25"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+        <passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+        <passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+      </effect_group>
+
+      <effect_group tiered="false" name="Staff: Attach to Weapon">
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/FireBall.unity3d?ammoFireBall.prefab" parent_transform="Attachments/AmmoSlot"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePrefabFromEntity" prefab="ammoFireBall" parent_transform="Attachments/AmmoSlot"/>
+      </effect_group>
+    </item>
+  </append>
+</houseofgrey>

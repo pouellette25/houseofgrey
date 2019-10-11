@@ -1,0 +1,6 @@
+<houseofgrey>
+  <!--<setattribute xpath="/windows/window[@name='windowSkillAttributeInfo']/rect[@name='content']/sprite[@depth='3']" name="atlas">ItemIconAtlas</setattribute>
+  <setattribute xpath="/windows/window[@name='windowSkillInfo']/rect[@name='content']/sprite[@depth='3']" name="atlas">ItemIconAtlas</setattribute>-->
+
+  <setattribute xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@depth='1']/grid[@name='categories']" name="cols">10</setattribute>  
+</houseofgrey>
