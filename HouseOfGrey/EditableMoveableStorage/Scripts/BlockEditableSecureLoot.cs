@@ -142,11 +142,17 @@ class BlockEditableSecureLoot : BlockSecureLoot
     private void EventData_Event(object obj)
     {
         World world = GameManager.Instance.World;
-        object[] objArray = (object[])obj;
+
+        var eventData = obj as TimerEventData;
+
+        object[] objArray = (object[])eventData.Data;
+
         int _clrIdx = (int)objArray[0];
         BlockValue blockValue = (BlockValue)objArray[1];
+
         Vector3i vector3i = (Vector3i)objArray[2];
         BlockValue block = world.GetBlock(vector3i);
+
         EntityPlayerLocal entityPlayerLocal = objArray[3] as EntityPlayerLocal;
         if (block.damage > 0)
             GameManager.ShowTooltipWithAlert(entityPlayerLocal, Localization.Get("ttRepairBeforePickup", string.Empty), "ui_denied");
@@ -175,8 +181,10 @@ class BlockEditableSecureLoot : BlockSecureLoot
     // TODO: Move this to a helper class, and make it generic
     private XUiC_StorageBoxLabelWindow GetStorageWindowController()
     {
+        Debug.Log("get controller");
         var windowManager = (GUIWindowManager)UnityEngine.Object.FindObjectOfType(typeof(GUIWindowManager));
 
+        Debug.Log("Window Manager = " + windowManager);
         if (windowManager == null || !windowManager.Contains("storage_box"))
         {
             return null;
@@ -186,8 +194,10 @@ class BlockEditableSecureLoot : BlockSecureLoot
 
         if (editWindow != null)
         {
+            Debug.Log("editwindow is not null");
             var controller = (editWindow as XUiWindowGroup).Controller;
 
+            Debug.Log("controller = " + controller);
             return controller != null ? controller.GetChildByType<XUiC_StorageBoxLabelWindow>() : null;
         }
 
