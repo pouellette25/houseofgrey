@@ -202,5 +202,61 @@
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePrefabFromEntity" prefab="ammoFireBall" parent_transform="Attachments/AmmoSlot"/>
       </effect_group>
     </item>
+
+    <item name="meleeToolTacticalAxe">
+      <!-- T3 Tools -->
+      <property name="Extends" value="meleeToolFireaxeIron"/>
+      <property name="CustomIcon" value="meleeToolFireaxeIron"/>
+      <!-- xxx model to be replaced -->
+      <property name="CustomIconTint" value="a0a0ff"/>
+      <property name="Meshfile" value="#@modfolder:Resources/TacticalAxe.unity3d?tacticalAxe_M.prefab"/>
+      <property name="EconomicValue" value="700"/>
+      <property name="UnlockedBy" value="meleeToolSteelSetSchematic"/>
+      <property name="Material" value="MmeleeToolAllSteel"/>
+      <property name="Weight" value="4"/>
+
+      <effect_group name="meleeToolTacticalAxe">
+        <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+        <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+        <passive_effect name="EntityDamage" operation="base_set" value="28.9"/>
+        <!-- meleeToolFireaxeSteel -->
+        <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/>
+        <!-- random rng -->
+        <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+        <!-- tier bonus -->
+
+        <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="86.2"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/>
+        <!-- random BlockDmg -->
+        <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+        <!-- tier bonus -->
+
+        <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/>
+        <!-- random DegMax -->
+        <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/>
+        <!-- random APM -->
+        <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/>
+        <!-- random StamLoss -->
+
+        <passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+        <passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="3000,12000" tier="1,6" tags="perkMiner69r"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="10" tags="perkMiner69r"/>
+        <passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+      </effect_group>
+      <effect_group name="Power Attack">
+        <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+        <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+        <passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+      </effect_group>
+    </item>
   </append>
 </houseofgrey>

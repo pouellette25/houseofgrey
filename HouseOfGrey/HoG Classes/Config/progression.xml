@@ -1,0 +1,217 @@
+﻿<houseofgrey>
+  <remove xpath="/progression/attributes/attribute"></remove>
+  <remove xpath="/progression/skills/skill"></remove>
+  <remove xpath="/progression/perks/perk"></remove>
+
+  <append xpath="/progression/attributes">
+    <attribute name="attFortitude" name_key="attWarriorName" desc_key="attWarriorDesc" icon="ui_game_symbol_warrior">
+      <level_requirements level="1">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="3">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="6">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="7">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="8">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="9">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/>
+      </level_requirements>
+      <level_requirements level="10">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/>
+      </level_requirements>
+      <effect_group>
+
+        <requirement name="HoldingItemHasTags" tags="melee,blunt"/>
+        <requirement name="HoldingItemHasTags" tags="melee,axe"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
+        <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+
+        <effect_description level="1" desc_key="attWarriorRank01Desc" long_desc_key="attWarriorRank01LongDesc"/>
+        <effect_description level="2" desc_key="attWarriorRank02Desc" long_desc_key="attWarriorRank02LongDesc"/>
+        <effect_description level="3" desc_key="attWarriorRank03Desc" long_desc_key="attWarriorRank03LongDesc"/>
+        <effect_description level="4" desc_key="attWarriorRank04Desc" long_desc_key="attWarriorRank04LongDesc"/>
+        <effect_description level="5" desc_key="attWarriorRank05Desc" long_desc_key="attWarriorRank05LongDesc"/>
+        <effect_description level="6" desc_key="attWarriorRank06Desc" long_desc_key="attWarriorRank06LongDesc"/>
+        <effect_description level="7" desc_key="attWarriorRank07Desc" long_desc_key="attWarriorRank07LongDesc"/>
+        <effect_description level="8" desc_key="attWarriorRank08Desc" long_desc_key="attWarriorRank08LongDesc"/>
+        <effect_description level="9" desc_key="attWarriorRank09Desc" long_desc_key="attWarriorRank09LongDesc"/>
+        <effect_description level="10" desc_key="attWarriorRank10Desc" long_desc_key="attWarriorRank10LongDesc"/>
+      </effect_group>
+    </attribute>
+
+    <attribute name="attHunter" name_key="attHunterName" desc_key="attHunterDesc" icon="ui_game_symbol_hunter">
+      <level_requirements level="1">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="3">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="6">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="7">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="8">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="9">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/>
+      </level_requirements>
+      <level_requirements level="10">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/>
+      </level_requirements>
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="archery"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
+        <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+
+        <effect_description level="1"  desc_key="attHunterRank01Desc" long_desc_key="attHunterRank01LongDesc"/>
+        <effect_description level="2"  desc_key="attHunterRank02Desc" long_desc_key="attHunterRank02LongDesc"/>
+        <effect_description level="3"  desc_key="attHunterRank03Desc" long_desc_key="attHunterRank03LongDesc"/>
+        <effect_description level="4"  desc_key="attHunterRank04Desc" long_desc_key="attHunterRank04LongDesc"/>
+        <effect_description level="5"  desc_key="attHunterRank05Desc" long_desc_key="attHunterRank05LongDesc"/>
+        <effect_description level="6"  desc_key="attHunterRank06Desc" long_desc_key="attHunterRank06LongDesc"/>
+        <effect_description level="7"  desc_key="attHunterRank07Desc" long_desc_key="attHunterRank07LongDesc"/>
+        <effect_description level="8"  desc_key="attHunterRank08Desc" long_desc_key="attHunterRank08LongDesc"/>
+        <effect_description level="9"  desc_key="attHunterRank09Desc" long_desc_key="attHunterRank09LongDesc"/>
+        <effect_description level="10" desc_key="attHunterRank10Desc" long_desc_key="attHunterRank10LongDesc"/>
+      </effect_group>
+    </attribute>
+
+    <attribute name="attGunSlinger" name_key="attGunSlingerName" desc_key="attGunSlingerDesc" icon="ui_game_symbol_hog_gunslinger">
+      <level_requirements level="1">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="3">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="6">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="7">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="8">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="9">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/>
+      </level_requirements>
+      <level_requirements level="10">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/>
+      </level_requirements>
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="gun"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
+        <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
+        <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+
+        <effect_description level="1"  desc_key="attGunSlingerRank01Desc" long_desc_key="attGunSlingerRank01LongDesc"/>
+        <effect_description level="2"  desc_key="attGunSlingerRank02Desc" long_desc_key="attGunSlingerRank02LongDesc"/>
+        <effect_description level="3"  desc_key="attGunSlingerRank03Desc" long_desc_key="attGunSlingerRank03LongDesc"/>
+        <effect_description level="4"  desc_key="attGunSlingerRank04Desc" long_desc_key="attGunSlingerRank04LongDesc"/>
+        <effect_description level="5"  desc_key="attGunSlingerRank05Desc" long_desc_key="attGunSlingerRank05LongDesc"/>
+        <effect_description level="6"  desc_key="attGunSlingerRank06Desc" long_desc_key="attGunSlingerRank06LongDesc"/>
+        <effect_description level="7"  desc_key="attGunSlingerRank07Desc" long_desc_key="attGunSlingerRank07LongDesc"/>
+        <effect_description level="8"  desc_key="attGunSlingerRank08Desc" long_desc_key="attGunSlingerRank08LongDesc"/>
+        <effect_description level="9"  desc_key="attGunSlingerRank09Desc" long_desc_key="attGunSlingerRank09LongDesc"/>
+        <effect_description level="10" desc_key="attGunSlingerRank10Desc" long_desc_key="attGunSlingerRank10LongDesc"/>
+      </effect_group>
+    </attribute>
+
+    <attribute name="attWizard" name_key="attWizardName" desc_key="attWizardDesc" icon="ui_game_symbol_wizard">
+      <!-- <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> -->
+      <level_requirements level="1">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="3">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="6">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/>
+      </level_requirements>
+      <level_requirements level="7">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="8">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/>
+      </level_requirements>
+      <level_requirements level="9">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/>
+      </level_requirements>
+      <level_requirements level="10">
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/>
+      </level_requirements>
+
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkWizard"/>
+        <passive_effect name="WeaponHandling" operation="perc_add" value="0.0,0.5" level="1,10"/>
+        <passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.0,.5" level="1,10"/>
+      </effect_group>
+
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkWizard"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.0,0.40" level="1,9"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.5" level="10"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="0.52,0.70" level="11,20"/>
+
+        <effect_description level="1" desc_key="attWizardRank1Desc"/>
+        <effect_description level="2" desc_key="attWizardRank2Desc"/>
+        <effect_description level="3" desc_key="attWizardRank3Desc"/>
+        <effect_description level="4" desc_key="attWizardRank4Desc"/>
+        <effect_description level="5" desc_key="attWizardRank5Desc"/>
+        <effect_description level="6" desc_key="attWizardRank6Desc"/>
+        <effect_description level="7" desc_key="attWizardRank7Desc"/>
+        <effect_description level="8" desc_key="attWizardRank8Desc"/>
+        <effect_description level="9" desc_key="attWizardRank9Desc"/>
+        <effect_description level="10" desc_key="attWizardRank10Desc"/>
+      </effect_group>
+    </attribute>
+  </append>
+</houseofgrey>
