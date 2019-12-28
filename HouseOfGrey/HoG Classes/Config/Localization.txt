@@ -74,29 +74,143 @@ attGunSlingerRank10LongDesc,progression,Attribute,New,"You are unrivaled at maki
 attblacksmith,progression,Attribute,New,Blacksmith,,,,,
 attBlacksmithName,progression,Attribute,New,Attribute: Blacksmith,,,,,
 attBlacksmithDesc,progression,Attribute,New,The Blacksmith is adept at crafting weapons and tools used against the zombie hordes.,,,,,
+attBlacksmithRank1Desc,progression,Perk,New,Couch Potato,,,,,
+attBlacksmithRank1LongDesc,progression,Perk,New,"Ok so you are not a total couch potato any more, but not deserving of the title athlete yet either. Reduces melee and tool stamina use by 5%.",,,,,
+attBlacksmithRank2Desc,progression,Perk,New,Bench Warmer,,,,,
+attBlacksmithRank2LongDesc,progression,Perk,New,You have graduated to bench warmer. Reduce melee and tool stamina usage by 10%.,,,,,
+attBlacksmithRank3Desc,progression,Perk,New,Athlete,,,,,
+attBlacksmithRank3LongDesc,progression,Perk,New,You are now a bonafide athlete and getting winded doing nothing is a thing of the past. Reduce melee and tool stamina usage by 15%.\nKilling blows grant 5 stamina.,,,,,
+attBlacksmithRank4Desc,progression,Perk,New,Warrior,,,,,
+attBlacksmithRank4LongDesc,progression,Perk,New,Nobody will disrespect a warrior. Reduce melee and tool stamina usage by 20%.\nKilling blows grant 10 stamina.,,,,,
+attBlacksmithRank5Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank5LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 25%.\nKilling blows grant 15 stamina.,,,,,
+attBlacksmithRank6Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank6LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 30%.\nKilling blows grant 20 stamina.,,,,,
+attBlacksmithRank7Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank7LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 35%.\nKilling blows grant 25 stamina.,,,,,
+attBlacksmithRank8Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank8LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 40%.\nKilling blows grant 30 stamina.,,,,,
+attBlacksmithRank9Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank9LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 45%.\nKilling blows grant 35 stamina.,,,,,
+attBlacksmithRank10Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank10LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 50%.\nKilling blows grant 40 stamina.,,,,,
 
 attengineer,progression,Attribute,New,Engineer,,,,,
 attEngineerName,progression,Attribute,New,Attribute: Engineer,,,,,
 attEngineerDesc,progression,Attribute,New,Engineers are essential for making transportation item modifications and explosive weapons.\nThey can also create powered traps and are handy with a wrench.,,,,,
+attEngineerRank01Desc,progression,Attribute,New,Oblivious,,,,,
+attEngineerRank01LongDesc,progression,Attribute,New,"You are pretty oblivious in the perception department. Deal 200% head shot damage and have a 5% chance to dismember with explosives.",,,,,
+attEngineerRank02Desc,progression,Attribute,New,Unaware,,,,,
+attEngineerRank02LongDesc,progression,Attribute,New,"You are still unaware to most things around you. Deal 210% head shot damage and have a 10% chance to dismember with explosives.",,,,,
+attEngineerRank03Desc,progression,Attribute,New,Unobservant,,,,,
+attEngineerRank03LongDesc,progression,Attribute,New,"You are sometimes unobservant but getting better. Deal 220% head shot damage and have a 15% chance to dismember with explosives.",,,,,
+attEngineerRank04Desc,progression,Attribute,New,Incognizant,,,,,
+attEngineerRank04LongDesc,progression,Attribute,New,"Your incognizant perception is usually just a small setback. Deal 230% head shot damage and have a 20% chance to dismember with explosives.",,,,,
+attEngineerRank05Desc,progression,Attribute,New,Observant,,,,,
+attEngineerRank05LongDesc,progression,Attribute,New,"You are observant and notice just enough to make a big difference. Deal 240% head shot damage and have a 26% chance to dismember with explosives.",,,,,
+attEngineerRank06Desc,progression,Attribute,New,Attentive,,,,,
+attEngineerRank06LongDesc,progression,Attribute,New,"Your attention to detail is clearly aiding you in combat. Deal 250% head shot damage and have a 30% chance to dismember with explosives.",,,,,
+attEngineerRank07Desc,progression,Attribute,New,Discerning,,,,,
+attEngineerRank07LongDesc,progression,Attribute,New,"You can discern weak points in enemies with ease now. Deal 260% head shot damage and have a 35% chance to dismember with explosives.",,,,,
+attEngineerRank08Desc,progression,Attribute,New,Perceptive,,,,,
+attEngineerRank08LongDesc,progression,Attribute,New,"Your perception is astounding. Deal 270% head shot damage and have a 40% chance to dismember with explosives.",,,,,
+attEngineerRank09Desc,progression,Attribute,New,Astute awareness,,,,,
+attEngineerRank09LongDesc,progression,Attribute,New,"Your awareness is astute. Deal 285% head shot damage and have a 45% chance to dismember with explosives.",,,,,
+attEngineerRank10Desc,progression,Attribute,New,Boom Headshot,,,,,
+attEngineerRank10LongDesc,progression,Attribute,New,"You are unrivaled at making heads go boom.  Deal 300% head shot damage and have a 50% chance to dismember with explosives.",,,,,
 
 attthief,progression,Attribute,New,Thief,,,,,
 attThiefName,progression,Attribute,New,Attribute: Thief,,,,,
 attThiefDesc,progression,Attribute,New,Quick on their feet and known for haggling prices with traders.,,,,,
+attThiefRank1Desc,progression,Perk,New,Slim Jim,,,,,
+attThiefRank1LongDesc,progression,Perk,New,"Slim Jim. You are just getting the hang of this but someday you are going to be somebody. You can craft lock picks, pick locks 5% faster and have a 5% lower chance to break lockpicks. ",,,,,
+attThiefRank2Desc,progression,Perk,New,Burglar,,,,,
+attThiefRank2LongDesc,progression,Perk,New,Burglar. You are starting to make a name for yourself. You can pick locks 10% faster and have a 10% lower chance to break lockpicks.,,,,,
+attThiefRank3Desc,progression,Perk,New,Thief,,,,,
+attThiefRank3LongDesc,progression,Perk,New,You are now a professional thief. You can pick locks 15% faster and have a 15% less chance to break lockpicks.,,,,,
+attThiefRank4Desc,progression,Perk,New,Lock Smith,,,,,
+attThiefRank4LongDesc,progression,Perk,New,You are now a lock smith and few locks will keep you out. You can pick locks 20% faster and have a 20% lower chance to break lockpicks.,,,,,
+attThiefRank5Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank5LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 25% faster and have a 25% lower chance to break lockpicks.,,,,,
+attThiefRank6Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank6LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 30% faster and have a 30% lower chance to break lockpicks.,,,,,
+attThiefRank7Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank7LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 35% faster and have a 35% lower chance to break lockpicks.,,,,,
+attThiefRank8Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank8LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 40% faster and have a 40% lower chance to break lockpicks.,,,,,
+attThiefRank9Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank9LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 45% faster and have a 45% lower chance to break lockpicks.,,,,,
+attThiefRank10Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank10LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 50% faster and have a 50% lower chance to break lockpicks.,,,,,
 
 attassassin,progression,Attribute,New,Assassin,,,,,
 attAssassinName,progression,Attribute,New,Attribute: Assassin,,,,,
-attAssassinDesc,progression,Attribute,New,Assassing hide in the shadows waiting for the right moment to strike down their enemies.\nThey prefer light blades over guns or heavy weapons to keep their presence hidden.,,,,,
+attAssassinDesc,progression,Attribute,New,Assassins hide in the shadows waiting for the right moment to strike down their enemies.\nThey prefer light blades to keep their presence hidden.,,,,,
+attAssassinRank01Desc,progression,Attribute,New,Clumsy,,,,,
+attAssassinRank01LongDesc,progression,Attribute,New,"You are as clumsy as they come but you still do 200% head shot damage and have a 5% chance to dismember with knives.",,,,,
+attAssassinRank02Desc,progression,Attribute,New,Fumbling,,,,,
+attAssassinRank02LongDesc,progression,Attribute,New,"You didn't make the football team but that didn't stop you from practicing. Deal 210% head shot damage and have a 10% chance to dismember with knives.",,,,,
+attAssassinRank03Desc,progression,Attribute,New,Clunky,,,,,
+attAssassinRank03LongDesc,progression,Attribute,New,"You are still loud and clunky but can deal 220% head shot damage and have a 15% chance to dismember with knives.",,,,,
+attAssassinRank04Desc,progression,Attribute,New,Inept,,,,,
+attAssassinRank04LongDesc,progression,Attribute,New,"Your dexterity is a bit inept, but you can deal 230% head shot damage and have a 20% chance to dismember with knives.",,,,,
+attAssassinRank05Desc,progression,Attribute,New,Agile,,,,,
+attAssassinRank05LongDesc,progression,Attribute,New,"You are now agile and deal 240% head shot damage and have a 25% chance to dismember with knives.",,,,,
+attAssassinRank06Desc,progression,Attribute,New,Nimble,,,,,
+attAssassinRank06LongDesc,progression,Attribute,New,"Your movement is now very nimble and deal 250% head shot damage and have a 30% chance to dismember with knives.",,,,,
+attAssassinRank07Desc,progression,Attribute,New,Dexterous,,,,,
+attAssassinRank07LongDesc,progression,Attribute,New,"Your dexterity is very impressive. Deal 260% head shot damage and have a 35% chance to dismember with knives.",,,,,
+attAssassinRank08Desc,progression,Attribute,New,Gymnast,,,,,
+attAssassinRank08LongDesc,progression,Attribute,New,"Moving fluid and landing on your feet are second nature for you. Deal 270% head shot damage and have a 40% chance to dismember with knives.",,,,,
+attAssassinRank09Desc,progression,Attribute,New,Professional Athlete,,,,,
+attAssassinRank09LongDesc,progression,Attribute,New,"Your agility is good enough you could be a professional athlete. Deal 285% head shot damage and have a 45% chance to dismember with knives.",,,,,
+attAssassinRank10Desc,progression,Attribute,New,Parkour Master,,,,,
+attAssassinRank10LongDesc,progression,Attribute,New,"Your dexterity is unmatched. Deal 300% head shot damage and have a 50% chance to dismember with knives.",,,,,
+
+attalchemist,progression,Attribute,New,Alchemist,,,,,
+attAlchemistName,progression,Attribute,New,Attribute: Alchemist,,,,,
+attAlchemistDesc,progression,Attribute,New,Masters of potions.,,,,,
+attAlchemistRank1Desc,progression,Perk,New,Quack,,,,,
+attAlchemistRank1LongDesc,progression,Perk,New,"Healing items heal 5% more health and heal over time 10% faster. All healing you perform is 5% more effective. Gain 20% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank2Desc,progression,Perk,New,Intern,,,,,
+attAlchemistRank2LongDesc,progression,Perk,New,"Healing items heal 10% more health and heal over time 20% faster. All healing you perform is 10% more effective. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank3Desc,progression,Perk,New,Doctor,,,,,
+attAlchemistRank3LongDesc,progression,Perk,New,"Healing items heal 15% more health and heal over time 30% faster. All healing you perform is 15% more effective. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints. 20% less side effects using blood draw kits.",,,,,
+attAlchemistRank4Desc,progression,Perk,New,Surgeon,,,,,
+attAlchemistRank4LongDesc,progression,Perk,New,"Healing items heal 20% more health and heal over time 40% faster. All healing you perform is 20% more effective. Gain 80% more XP using bandages, first aid bandages, first aid kits and splints. 40% less side effects using blood draw kits.",,,,,
+attAlchemistRank5Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank5LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 25% more health and heal over time 50% faster. All healing you perform is 25% more effective. When healing others you gain half the benefits. Gain 100% more XP using bandages, first aid bandages, first aid kits and splints. 60% less side effects using blood draw kits.",,,,,
+attAlchemistRank6Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank6LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 30% more health and heal over time 60% faster. All healing you perform is 30% more effective. Add potions and things here",,,,,
+attAlchemistRank7Desc,progression,Perk,New,Miracle Worker,,,,,	
+attAlchemistRank7LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 35% more health and heal over time 70% faster. All healing you perform is 35% more effective. Add potions and things here",,,,,
+attAlchemistRank8Desc,progression,Perk,New,Miracle Worker,,,,,	
+attAlchemistRank8LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 40% more health and heal over time 80% faster. All healing you perform is 40% more effective. Add potions and things here",,,,,
+attAlchemistRank9Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank9LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 45% more health and heal over time 90% faster. All healing you perform is 45% more effective. Add potions and things here",,,,,
+attAlchemistRank10Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank10LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 50% more health and heal over time 100% faster. All healing you perform is 50% more effective. Add potions and things here",,,,,
 
 attwizard,progression,Attribute,New,Wizard
 attWizardName,progression,Attribute,New,Attribute: Wizard
 attWizardDesc,progression,Attribute,New,A wizard is never late nor is he early. He arrives precisely when he means to.\n...It's when?! Gotta go.
 attWizardRank1Desc,progression,Perk,New,You're a wizard Harry!
-attWizardRank2Desc,progression,Perk,New,"10% Faster aiming with magic weapons, and cast times are 10% faster".
-attWizardRank3Desc,progression,Perk,New,"15% Faster aiming with magic weapons, and cast times are 15% faster".
-attWizardRank4Desc,progression,Perk,New,"20% Faster aiming with magic weapons, and cast times are 20% faster".
-attWizardRank5Desc,progression,Perk,New,"25% Faster aiming with magic weapons, and cast times are 25% faster".
-attWizardRank6Desc,progression,Perk,New,"30% Faster aiming with magic weapons, and cast times are 30% faster".
-attWizardRank7Desc,progression,Perk,New,"35% Faster aiming with magic weapons, and cast times are 35% faster".
-attWizardRank8Desc,progression,Perk,New,"40% Faster aiming with magic weapons, and cast times are 40% faster".
-attWizardRank9Desc,progression,Perk,New,"45% Faster aiming with magic weapons, and cast times are 45% faster".
-attWizardRank10Desc,progression,Perk,New,"Gandalf would be proud! 50% Faster aiming with magic weapons, and cast times are 50% faster."
+attWizardRank1LongDesc,progression,Perk,New,"5% Faster aiming with magic weapons, and cast times are 10% faster".
+attWizardRank2Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank2LongDesc,progression,Perk,New,"10% Faster aiming with magic weapons, and cast times are 15% faster".
+attWizardRank3Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank3LongDesc,progression,Perk,New,"15% Faster aiming with magic weapons, and cast times are 20% faster".
+attWizardRank4Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank4LongDesc,progression,Perk,New,"20% Faster aiming with magic weapons, and cast times are 25% faster".
+attWizardRank5Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank5LongDesc,progression,Perk,New,"25% Faster aiming with magic weapons, and cast times are 30% faster".
+attWizardRank6Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank6LongDesc,progression,Perk,New,"30% Faster aiming with magic weapons, and cast times are 35% faster".
+attWizardRank7Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank7LongDesc,progression,Perk,New,"35% Faster aiming with magic weapons, and cast times are 40% faster".
+attWizardRank8Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank8LongDesc,progression,Perk,New,"40% Faster aiming with magic weapons, and cast times are 45% faster".
+attWizardRank9Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank9LongDesc,progression,Perk,New,"45% Faster aiming with magic weapons, and cast times are 45% faster".
+attWizardRank10Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank10LongDesc,progression,Perk,New,"Gandalf would be proud! 50% Faster aiming with magic weapons, and cast times are 50% faster."
