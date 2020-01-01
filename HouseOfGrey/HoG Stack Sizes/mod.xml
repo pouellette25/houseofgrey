@@ -1,8 +1,8 @@
 <mod>
   <info>
     <author>GanTheGrey</author>
-    <name>House of Grey weapons</name>
-    <description>Adds custom weapons and ammo to the game</description>
+    <name>House of Grey Stack Sizes</name>
+    <description>Updates the stack sizes of various items</description>
     <mod_version>1.0</mod_version>
     <game_version>18.2</game_version>
     <launcher_version>0.0.0</launcher_version>

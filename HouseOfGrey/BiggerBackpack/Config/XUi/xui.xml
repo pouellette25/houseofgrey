@@ -1,4 +1,0 @@
-<houseofgrey>
-    <set xpath="/xui/ruleset/@scale">1.2</set>
-    <set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">1.05</set>
-</houseofgrey>

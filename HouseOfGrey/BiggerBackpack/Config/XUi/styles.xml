@@ -1,4 +1,0 @@
-<houseofgrey>
-    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='width']/@value">49</set>
-    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='height']/@value">49</set>
-</houseofgrey>
