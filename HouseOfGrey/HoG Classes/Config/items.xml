@@ -1,0 +1,166 @@
+﻿<houseofgrey>
+  <append xpath="/items">
+    <item name="bookSavagesNonsenseEncumbered">
+      <!-- first book vol 1 -->
+      <property name="Extends" value="bookFiremansAlmanacHeat"/>
+      <property name="CustomIcon" value="bookSavagesNonsense"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseEncumberedLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseEncumbered"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseEncumbered" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseSneakCrossbow">
+      <!-- vol 2 -->
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseSneakCrossbowLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseSneakCrossbow"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseSneakCrossbow" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseLightArmor">
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseLightArmorLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseLightArmor"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="bookSavagesNonsenseLightArmor" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseBrokenGlass">
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseBrokenGlassLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseBrokenGlass"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseBrokenGlass" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseMoreAmmo">
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseMoreAmmoLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseMoreAmmo"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseMoreAmmo" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseCola">
+      <!-- vol 6 -->
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseColaLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseCola"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseCola" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="bookSavagesNonsenseAccuracy">
+      <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseAccuracyLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseAccuracy"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseAccuracy" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+          <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+
+    <item name="drinkJarCola">
+      <property name="Extends" value="drinkJarRedTea"/>
+      <property name="DisplayType" value="water"/>
+      <property name="CustomIcon" value="drinkJarCola"/>
+      <property name="EconomicValue" value="10"/>
+      <property name="UnlockedBy" value="perkSavagesNonsenseCola"/>
+
+      <effect_group tiered="false">
+        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+        <display_value name="dStaminaRegen" value=".3"/>
+        <display_value name="dDuration" value="240"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffColaDuration" operation="add" value="240"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffColaDuration" operation="set" value="240">
+          <requirement name="CVarCompare" cvar="$buffColaDuration" operation="GT" value="240"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCola"/>
+      </effect_group>
+
+      <effect_group tiered="false">
+        <requirement name="HasBuff" buff="buffIsOnFire"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+      </effect_group>
+    </item>
+
+    <item name="resourceVanilla">
+      <property name="HoldType" value="16"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="resourceVanilla"/>
+      <property name="Material" value="MresourceCrop"/>
+      <property name="Stacknumber" value="500"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="12"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property name="CraftingIngredientTime" value="5"/>
+      <property name="Group" value="Resources"/>
+    </item>
+
+    <item name="resourceCinnamon">
+      <property name="HoldType" value="16"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="resourceCinnamon"/>
+      <property name="Material" value="MresourceCrop"/>
+      <property name="Stacknumber" value="500"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="12"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property name="CraftingIngredientTime" value="5"/>
+      <property name="Group" value="Resources"/>
+    </item>
+  </append>
+</houseofgrey>

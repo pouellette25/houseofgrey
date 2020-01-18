@@ -1,0 +1,19 @@
+<mod>
+  <info>
+    <!-- Information about the Mod, the author and version information -->
+    <!-- These are displayed in the SDX Launcher -->
+    <author>KhaineGB and SphereII</author>
+    <name>10 Slot Toolbelt</name>
+    <description>Increases toolbelt to 10 slots</description>
+    <mod_version>18.1.0.11</mod_version>
+    <game_version>18.1</game_version>
+    <launcher_version>0.7.3</launcher_version>
+  </info>
+  <hashes>
+    <hash filename="D:\Github\SphereII.Mods/10SlotToolbelt/Config\XUi\windows.xml" hash="3655cb2f5763208f197786c78a602054" />
+    <hash filename="D:\Github\SphereII.Mods/10SlotToolbelt/Config\XUi\xui.xml" hash="927fc97c272256dba2a64769ce839c62" />
+    <hash filename="D:\Github\SphereII.Mods/10SlotToolbelt/PatchScripts\CreatePlayerActionPatcher.cs" hash="e61d3b7947c77a93d289dbebb3e83e54" />
+    <hash filename="D:\Github\SphereII.Mods/10SlotToolbelt/Scripts\ToolbeltSDX.cs" hash="6d6708a540886e7350b50c2530d9f31c" />
+    <hash filename="D:\Github\SphereII.Mods/10SlotToolbelt/Harmony\BiggerToolbelt.cs" hash="56f26813cb1092c1ad6965345017af1b" />
+  </hashes>
+</mod>

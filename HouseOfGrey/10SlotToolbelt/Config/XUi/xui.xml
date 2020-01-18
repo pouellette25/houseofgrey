@@ -1,0 +1,4 @@
+<configs>
+	<!-- Change old toolbelt window to the new one -->
+	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='windowToolbelt']/@name">windowToolbeltSDX</set>
+</configs>

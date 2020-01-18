@@ -11,6 +11,9 @@
   <set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">1000</set>
   <set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">1000</set>
   <set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">1000</set>
+  <set xpath="/items/item[@name='thrownAmmoFlare']/property[@name='Stacknumber']/@value">200</set>
+  <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">200</set>
+  <set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">200</set>
 
   <!--Resources-->
   <set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">1000</set>

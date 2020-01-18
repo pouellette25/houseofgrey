@@ -3,7 +3,6 @@ using Harmony;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 using UnityEngine;
 
 namespace HoG_Weapons_and_Ammo.Harmony
@@ -27,6 +26,15 @@ namespace HoG_Weapons_and_Ammo.Harmony
             {
                 float strength = dr.Strength;
                 DamageSource source = dr.Source;
+
+                var _difficultyModifiers = new Dictionary<int, float>()
+                    {
+                        {0, 0.5f },
+                        {1, 0.75f },
+                        {3, 1.5f },
+                        {4, 2.0f },
+                        {5, 2.5f },
+                    };
 
                 if (strength > 0.0 && source != null)
                 {                    
@@ -59,7 +67,9 @@ namespace HoG_Weapons_and_Ammo.Harmony
                             if (holdingItem.Properties.Contains("DeathForceMultiplier"))
                             {
                                 var multiplier = holdingItem.Properties.GetFloat("DeathForceMultiplier");
-                                forceVec *= multiplier;
+
+                                var difficulty = GameStats.GetInt(EnumGameStats.GameDifficulty);
+                                forceVec *= multiplier * _difficultyModifiers[difficulty];
                             }
                         }
                     }

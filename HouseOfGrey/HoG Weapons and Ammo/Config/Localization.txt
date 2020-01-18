@@ -1,0 +1,4 @@
+﻿Key,Source,Context,Changes,English
+meleeToolUncleSamHammerSchematic,items,Melee,newKey,Uncle Sam Hammer Schematic,,,,,
+meleeToolUncleSamHammer,items,Melee,newKey,Uncle Sam Hammer,,,,,
+meleeToolUncleSamHammerDesc,items,Melee,newKey,I wanna be your sledge hammer. Let the PUNishment Begin!\n\nRepair with a Repair Kit.\nScrap to Steel Sledgehammer parts.,,,,,

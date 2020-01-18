@@ -1,0 +1,120 @@
+﻿<houseofgrey>
+  <remove xpath="/controls/backpack_item_stack" />
+  <remove xpath="/controls/ingredient_header" />
+  <remove xpath="/controls/ingredient_row" />
+  <remove xpath="/controls/unlocked_by_header" />
+  <remove xpath="/controls/unlocked_by_row" />
+
+  <append xpath="/controls">
+    <backpack_item_stack>
+      <rect controller="ItemStack" style="itemStack, hover" collider_scale="1" >
+        <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="70" height="70" color="[black]" type="sliced" fillcenter="false" />
+        <sprite depth="3" name="background" sprite="menu_empty3px" width="64" height="64" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+        <sprite depth="2" name="highlightOverlay" width="62" height="62" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+
+        <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="64,64" globalopacity="true"/>
+
+        <sprite depth="4" name="itemIcon" width="60" height="60" atlas="ItemIconAtlas" sprite="{itemicon}" pos="30,-30" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+        <sprite depth="8" name="lockTypeIcon" width="7" height="7" sprite="" pos="2,-2" foregroundlayer="true"/>
+
+        <sprite depth="3" name="durabilityBackground" width="64" height="5" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -57" foregroundlayer="true"/>
+        <filledsprite depth="4" name="durability" width="64" height="5" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -57" foregroundlayer="true"/>
+
+        <sprite depth="5" name="disabledOverlay" width="60" height="60" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+        <label depth="7" name="stackValue" pos="5,-45" width="54" height="24" text="{itemcount}" font_size="18" effect="outline" justify="center" />
+        <label depth="7" name="timer" pos="35,-33" width="45" height="16" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
+        <sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="64" height="64" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+        <!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+        <label depth="12" name="itemName" pos="30,-30" width="0" height="0" text="" font_size="18" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true"/>
+        <!--*#$-IGS END.-$#-->
+        <sprite depth="13" name="assembleIcon" size="35,35" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+      </rect>
+    </backpack_item_stack>
+
+    <ingredient_header>
+      <rect name="header" width="657" height="50">
+        <rect depth="2" width="65" height="48">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[darkGrey]" type="sliced" />
+          <label depth="3" text="ITEM" text_key="lblitem" pos="32,-23" height="26" font_size="26" justify="center" pivot="center"/>
+        </rect>
+        <rect depth="2" width="443" height="48" pos="68,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="446" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[darkGrey]" type="sliced" />
+          <label depth="3" text="NAME" text_key="mmTextName" pos="220,-23" width="440" height="26" font_size="26" justify="center" pivot="center"/>
+        </rect>
+        <rect depth="2" width="140" height="48" pos="510,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="146" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[darkGrey]" type="sliced" />
+          <label depth="3" text="COUNT" text_key="lblContextCraftCount" pos="70,-23" width="64" height="26" font_size="26" justify="center" pivot="center" upper_case="true"/>
+        </rect>
+      </rect>
+    </ingredient_header>
+
+    <ingredient_row>
+      <rect name="row" width="657" height="50" controller="IngredientEntry">
+        <rect depth="2" width="65" height="48">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+
+          <sprite color="[lightGrey]" type="sliced" />
+          <sprite depth="2" name="icon" width="40" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-22" pivot="center" foregroundlayer="true"/>
+        </rect>
+        <rect depth="2" width="443" height="48" pos="68,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="446" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[lightGrey]" type="sliced" />
+          <label depth="3" name="name" pos="220,-23" width="440" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{itemname}"/>
+        </rect>
+        <rect depth="2" width="140" height="48" pos="510,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="146" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[lightGrey]" type="sliced" />
+          <label depth="3" name="needCount" pos="70,-23" width="120" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{haveneedcount}"/>
+        </rect>
+      </rect>
+    </ingredient_row>
+
+    <unlocked_by_header>
+      <rect name="header" width="657" height="50">
+        <rect depth="2" width="65" height="48">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[darkGrey]" type="sliced" />
+          <label depth="3" text="TYPE" pos="32,-23" height="26" font_size="26" justify="center" pivot="center"/>
+        </rect>
+        <rect depth="2" width="582" height="48" pos="68,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="588" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[darkGrey]" type="sliced" />
+          <label depth="3" text="UNLOCKED BY" text_key="UNLOCKED BY" pos="0,-13" height="26" font_size="26" justify="center" />
+        </rect>
+      </rect>
+    </unlocked_by_header>
+
+    <unlocked_by_row>
+      <rect name="row" width="657" height="50" controller="UnlockByEntry">
+        <rect depth="2" width="65" height="48">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+
+          <sprite color="[lightGrey]" type="sliced" />
+          <sprite depth="2" name="icon" width="40" height="40" atlas="{itemiconatlas}" sprite="{itemicon}" color="{itemicontint}" pos="30,-22" pivot="center" foregroundlayer="true"/>
+        </rect>
+        <rect depth="2" width="582" height="48" pos="68,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="588" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[lightGrey]" type="sliced" />
+          <label depth="3" name="name" pos="0,-13" height="26" font_size="26" color="[labelColor]" justify="center" text="{name}"/>
+        </rect>
+      </rect>
+    </unlocked_by_row>
+
+    <item_action_entry_character>
+      <rect height="110" controller="ItemActionEntry" disabled_font_color="[disabledLabelColor]" default_font_color="[labelColor]" default_background_color="[mediumGrey]" >
+        <sprite depth="3" name="background" color="[mediumGrey]" type="sliced" on_press="true" on_hover="true" width="147"/>
+        <sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="{statuscolor}" pos="2,-10" foregroundlayer="true"/>
+        <!--#$-IGS BEGIN: Adding gamepad callout. -$#-->
+        <label depth="4" name="Name" pos="32,-22" width="78" height="26" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" />
+        <gamepad_icon depth="4" name="gamepadIcon" pos="146,-22" pivot="Right" />
+        <label depth="4" name="keyboardButton" pos="145,-22" width="36" height="26" text="&lt;W&gt;" font_size="26" color="{statuscolor}" effect="shadow" pivot="right" justify="center" />
+        <!--*#$-IGS END.-$#-->
+      </rect>
+    </item_action_entry_character>
+
+  </append>
+</houseofgrey>

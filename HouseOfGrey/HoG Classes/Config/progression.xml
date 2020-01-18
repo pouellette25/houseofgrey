@@ -482,6 +482,9 @@
         <effect_description level="10" desc_key="attWizardRank10Desc" long_desc_key="attWizardRank10LongDesc"/>
       </effect_group>
     </attribute>
+
+    <attribute name="attBooks" name_key="attBooks" desc_key="attBooks" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
   </append>
 
   <append xpath="/progression/perks">
@@ -558,6 +561,13 @@
         <effect_description level="3" desc_key="perkPummelPeteRank3Desc" long_desc_key="perkPummelPeteRank3LongDesc"/>
         <effect_description level="4" desc_key="perkPummelPeteRank4Desc" long_desc_key="perkPummelPeteRank4LongDesc"/>
         <effect_description level="5" desc_key="perkPummelPeteRank5Desc" long_desc_key="perkPummelPeteRank5LongDesc"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfKilledOther" action="PlaySound" sound="bat_HomeRun" play_in_head="true">
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+          <requirement name="HoldingItemHasTags" tags="perkPummelPete" />
+        </triggered_effect>
       </effect_group>
     </perk>
 
@@ -2381,5 +2391,1024 @@
       </effect_group>
     </perk>
     <!--End Alchemist-->
+
+    <!--Default Book Perks-->
+    <perk name="perkFiremansAlmanacHeat" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacHeatDesc" long_desc_key="perkFiremansAlmanacHeatLongDesc">
+      <effect_group>
+        <passive_effect name="HyperthermalResist" operation="base_add" level="1" value="10"/>
+      </effect_group>
+    </perk>
+    <!-- The Fireman Axe Mod -->
+    <perk name="perkFiremansAlmanacAxes" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" name_key="bookFiremansAlmanacAxes" desc_key="perkFiremansAlmanacAxesDesc" long_desc_key="perkFiremansAlmanacAxesLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeFiremansAxeMod"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacSpeed" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacSpeedDesc" long_desc_key="perkFiremansAlmanacSpeedLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="axe"/>
+        <passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value="0.05"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacMolotov" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacMolotovDesc" long_desc_key="perkFiremansAlmanacMolotovLongDesc">
+      <effect_group>
+        <!-- effect is on thrownAmmoMolotovCocktail -->
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacPrevention" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacPreventionDesc" long_desc_key="perkFiremansAlmanacPreventionLongDesc">
+      <effect_group>
+        <passive_effect name="BuffResistance" operation="base_add" level="1" value="0.25" tags="buffBurningMolotov,buffBurningElement"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacHarvest" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacHarvestDesc" long_desc_key="perkFiremansAlmanacHarvestLongDesc">
+      <effect_group>
+        <passive_effect name="BlockDamage" operation="perc_add" level="1" value="0.1" tags="coalBurnedDmg"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacEquipment" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" name_key="bookFiremansAlmanacEquipment" desc_key="perkFiremansAlmanacEquipmentDesc" long_desc_key="perkFiremansAlmanacEquipmentLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorFirefightersHelmet"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkFiremansAlmanacComplete" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacCompleteDesc" long_desc_key="perkFiremansAlmanacCompleteLongDesc">
+      <effect_group>
+        <requirement name="InBiome" biome="9"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.2"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.2" tags="running"/>
+        <passive_effect name="CarryCapacity" operation="base_add" level="1" value="45"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkNeedleAndThreadWinterWear" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadWinterWear" desc_key="perkNeedleAndThreadWinterWearDesc" long_desc_key="perkNeedleAndThreadWinterWearLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelFlannelShirt,apparelSweatshirt,apparelSkullCap"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadLegwear" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadLegwear" desc_key="perkNeedleAndThreadLegwearDesc" long_desc_key="perkNeedleAndThreadLegwearLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelDenimPants,apparelOveralls,apparelSkirt"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadFootwear" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadFootwear" desc_key="perkNeedleAndThreadFootwearDesc" long_desc_key="perkNeedleAndThreadFootwearLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelWornBoots,apparelRunningShoes,apparelCowboyBoots,apparelSuitDressShoes"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadDesertWear" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadDesertWear" desc_key="perkNeedleAndThreadDesertWearDesc" long_desc_key="perkNeedleAndThreadDesertWearLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelTankTop,apparelTShirtPlain,apparelCowboyHat,apparelDenimShortsPants"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadDusters" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadDusters" desc_key="perkNeedleAndThreadDustersDesc" long_desc_key="perkNeedleAndThreadDustersLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatLeatherDuster"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadPufferCoats" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadPufferCoats" desc_key="perkNeedleAndThreadPufferCoatsDesc" long_desc_key="perkNeedleAndThreadPufferCoatsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatPufferCoat"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadPockets" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="bookNeedleAndThreadPockets" desc_key="perkNeedleAndThreadPocketsDesc" long_desc_key="perkNeedleAndThreadPocketsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modClothingCargoStoragePocket"/>
+      </effect_group>
+    </perk>
+    <perk name="perkNeedleAndThreadComplete" parent="skillNeedleAndThread" max_level="1" base_skill_point_cost="0" name_key="perkNeedleAndThreadCompleteName" desc_key="perkNeedleAndThreadCompleteDesc" long_desc_key="perkNeedleAndThreadCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelArmyPants,apparelArmyShirt"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkNightStalkerStealthDamage" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerStealthDamageDesc" long_desc_key="perkNightStalkerStealthDamageLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerSilentNight" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerSilentNightDesc" long_desc_key="perkNightStalkerSilentNightLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <passive_effect name="LightMultiplier" operation="perc_add" level="1" value="-.05"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" level="1" value="-.05"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerBlades" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerBladesDesc" long_desc_key="perkNightStalkerBladesLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerThiefAdrenaline" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerThiefAdrenalineDesc" long_desc_key="perkNightStalkerThiefAdrenalineLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <passive_effect name="CarryCapacity" operation="base_add" level="1" value="27"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerArchery" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerArcheryDesc" long_desc_key="perkNightStalkerArcheryLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="HoldingItemHasTags" tags="perkArchery"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerTwilightThief" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerTwilightThiefDesc" long_desc_key="perkNightStalkerTwilightThiefLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".05" tags="Kill"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerSlumberParty" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerSlumberPartyDesc" long_desc_key="perkNightStalkerSlumberPartyLongDesc">
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <requirement name="IsSleeping" target="other"/>
+        <requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+        <passive_effect name="DamageBonus" operation="base_add" level="1" value=".5"/>
+        <!--For UI-->
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".5"/>
+      </effect_group>
+    </perk>
+
+    <perk name="perkNightStalkerComplete" parent="skillNightStalker" max_level="1" base_skill_point_cost="0" desc_key="perkNightStalkerCompleteDesc" long_desc_key="perkNightStalkerCompleteLongDesc">
+      <!-- old: 50% vampiric damage from killing blows <passive_effect name="HealthSteal" operation="base_add" level="1" value=".5"/> -->
+      <effect_group>
+        <requirement name="IsNight"/>
+        <requirement name="HoldingItemHasTags" tags="knife"/>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value="2"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkLuckyLooterDukes" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterDukesDesc" long_desc_key="perkLuckyLooterDukesLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="dukes"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterAmmunition" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterAmmoDesc" long_desc_key="perkLuckyLooterAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ammo"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterBrass" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterBrassDesc" long_desc_key="perkLuckyLooterBrassLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="brass"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterLead" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterLeadDesc" long_desc_key="perkLuckyLooterLeadLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="lead"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterBooks" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterBooksDesc" long_desc_key="perkLuckyLooterBooksLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="junk"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterFood" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterFoodDesc" long_desc_key="perkLuckyLooterFoodLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="food"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterMedical" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterMedicalDesc" long_desc_key="perkLuckyLooterMedicalLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="medical"/>
+      </effect_group>
+    </perk>
+    <perk name="perkLuckyLooterComplete" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterCompleteDesc" long_desc_key="perkLuckyLooterCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="LootDropProb" operation="perc_add" level="1" value=".2"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkEnforcerDamage" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" desc_key="perkEnforcerDamageDesc" long_desc_key="perkEnforcerDamageLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="revolver"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerApparel" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" desc_key="perkEnforcerApparelDesc" long_desc_key="perkEnforcerApparelLongDesc">
+      <!-- effect is on suitPants/suitJacket -->
+      <effect_group></effect_group>
+    </perk>
+    <perk name="perkEnforcerPunks" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" desc_key="perkEnforcerPunksDesc" long_desc_key="perkEnforcerPunksLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="revolver"/>
+        <requirement name="RoundsInMagazine" operation="LTE" value="0"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value="1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerIntimidation" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" desc_key="perkEnforcerIntimidationDesc" long_desc_key="perkEnforcerIntimidationLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="revolver"/>
+        <passive_effect name="BarteringBuying" operation="base_add" level="1" value="0.05"/>
+        <passive_effect name="BarteringSelling" operation="base_add" level="1" value="0.05"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerAPAmmo" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" name_key="bookEnforcerAPAmmo" desc_key="perkEnforcerAPAmmoDesc" long_desc_key="perkEnforcerAPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo44MagnumBulletAP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerHPAmmo" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" name_key="bookEnforcerHPAmmo" desc_key="perkEnforcerHPAmmoDesc" long_desc_key="perkEnforcerHPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo44MagnumBulletHP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerCriminalPursuit" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" desc_key="perkEnforcerCriminalPursuitDesc" long_desc_key="perkEnforcerCriminalPursuitLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="revolver"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value=".2" tags="running"/>
+      </effect_group>
+    </perk>
+    <perk name="perkEnforcerComplete" parent="skillEnforcer" max_level="1" base_skill_point_cost="0" name_key="perkEnforcerCompleteName" desc_key="perkEnforcerCompleteDesc" long_desc_key="perkEnforcerCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle44MagnumBulletAP,ammoBundle44MagnumBulletHP,ammoBundle44MagnumBulletBall"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkBatterUpBigHits" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" desc_key="perkBatterUpBigHitsDesc" long_desc_key="perkBatterUpBigHitsLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="club"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpGear" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" name_key="bookBatterUpGear" desc_key="perkBatterUpGearDesc" long_desc_key="perkBatterUpGearLongDesc">
+      <!-- effect is on ballCap/jacketLetter -->
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelBallCap,apparelCoatJacketLetterZU"/>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpSlowPitch" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" desc_key="perkBatterUpSlowPitchDesc" long_desc_key="perkBatterUpSlowPitchLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffBatterUpSlowDown">
+          <requirement name="HoldingItemHasTags" tags="perkPummelPete"/>
+          <requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+          <requirement name="ProgressionLevel" progression_name="perkBatterUpSlowPitch" operation="Equals" value="1"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpKnockdown" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" desc_key="perkBatterUpKnockdownDesc" long_desc_key="perkBatterUpKnockdownLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+          <requirement name="HoldingItemHasTags" tags="perkPummelPete"/>
+          <requirement name="ProgressionLevel" progression_name="perkBatterUpKnockdown" operation="Equals" value="1"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpMaintenance" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" desc_key="perkBatterUpMaintenanceDesc" long_desc_key="perkBatterUpMaintenanceLongDesc">
+      <effect_group>
+        <passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkPummelPete"/>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpBaseballBats" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" name_key="bookBatterUpBaseballBats" desc_key="perkBatterUpBaseballBatsDesc" long_desc_key="perkBatterUpBaseballBatsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeClubBaseballBat"/>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpConditioning" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" name_key="bookBatterUpConditioning" desc_key="perkBatterUpConditioningDesc" long_desc_key="perkBatterUpConditioningLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeClubMetalChain"/>
+      </effect_group>
+    </perk>
+    <perk name="perkBatterUpComplete" parent="skillBatterUp" max_level="1" base_skill_point_cost="0" desc_key="perkBatterUpCompleteDesc" long_desc_key="perkBatterUpCompleteLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="1000">
+          <requirement name="ProgressionLevel" progression_name="perkBatterUpComplete" operation="Equals" value="1"/>
+          <requirement name="HoldingItemHasTags" tags="club"/>
+          <requirement name="IsSecondaryAttack"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkGreatHeistSafes" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistSafesDesc" long_desc_key="perkGreatHeistSafesLongDesc">
+      <effect_group>
+        <passive_effect name="BlockDamage" operation="perc_add" level="1" value=".1" tags="safes"/>
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistGems" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistGemsDesc" long_desc_key="perkGreatHeistGemsLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".1" tags="gems"/>
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistTimedCharge" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" name_key="bookGreatHeistTimedCharge" desc_key="perkGreatHeistTimedChargeDesc" long_desc_key="perkGreatHeistTimedChargeLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownTimedCharge"/>
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistClaimed" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistClaimedDesc" long_desc_key="perkGreatHeistClaimedLongDesc">
+      <effect_group>
+        <passive_effect name="LandClaimDamageModifier" operation="perc_subtract" level="1" value="0.2" />
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistAdrenalineFall" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistAdrenalineFallDesc" long_desc_key="perkGreatHeistAdrenalineFallLongDesc">
+      <effect_group>
+        <!-- effect is in  buffPlayerFallingDamage -->
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistSprintSneak" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistSprintSneakDesc" long_desc_key="perkGreatHeistSprintSneakLongDesc">
+      <effect_group>
+        <!-- effect is in  entityclasses.xml -->
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistMotionDetection" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" desc_key="perkGreatHeistMotionDetectionDesc" long_desc_key="perkGreatHeistMotionDetectionLongDesc">
+      <effect_group>
+        <passive_effect name="TurretWakeUp" operation="base_set" level="1" value="3"/>
+      </effect_group>
+    </perk>
+    <perk name="perkGreatHeistComplete" parent="skillGreatHeist" max_level="1" base_skill_point_cost="0" name_key="perkGreatHeistCompleteName" desc_key="perkGreatHeistCompleteDesc" long_desc_key="perkGreatHeistCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceLockPick"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceLockPickBundle"/>
+        <passive_effect name="LockPickTime" operation="perc_subtract" level="1" value=".167"/>
+        <passive_effect name="LockPickBreakChance" operation="perc_subtract" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkWasteTreasuresHoney" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresHoneyDesc" long_desc_key="perkWasteTreasuresHoneyLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresHoneyHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresCoffins" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresCoffinsDesc" long_desc_key="perkWasteTreasuresCoffinsLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresCoffinHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresAcid" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresAcidDesc" long_desc_key="perkWasteTreasuresAcidLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresAcidHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresWater" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" name_key="bookWasteTreasuresWater" desc_key="perkWasteTreasuresWaterDesc" long_desc_key="perkWasteTreasuresWaterLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarPureMineralWater"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresDoors" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresDoorsDesc" long_desc_key="perkWasteTreasuresDoorsLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresDoorHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresCloth" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" name_key="bookWasteTreasuresCloth" desc_key="perkWasteTreasuresClothDesc" long_desc_key="perkWasteTreasuresClothLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceCloth"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresSinks" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresSinksDesc" long_desc_key="perkWasteTreasuresSinksLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresSinkHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkWasteTreasuresComplete" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresCompleteDesc" long_desc_key="perkWasteTreasuresCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresCompleteHarvest"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkHuntingJournalBears" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalBearsDesc" long_desc_key="perkHuntingJournalBearsLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="bear"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalWolves" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalWolvesDesc" long_desc_key="perkHuntingJournalWolvesLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalCoyotes" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalCoyotesDesc" long_desc_key="perkHuntingJournalCoyotesLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="coyote"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalMountainLions" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalMountainLionsDesc" long_desc_key="perkHuntingJournalMountainLionsLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalDeer" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalDeerDesc" long_desc_key="perkHuntingJournalDeerLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="deer"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalVultures" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalVulturesDesc" long_desc_key="perkHuntingJournalVulturesLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="vulture"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalSelfDefense" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalSelfDefenseDesc" long_desc_key="perkHuntingJournalSelfDefenseLongDesc">
+      <effect_group>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1">
+          <requirement name="EntityTagCompare" target="other" tags="human,zombie"/>
+          <requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkHuntingJournalComplete" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalCompleteDesc" long_desc_key="perkHuntingJournalCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="butcherHarvest"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkArtOfMiningLuckyStrike" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningLuckyStrikeDesc" long_desc_key="perkArtOfMiningLuckyStrikeLongDesc">
+      <effect_group>
+        <passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="artOfMiningLuckyStrikeHarvest"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningDiamondTools" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningDiamondTools" desc_key="perkArtOfMiningDiamondToolsDesc" long_desc_key="perkArtOfMiningDiamondToolsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeDiamondTip"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningCoffee" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningCoffee" desc_key="perkArtOfMiningCoffeeDesc" long_desc_key="perkArtOfMiningCoffeeLongDesc">
+      <effect_group>
+        <requirement name="HasBuff" buff="buffCoffee"/>
+        <requirement name="HoldingItemHasTags" tags="miningTool"/>
+        <passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+        <passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.05" tags="Harvesting"/>
+      </effect_group>
+      <effect_group>
+        <requirement name="HasBuff" buff="buffBlackStrapCoffee"/>
+        <requirement name="HoldingItemHasTags" tags="miningTool"/>
+        <passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+        <passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.05" tags="Harvesting"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningBlackStrap" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningBlackStrap" desc_key="perkArtOfMiningBlackStrapDesc" long_desc_key="perkArtOfMiningBlackStrapLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkjarBlackStrapCoffee"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningPallets" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningPallets" desc_key="perkArtOfMiningPalletsDesc" long_desc_key="perkArtOfMiningPalletsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceRockSmallBundle,resourceWoodBundle,resourceScrapIronBundle,resourceOilShaleBundle,resourcePotassiumNitratePowderBundle,resourceLeadBundle,resourceCoalBundle"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningAvalanche" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningAvalancheDesc" long_desc_key="perkArtOfMiningAvalancheLongDesc">
+      <effect_group>
+        <passive_effect name="FallingBlockDamage" operation="perc_add" level="1" value="-.5" />
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningLantern" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningLantern" desc_key="perkArtOfMiningLanternDesc" long_desc_key="perkArtOfMiningLanternLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorMiningHelmet,modArmorHelmetLight,lanternLight_player"/>
+      </effect_group>
+    </perk>
+    <perk name="perkArtOfMiningComplete" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningCompleteDesc" long_desc_key="perkArtOfMiningCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="BlockDamage" operation="base_add" level="1" value="10000" tags="ore">
+          <requirement name="HoldingItemHasTags" tags="miningTool"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkRangersArrowRecovery" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersArrowRecoveryDesc" long_desc_key="perkRangersArrowRecoveryLongDesc">
+      <effect_group>
+        <passive_effect name="ProjectileStickChance" operation="perc_add" level="1" value=".2"/>
+      </effect_group>
+    </perk>
+    <perk name="perkRangersExplodingBolts" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="bookRangersExplodingBolts" desc_key="perkRangersExplodingBoltsDesc" long_desc_key="perkRangersExplodingBoltsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoCrossbowBoltExploding,ammoArrowExploding"/>
+      </effect_group>
+    </perk>
+    <perk name="perkRangersCripplingShot" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersCripplingShotDesc" long_desc_key="perkRangersCripplingShotLongDesc">
+      <effect_group>
+        <!-- effect is on  ammoArrowStone  etc -->
+      </effect_group>
+    </perk>
+    <perk name="perkRangersAPAmmo" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="bookRangersAPAmmo" desc_key="perkRangersAPAmmoDesc" long_desc_key="perkRangersAPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoArrowSteelAP,ammoCrossbowBoltSteelAP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkRangersFlamingArrows" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="bookRangersFlamingArrows" desc_key="perkRangersFlamingArrowsDesc" long_desc_key="perkRangersFlamingArrowsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoArrowFlaming,ammoCrossbowBoltFlaming"/>
+      </effect_group>
+    </perk>
+    <perk name="perkRangersForestGuide" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersForestGuideDesc" long_desc_key="perkRangersForestGuideLongDesc">
+      <effect_group>
+        <passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkArchery"/>
+      </effect_group>
+    </perk>
+    <perk name="perkRangersKnockdown" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersKnockdownDesc" long_desc_key="perkRangersKnockdownLongDesc">
+      <effect_group>
+        <!-- effect is on  ammoArrowStone  etc -->
+      </effect_group>
+    </perk>
+    <perk name="perkRangersComplete" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="perkRangersCompleteName" desc_key="perkRangersCompleteDesc" long_desc_key="perkRangersCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundleArrowStone,ammoBundleArrowIron,ammoBundleArrowFlaming,ammoBundleCrossbowBoltFlaming,ammoBundleArrowSteelAP,ammoBundleCrossbowBoltExploding,ammoBundleArrowExploding,ammoBundleCrossbowBoltIron,ammoBundleCrossbowBoltSteelAP,ammoBundleCrossbowBoltStone"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkPistolPeteTakeAim" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteTakeAimDesc" long_desc_key="perkPistolPeteTakeAimLongDesc">
+      <effect_group>
+        <requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+        <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+        <passive_effect name="MaxRange" operation="perc_add" level="1" value=".2"/>
+        <passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".2"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteSwissKnees" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteSwissKneesDesc" long_desc_key="perkPistolPeteSwissKneesLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffPistolPeteSwissKnees">
+          <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+          <requirement name="ProgressionLevel" progression_name="perkPistolPeteSwissKnees" operation="Equals" value="1"/>
+          <requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteSteadyHand" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteSteadyHandDesc" long_desc_key="perkPistolPeteSteadyHandLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+        <passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="-.08"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteMaintenance" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteMaintenanceDesc" long_desc_key="perkPistolPeteMaintenanceLongDesc">
+      <effect_group>
+        <passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="9mmGun"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteHPAmmo" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" name_key="bookPistolPeteHPAmmo" desc_key="perkPistolPeteHPAmmoDesc" long_desc_key="perkPistolPeteHPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletHP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteAPAmmo" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" name_key="bookPistolPeteAPAmmo" desc_key="perkPistolPeteAPAmmoDesc" long_desc_key="perkPistolPeteAPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletAP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteDamage" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteDamageDesc" long_desc_key="perkPistolPeteDamageLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkPistolPeteComplete" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" name_key="perkPistolPeteCompleteName" desc_key="perkPistolPeteCompleteDesc" long_desc_key="perkPistolPeteCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle9mmBulletBall,ammoBundle9mmBulletHP,ammoBundle9mmBulletAP"/>
+        <passive_effect name="TargetArmor" operation="perc_add" level="1" value="-.2">
+          <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+          <requirement name="TargetRange" target="other" operation="LTE" value="3"/>
+        </passive_effect>
+      </effect_group>
+
+      <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkPistolPeteComplete" operation="Equals" value="1"/>
+        <requirement name="HoldingItemHasTags" tags="9mmGun"/>
+        <requirement name="TargetRange" target="other" operation="LTE" value="3"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1">
+          <requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="1" target="other"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkShotgunMessiahDamage" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahDamageDesc" long_desc_key="perkShotgunMessiahDamageLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahBreachingSlugs" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahBreachingSlugs" desc_key="perkShotgunMessiahBreachingSlugsDesc" long_desc_key="perkShotgunMessiahBreachingSlugsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunBreachingSlug"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahLimbShot" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahLimbShotDesc" long_desc_key="perkShotgunMessiahLimbShotLongDesc">
+      <effect_group>
+        <passive_effect name="DismemberChance" operation="base_add" level="1" value=".3">
+          <requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+          <requirement name="TargetRange" target="other" operation="LTE" value="3"/>
+        </passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahSlugs" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahSlugs" desc_key="perkShotgunMessiahSlugsDesc" long_desc_key="perkShotgunMessiahSlugsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunSlug"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahMaintenance" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahMaintenanceDesc" long_desc_key="perkShotgunMessiahMaintenanceLongDesc">
+      <effect_group>
+        <passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkBoomstick"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahMagazine" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahMagazine" desc_key="perkShotgunMessiahMagazineDesc" long_desc_key="perkShotgunMessiahMagazineLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunShotgunTubeExtenderMagazine"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahPartyStarter" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahPartyStarterDesc" long_desc_key="perkShotgunMessiahPartyStarterLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+        <requirement name="StatComparePercCurrentToMax" target="other" stat="Health" operation="GTE" value="1"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".2"/>
+      </effect_group>
+    </perk>
+    <perk name="perkShotgunMessiahComplete" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="perkShotgunMessiahCompleteName" desc_key="perkShotgunMessiahCompleteDesc" long_desc_key="perkShotgunMessiahCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoBundleBlunderbuss"/>
+        <passive_effect name="BlockDamage" operation="perc_add" level="1" value="3" tags="wood"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkSniperDamage" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperDamageDesc" long_desc_key="perkSniperDamageLongDesc">
+      <!-- effect is on the scopes -->
+    </perk>
+    <perk name="perkSniperCripplingShot" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperCripplingShotDesc" long_desc_key="perkSniperCripplingShotLongDesc">
+      <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkSniperCripplingShot" operation="Equals" value="1"/>
+        <requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+        <requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+        <passive_effect name="DismemberChance" operation="base_add" level="1" value=".15"/>
+
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryCrippled01">
+          <requirement name="!EntityTagCompare" target="other" tags="feral,radiated"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryCrippled01">
+          <requirement name="EntityTagCompare" target="other" tags="feral"/>
+          <requirement name="!EntityTagCompare" target="other" tags="radiated"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryCrippled01">
+          <requirement name="EntityTagCompare" target="other" tags="radiated"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkSniperHeadShot" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperHeadShotDesc" long_desc_key="perkSniperHeadShotLongDesc">
+      <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkSniperHeadShot" operation="Equals" value="1"/>
+        <requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+        <requirement name="HitLocation" body_parts="Head"/>
+        <passive_effect name="DismemberChance" operation="base_add" level="1" value=".15"/>
+
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryStunned02">
+          <requirement name="!EntityTagCompare" target="other" tags="feral,radiated"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryStunned02">
+          <requirement name="EntityTagCompare" target="other" tags="feral"/>
+          <requirement name="!EntityTagCompare" target="other" tags="radiated"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffInjuryStunned01">
+          <requirement name="EntityTagCompare" target="other" tags="radiated"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkSniperGhost" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="bookSniperGhost" desc_key="perkSniperGhostDesc" long_desc_key="perkSniperGhostLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+        <passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="0.1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSniperControlledBreathing" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperControlledBreathingDesc" long_desc_key="perkSniperControlledBreathingLongDesc">
+      <effect_group>
+        <!-- effect is in buffHoldBreathAiming01 -->
+      </effect_group>
+    </perk>
+    <perk name="perkSniperAPAmmo" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="bookSniperAPAmmo" desc_key="perkSniperAPAmmoDesc" long_desc_key="perkSniperAPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo762mmBulletAP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSniperHPAmmo" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="bookSniperHPAmmo" desc_key="perkSniperHPAmmoDesc" long_desc_key="perkSniperHPAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo762mmBulletHP"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSniperComplete" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="perkSniperCompleteName" desc_key="perkSniperCompleteDesc" long_desc_key="perkSniperCompleteLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle762mmBulletBall,ammoBundle762mmBulletHP,ammoBundle762mmBulletAP"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelGhillieSuitHood,apparelGhillieSuitJacket,apparelGhillieSuitPants"/>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkAutoWeaponsDamage" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsDamageDesc" long_desc_key="perkAutoWeaponsDamageLongDesc">
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkBookAutoWeapons"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsUncontrolledBurst" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsUncontrolledBurstDesc" long_desc_key="perkAutoWeaponsUncontrolledBurstLongDesc">
+      <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" operation="Equals" value="1"/>
+        <requirement name="HoldingItemHasTags" tags="perkBookAutoWeapons"/>
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="add" value="1"/>
+
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value=".01"/>
+
+        <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionRayMiss" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0">
+          <requirement name="RoundsInMagazine" operation="LT" value="1"/>
+        </triggered_effect>
+
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="multiply" value="@.AutoWeaponsUBCount"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value="@.AutoWeaponsUBEffect"/>
+      </effect_group>
+      <effect_group>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value="0"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsMaintenance" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsMaintenanceDesc" long_desc_key="perkAutoWeaponsMaintenanceLongDesc">
+      <effect_group>
+        <passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.2" tags="perkBookAutoWeapons"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsDrumMag" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsDrumMag" desc_key="perkAutoWeaponsDrumMagDesc" long_desc_key="perkAutoWeaponsDrumMagLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunDrumMagazineExtender"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsRecoil" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsRecoilDesc" long_desc_key="perkAutoWeaponsRecoilLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+          <requirement name="RoundsInMagazine" operation="LT" value="1"/>
+        </triggered_effect>
+      </effect_group>
+
+      <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkAutoWeaponsRecoil" operation="Equals" value="1"/>
+        <requirement name="HoldingItemHasTags" tags="perkBookAutoWeapons"/>
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+          <requirement name="RoundsInMagazine" operation="LT" value="1"/>
+        </triggered_effect>
+
+        <!-- to do
+				check balancing when mod installation works again			-->
+
+        <!-- ak47 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.9"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>-->
+        <!-- M60 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.83"/>-->
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
+
+        <triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
+          <requirement name="CVarCompare" cvar=".AutoWeaponsRecoilEffect" operation="LT" value="-.5"/>
+        </triggered_effect>
+
+        <passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="@.AutoWeaponsRecoilEffect"/>
+      </effect_group>
+      <effect_group>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="0"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsRagdoll" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsRagdollDesc" long_desc_key="perkAutoWeaponsRagdollLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="walker" buff="buffAutoWeaponsRagdoll">
+          <requirement name="HoldingItemHasTags" tags="perkBookAutoWeapons"/>
+          <requirement name="ProgressionLevel" progression_name="perkAutoWeaponsRagdoll" operation="Equals" value="1"/>
+          <!-- to do
+			Fully automatic mode has an INCREASING CHANCE to ragdoll an enemy with each hit.
+			Ragdoll: Fully automatic mode has an increasing chance to ragdoll an enemy with each hit. -->
+
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsMachineGuns" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsMachineGuns" desc_key="perkAutoWeaponsMachineGunsDesc" long_desc_key="perkAutoWeaponsMachineGunsLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunM60"/>
+      </effect_group>
+    </perk>
+    <perk name="perkAutoWeaponsComplete" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsCompleteDesc" long_desc_key="perkAutoWeaponsCompleteLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffAutoWeaponsComplete">
+          <requirement name="HoldingItemHasTags" tags="perkBookAutoWeapons"/>
+          <requirement name="ProgressionLevel" progression_name="perkAutoWeaponsComplete" operation="Equals" value="1"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+    <perk name="perkUrbanCombatLanding" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" name_key="bookUrbanCombatLanding" desc_key="perkUrbanCombatLandingDesc" long_desc_key="perkUrbanCombatLandingLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorMilitaryStealthBoots"/>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatControlledBreathing" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" name_key="bookUrbanCombatControlledBreathing" desc_key="perkUrbanCombatControlledBreathingDesc" long_desc_key="perkUrbanCombatControlledBreathingLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCigar"/>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatSneaking" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatSneakingDesc" long_desc_key="perkUrbanCombatSneakingLongDesc">
+      <effect_group>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <passive_effect name="SilenceBlockSteps" operation="base_set" level="1" value="1" tags="trashPile"/>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatJumping" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatJumpingDesc" long_desc_key="perkUrbanCombatJumpingLongDesc">
+      <effect_group>
+        <!-- landing effect is in buffPlayerFallingDamage, Landing Sound stealth book -->
+        <!-- jumping effect is in entityclasses.xml -->
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatLandMines" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatLandMinesDesc" long_desc_key="perkUrbanCombatLandMinesLongDesc">
+      <effect_group>
+        <passive_effect name="LandMineImmunity" operation="base_set" level="1" value="1"/>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatAdrenalineRush" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatAdrenalineRushDesc" long_desc_key="perkUrbanCombatAdrenalineRushLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onCombatEntered" action="AddBuff" buff="buffUrbanCombatAdrenalineRush">
+          <requirement name="ProgressionLevel" progression_name="perkUrbanCombatAdrenalineRush" operation="Equals" value="1"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatRoomClearing" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatRoomClearingDesc" long_desc_key="perkUrbanCombatRoomClearingLongDesc">
+      <effect_group>
+        <requirement name="IsIndoors"/>
+        <passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
+        <passive_effect name="HealthLoss" operation="perc_subtract" level="1" value=".05"/>
+      </effect_group>
+    </perk>
+    <perk name="perkUrbanCombatComplete" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatCompleteDesc" long_desc_key="perkUrbanCombatCompleteLongDesc">
+      <effect_group>
+        <!-- effect is in modGunSoundSuppressorSilencer -->
+      </effect_group>
+    </perk>
+    <!--End Default Book Perks-->
+
+    <!--HoG Book Perks-->
+    <perk name="perkSavagesNonsenseEncumbered" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseEncumberedDesc" long_desc_key="perkSavagesNonsenseEncumberedLongDesc">
+      <effect_group>
+        <requirement name="HasBuff" buff="buffEncumberedInv"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseSneakCrossbow" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseSneakCrossbowDesc" long_desc_key="perkSavagesNonsenseSneakCrossbowLongDesc">
+      <effect_group>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+        <requirement name="HoldingItemHasTags" tags="perkArchery"/>
+        <requirement name="!HoldingItemHasTags" tags="bowDrawPenalty"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value=".3" />
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseLightArmor" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseLightArmorDesc" long_desc_key="perkSavagesNonsenseLightArmorLongDesc">
+      <effect_group>
+        <requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="5"/>
+        <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseBrokenGlass" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsBrokenGlass" desc_key="perkSavagesNonsenseBrokenGlassDesc" long_desc_key="perkSavagesNonsenseBrokenGlassLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onSelfItemLooted" action="LogMessage" message="STuff and things are happening"/>
+        <triggered_effect trigger="onSelfItemGained" action="LogMessage" message="Gained Something"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseMoreAmmo" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseMoreAmmoDesc" long_desc_key="perkSavagesNonsenseMoreAmmoLongDesc">
+      <effect_group>
+        <passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ammo,perkArchery"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseCola" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" name_key="bookSavagesNonsenseCola" desc_key="perkSavagesNonsenseColaDesc" long_desc_key="perkSavagesNonsenseColaLongDesc">
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarCola"/>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseAccuracy" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseAccuracyDesc" long_desc_key="perkSavagesNonsenseAccuracyLongDesc">
+      <effect_group>
+        <triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffEmbraceYourFate">
+          <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+        </triggered_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkSavagesNonsenseComplete" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseCompleteDesc" long_desc_key="perkSavagesNonsenseCompleteLongDesc">
+
+    </perk>
+    <!--End HoG Book Perks-->
+  </append>
+
+  <append xpath="/progression/skills">
+    <skill name="skillFiremansAlmanac" parent="attBooks" name_key="perkFiremansAlmanac0Name" desc_key="perkFiremansAlmanac0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_fire">
+      <effect_group/>
+    </skill>
+    <skill name="skillGreatHeist" parent="attBooks" name_key="perkGreatHeist0Name" desc_key="perkGreatHeist0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_safe">
+      <effect_group/>
+    </skill>
+    <skill name="skillLuckyLooter" parent="attBooks" name_key="perkLuckyLooter0Name" desc_key="perkLuckyLooter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shopping_cart">
+      <effect_group/>
+    </skill>
+    <skill name="skillNeedleAndThread" parent="attBooks" name_key="perkNeedleAndThread0Name" desc_key="perkNeedleAndThread0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_light_armor">
+      <effect_group/>
+    </skill>
+    <skill name="skillNightStalker" parent="attBooks" name_key="perkNightStalker0Name" desc_key="perkNightStalker0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_sneak_attack">
+      <effect_group/>
+    </skill>
+    <skill name="skillEnforcer" parent="attBooks" name_key="perkEnforcer0Name" desc_key="perkEnforcer0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_gunslinger">
+      <effect_group/>
+    </skill>
+    <skill name="skillBatterUp" parent="attBooks" name_key="perkBatterUp0Name" desc_key="perkBatterUp0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_club">
+      <effect_group/>
+    </skill>
+    <skill name="skillWasteTreasures" parent="attBooks" name_key="perkWasteTreasures0Name" desc_key="perkWasteTreasures0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_treasure">
+      <effect_group/>
+    </skill>
+    <skill name="skillHuntingJournal" parent="attBooks" name_key="perkHuntingJournal0Name" desc_key="perkHuntingJournal0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_armor_leather">
+      <effect_group/>
+    </skill>
+    <skill name="skillArtOfMining" parent="attBooks" name_key="perkArtOfMining0Name" desc_key="perkArtOfMining0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_mining">
+      <effect_group/>
+    </skill>
+    <skill name="skillArchery" parent="attBooks" name_key="perkRangers0Name" desc_key="perkRangers0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_archery">
+      <effect_group/>
+    </skill>
+    <skill name="skillPistolPete" parent="attBooks" name_key="perkPistolPete0Name" desc_key="perkPistolPete0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_pistol">
+      <effect_group/>
+    </skill>
+    <skill name="skillShotguns" parent="attBooks" name_key="perkShotgunMessiah0Name" desc_key="perkShotgunMessiah0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shotgun">
+      <effect_group/>
+    </skill>
+    <skill name="skillSniper" parent="attBooks" name_key="perkSniper0Name" desc_key="perkSniper0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_long_shot">
+      <effect_group/>
+    </skill>
+    <skill name="skillAutoWeapons" parent="attBooks" name_key="perkAutoWeapons0Name" desc_key="perkAutoWeapons0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_rifle">
+      <effect_group/>
+    </skill>
+    <skill name="skillUrbanCombat" parent="attBooks" name_key="perkUrbanCombat0Name" desc_key="perkUrbanCombat0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_light_armor2">
+      <effect_group/>
+    </skill>
+    <skill name="skillSavagesNonsense" parent="attBooks" name_key="perkSavagesNonsense0Name" desc_key="perkSavagesNonsense0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_sneak_attack">
+      <effect_group/>
+    </skill>
   </append>
 </houseofgrey>

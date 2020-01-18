@@ -175,11 +175,11 @@ attAlchemistRank1LongDesc,progression,Perk,New,"Healing items heal 5% more healt
 attAlchemistRank2Desc,progression,Perk,New,Intern,,,,,
 attAlchemistRank2LongDesc,progression,Perk,New,"Healing items heal 10% more health and heal over time 20% faster. All healing you perform is 10% more effective. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
 attAlchemistRank3Desc,progression,Perk,New,Doctor,,,,,
-attAlchemistRank3LongDesc,progression,Perk,New,"Healing items heal 15% more health and heal over time 30% faster. All healing you perform is 15% more effective. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints. 20% less side effects using blood draw kits.",,,,,
+attAlchemistRank3LongDesc,progression,Perk,New,"Healing items heal 15% more health and heal over time 30% faster. All healing you perform is 15% more effective. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
 attAlchemistRank4Desc,progression,Perk,New,Surgeon,,,,,
-attAlchemistRank4LongDesc,progression,Perk,New,"Healing items heal 20% more health and heal over time 40% faster. All healing you perform is 20% more effective. Gain 80% more XP using bandages, first aid bandages, first aid kits and splints. 40% less side effects using blood draw kits.",,,,,
+attAlchemistRank4LongDesc,progression,Perk,New,"Healing items heal 20% more health and heal over time 40% faster. All healing you perform is 20% more effective. Gain 80% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
 attAlchemistRank5Desc,progression,Perk,New,Miracle Worker,,,,,
-attAlchemistRank5LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 25% more health and heal over time 50% faster. All healing you perform is 25% more effective. When healing others you gain half the benefits. Gain 100% more XP using bandages, first aid bandages, first aid kits and splints. 60% less side effects using blood draw kits.",,,,,
+attAlchemistRank5LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 25% more health and heal over time 50% faster. All healing you perform is 25% more effective. When healing others you gain half the benefits. Gain 100% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
 attAlchemistRank6Desc,progression,Perk,New,Miracle Worker,,,,,
 attAlchemistRank6LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 30% more health and heal over time 60% faster. All healing you perform is 30% more effective. Add potions and things here",,,,,
 attAlchemistRank7Desc,progression,Perk,New,Miracle Worker,,,,,	
@@ -214,3 +214,49 @@ attWizardRank9Desc,progression,Perk,New,You're a wizard Harry!
 attWizardRank9LongDesc,progression,Perk,New,"45% Faster aiming with magic weapons, and cast times are 45% faster".
 attWizardRank10Desc,progression,Perk,New,You're a wizard Harry!
 attWizardRank10LongDesc,progression,Perk,New,"Gandalf would be proud! 50% Faster aiming with magic weapons, and cast times are 50% faster."
+
+bookSavagesNonsenseEncumbered,items,perk book,newKey,Savage's Nonsense Vol 1,,,,,
+bookSavagesNonsenseSneakCrossbow,items,perk book,newKey,Savage's Nonsense Vol 2,,,,,
+bookSavagesNonsenseLightArmor,items,perk book,newKey,Savage's Nonsense Vol 3,,,,,
+bookSavagesNonsenseBrokenGlass,items,perk book,newKey,Savage's Nonsense Vol 4,,,,,
+bookSavagesNonsenseMoreAmmo,items,perk book,newKey,Savage's Nonsense Vol 5,,,,,
+bookSavagesNonsenseCola,items,perk book,newKey,Savage's Nonsense Vol 6,,,,,
+bookSavagesNonsenseAccuracy,items,perk book,newKey,Savage's Nonsense Vol 7,,,,,
+perkSavagesNonsense0Desc,progression,PerkBook,newKey,"Learn from loot hoarder extrodinaire Savage Harbinger on how to carry all the things and embrace your fate.",,,,,
+perkSavagesNonsense0Name,progression,PerkBook,newKey,"Savage's Books Of Nonsense",,,,,
+
+perkSavagesNonsenseEncumberedDesc,progression,PerkBook,newKey,"Your encumbered running speed is increased by 20%",,,,,
+perkSavagesNonsenseEncumberedLongDesc,progression,PerkBook,newKey,"Tight Package: Here's a trick I learned to keep my legs clear while carrying a full load. Think of your pack like a Tetris board...\n\nEncumbrance has a lessened effect on your run speed. Your run speed increases by 20% while encumbered.",,,,,
+
+perkSavagesNonsenseSneakCrossbowDesc,progression,PerkBook,newKey,"Sneak attacks with a crossbow deal 50% more damage.",,,,,
+perkSavagesNonsenseSneakCrossbowLongDesc,progression,PerkBook,newKey,"Telepoker: Reach out and poke someone! In the eye. From across the room. With a crossbow bolt.\n\nSneak attacks with a crossbow deal 50% more damage.",,,,,
+
+perkSavagesNonsenseLightArmorDesc,progression,PerkBook,newKey,"Sneak faster in light armor by 20%.",,,,,
+perkSavagesNonsenseLightArmorLongDesc,progression,PerkBook,newKey,"Honky Honky: Move aside, slowpoke! Get on point and stay on point before your slow and noisy friends wake the whole place up.\n\nWhile wearing a full array of light armor, your movement speed while sneaking is increased by 20%.",,,,,
+
+perkSavagesNonsenseBrokenGlassDesc,progression,PerkBook,newKey,"Walking with Broken Glass",,,,,
+perkSavagesNonsenseBrokenGlassLongDesc,progression,PerkBook,newKey,"Deal extra damage while carrying broken glass.",,,,,
+
+perkSavagesNonsenseMoreAmmoDesc,progression,PerkBook,newKey,"Find more bolts and arrows in loot.",,,,,
+perkSavagesNonsenseMoreAmmoLongDesc,progression,PerkBook,newKey,"Pointy Bits: Many scavengers leave bolts and arrows behind in the search for more bullets. Take advantage of their foolishness! Check their leavings. You will find more arrows and bolts in loot.",,,,,
+
+perkSavagesNonsenseColaDesc,progression,PerkBook,newKey,"Learn the secret of crafting cola.",,,,,
+perkSavagesNonsenseColaLongDesc,progression,PerkBook,newKey,"Cola Fiend: Sweet nectar of life! My first quest as a survivor of the apocalypse was to locate the secret to creating the world's most delicious cola. Heed me, fellow survivor. This potion will invigorate you and give you the fast hands you need in a moment of panic.",,,,,
+
+perkSavagesNonsenseAccuracyDesc,progression,PerkBook,newKey,"After being struck, your ranged accuracy increases for a time.",,,,,
+perkSavagesNonsenseAccuracyLongDesc,progression,PerkBook,newKey,"Embrace Your Fate: Those who survive know the secret: you must push beyond the panic. When pushed to the edge, a wellspring of calm fills you. In the finest tradition of action heroes, your aim drastically improves when you desperately need to hit. Your ranged accuracy increases after taking damage from a zombie.",,,,,
+buffEmbraceYourFateName,buffs,Buff,newKey,Embrace Your Fate
+buffEmbraceYourFateDesc,buffs,Buff,newKey,Your ranged accuracy is increased for a short time
+buffEmbraceYourFateTooltip,buffs,Buff,newKey,Your ranged accuracy is increased 
+
+perkSavagesNonsenseCompleteDesc,progression,PerkBook,newKey,Increased Regeneration.,,,,,
+perkSavagesNonsenseCompleteLongDesc,progression,PerkBook,newKey,Embrace Your Fate: Increased regeneration for 2 minutes after a bleed finishes naturally.,,,,,
+
+drinkJarCola,items,Food,--,Cola
+drinkJarColaDesc,items,Food,--,"Everyone's favorite cola in its classic glass... jar? Eh, close enough.\n\nIncreases reload speed by 30% for 4 minutes"
+
+resourceVanilla,items,Item,--,Vanilla
+resourceVanillaDesc,items,Item,--,Vanilla is acquired from destroying grass & small plants. Typically used to craft cola or potions.
+
+resourceCinnamon,items,Item,--,Cinnamon
+resourceCinnamonDesc,items,Item,--,Cinnamon is acquired from destroying trees. Typically used to craft cola or potions.
