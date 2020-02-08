@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <remove xpath="/controls/backpack_item_stack" />
   <remove xpath="/controls/ingredient_header" />
   <remove xpath="/controls/ingredient_row" />
@@ -15,7 +15,7 @@
         <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="64,64" globalopacity="true"/>
 
         <sprite depth="4" name="itemIcon" width="60" height="60" atlas="ItemIconAtlas" sprite="{itemicon}" pos="30,-30" pivot="center" foregroundlayer="true" color="{iconcolor}" />
-        <sprite depth="8" name="lockTypeIcon" width="7" height="7" sprite="" pos="2,-2" foregroundlayer="true"/>
+        <sprite depth="8" name="lockTypeIcon" width="28" height="28" sprite="" pos="2,-2" foregroundlayer="true"/>
 
         <sprite depth="3" name="durabilityBackground" width="64" height="5" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -57" foregroundlayer="true"/>
         <filledsprite depth="4" name="durability" width="64" height="5" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -57" foregroundlayer="true"/>
@@ -117,4 +117,4 @@
     </item_action_entry_character>
 
   </append>
-</houseofgrey>
+</configs>

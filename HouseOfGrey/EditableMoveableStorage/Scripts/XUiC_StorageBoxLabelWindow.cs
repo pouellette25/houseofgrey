@@ -35,7 +35,7 @@ class XUiC_StorageBoxLabelWindow : XUiController
 
         textInput.Text = _boxLabelTextService.ReadText(_tileEntity.GetHashCode());
 
-        if (UIUtils.GetInputStyle(xui.playerUI.playerInput) == UIUtils.InputStyle.Keyboard)
+        if (PlayerInputManager.Instance.CurrentInputStyle == PlayerInputManager.InputStyle.Keyboard)
         {
             textInput.SetSelected(true);
         }

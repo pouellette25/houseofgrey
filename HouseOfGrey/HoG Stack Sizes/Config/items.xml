@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <!--Ammo-->
   <set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
   <set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
@@ -105,4 +105,4 @@
   <set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">50</set>
 
 
-</houseofgrey>
+</configs>

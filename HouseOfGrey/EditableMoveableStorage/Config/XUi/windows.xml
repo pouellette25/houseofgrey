@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/windows">
     <window name="windowStorageEdit" pos="400, 83" width="306" height="166" panel="right" controller="StorageBoxLabelWindow, Mods" cursor_area="true">
       <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -21,4 +21,4 @@
       </rect>
     </window>
   </append>
-</houseofgrey>
+</configs>

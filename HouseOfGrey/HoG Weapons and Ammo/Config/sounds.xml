@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/Sounds">
     <SoundDataNode name="bat_HomeRun">
       <AudioSource name="Sounds/AudioSource_Melee"/>
@@ -11,4 +11,4 @@
       <MaxRepeatRate value="0.01"/>
     </SoundDataNode>
   </append>
-</houseofgrey>
+</configs>

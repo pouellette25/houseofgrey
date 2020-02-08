@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <setattribute xpath="/progression/attributes" name="min_level">0</setattribute>
   <remove xpath="/progression/attributes/attribute"></remove>
   <remove xpath="/progression/skills/skill"></remove>
@@ -3411,4 +3411,4 @@
       <effect_group/>
     </skill>
   </append>
-</houseofgrey>
+</configs>

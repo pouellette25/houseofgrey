@@ -2,6 +2,7 @@
 using Harmony;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
@@ -59,16 +60,48 @@ namespace HoG_Weapons_and_Ammo.Harmony
                     if(damageSourceEntity != null && dr.Fatal) // only run this logic if the hit was a kill
                     {
                         var localPlayer = (damageSourceEntity as EntityPlayerLocal);
-                        
-                        if(localPlayer != null)
+
+                        if (localPlayer != null && localPlayer.inventory != null) // there appears to be a strange timing issue when the inventory is null and throws an exception
                         {
+                            var multiplier = 0.0f;
+
                             var holdingItem = localPlayer.inventory.holdingItem;
+                            var holdingItemData = localPlayer.inventory.holdingItemData;
+
+                            if (holdingItemData != null && holdingItemData.itemValue != null && holdingItemData.itemValue.Modifications != null)
+                            {
+                                foreach (var mod in localPlayer.inventory.holdingItemData.itemValue.Modifications)
+                                {
+                                    if (mod.IsMod && mod.ItemClass != null)
+                                    {
+                                        if (mod.ItemClass.Properties != null && mod.ItemClass.Properties.Contains("DeathForceMultiplier"))
+                                        {
+                                            var modMultiplier = mod.ItemClass.Properties.GetFloat("DeathForceMultiplier");
+
+                                            // get the highest multiplier from any mods
+                                            if(modMultiplier > multiplier)
+                                            {
+                                                multiplier = modMultiplier;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
 
                             if (holdingItem.Properties.Contains("DeathForceMultiplier"))
                             {
-                                var multiplier = holdingItem.Properties.GetFloat("DeathForceMultiplier");
+                                var itemMultiplier = holdingItem.Properties.GetFloat("DeathForceMultiplier");
+                                if(itemMultiplier > multiplier)
+                                {
+                                    multiplier = itemMultiplier;
+                                }
+                            }
 
+                            if(multiplier > 0)
+                            {
                                 var difficulty = GameStats.GetInt(EnumGameStats.GameDifficulty);
+
+                                Debug.Log(multiplier);
                                 forceVec *= multiplier * _difficultyModifiers[difficulty];
                             }
                         }

@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/buffs/buff[@name='buffPerkAbilityUpdate']/effect_group">
      <!-- attAlchemist update --> 
     <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="healthPerkIncrease" operation="set" value="2.2">
@@ -120,5 +120,54 @@
         <passive_effect name="SpreadMultiplierAiming" operation="perc_subtract" value="0.25"/>
       </effect_group>
     </buff>
+
+    <buff name="buffChilled" description_key="buffChilledDesc" tooltip_key="buffChilledTooltip" icon="ui_game_symbol_electric_power" name_key="buffChilledName" icon_color="255,0,0">
+      <damage_type value="cold"/>
+      <stack_type value="replace"/>
+      <duration value="4.5"/>
+      <effect_group>
+        <passive_effect name="HealthChangeOT" operation="base_add" value="-6"/>
+        <passive_effect name="RunSpeed" operation="perc_subtract" value=".5" duration="5"/>
+        <passive_effect name="WalkSpeed" operation="perc_subtract" value=".5" duration="5"/>
+        <passive_effect name="CrouchSpeed" operation="perc_subtract" value=".5" duration="5"/>
+        <passive_effect name="JumpStrength" operation="perc_subtract" value=".5" duration="5"/>
+
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0.75,0"/>
+        <triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0.75,0"/>
+
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+
+        <triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ETrapHit" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+
+        <!--<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+        <triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>-->
+      </effect_group>
+    </buff>
+
+    <buff name="buffShockwave" description_key="buffShockwaveDesc" tooltip_key="buffShockwaveTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockwaveName" icon_color="255,0,0">
+      <damage_type value="electrical"/>
+      <stack_type value="replace"/>
+      <duration value=".5"/>
+      <effect_group>
+        <!--<triggered_effect trigger="onSelfBuffStart" action="LogMessage" message="Start buff"/>-->
+
+        <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/HoGParticles.unity3d?ShockWave" local_offset="0,0,0" parent_transform="Hips"/>
+        <triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/HoGParticles.unity3d?ShockWave" local_offset="0,0,0" parent_transform="Hips"/>
+
+        <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="ShockWave" parent_transform="Hips"/>
+
+        <triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="ShockWave" parent_transform="Hips"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="ShockWave" parent_transform="Hips"/>
+        <triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity"  particle="ShockWave" parent_transform="Hips"/>
+
+        <!--<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+        <triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>-->
+      </effect_group>
+    </buff>
   </append>
-</houseofgrey>
+</configs>

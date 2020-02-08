@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/items">
     <item name="bookSavagesNonsenseEncumbered">
       <!-- first book vol 1 -->
@@ -163,4 +163,4 @@
       <property name="Group" value="Resources"/>
     </item>
   </append>
-</houseofgrey>
+</configs>

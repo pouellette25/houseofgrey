@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/blocks/block[@name='treeGrassMaster']">
     <drop event="Harvest" name="resourceVanilla" count="0,2" tag="allHarvest"/>
   </append>
@@ -53,4 +53,4 @@
   <append xpath="/blocks/block[@name='treeWinterPine28m']">
     <drop event="Harvest" name="resourceCinnamon" count="0,2" tag="allHarvest"/>
   </append>
-</houseofgrey>
+</configs>

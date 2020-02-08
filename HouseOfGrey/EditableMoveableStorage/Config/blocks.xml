@@ -1,4 +1,4 @@
-<houseofgrey>
+<configs>
   <set xpath="/blocks/block[@name='cntSecureStorageChest']/property[@name='Class']/@value">EditableSecureLoot, Mods</set>
   <append xpath="/blocks/block[@name='cntSecureStorageChest']">
     <property name="TakeDelay" value="5" />
@@ -25,4 +25,4 @@
       <property name="FilterTags" value="floot"/>
     </block>
   </append>
-</houseofgrey>
+</configs>

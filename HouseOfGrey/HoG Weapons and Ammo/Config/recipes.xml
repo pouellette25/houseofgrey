@@ -1,4 +1,4 @@
-<houseofgrey>
+<configs>
 	<append xpath="/recipes">
 		<recipe name="ammoArrowStone" count="1">
 			<ingredient name="resourceRockSmall" count="1"/>
@@ -27,4 +27,4 @@
       </effect_group>
     </recipe>
 	</append>
-</houseofgrey>
+</configs>

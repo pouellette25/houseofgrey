@@ -1,12 +1,8 @@
-﻿<houseofgrey>
-  <set xpath="/items/item[@name='gunBowWooden']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowGlass,ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
-  <set xpath="/items/item[@name='gunBowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowGlass,ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
+﻿<configs>
+  <set xpath="/items/item[@name='gunBowWooden']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowStone,ammoArrowGlass,ammoArrowThunder,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
+  <set xpath="/items/item[@name='gunBowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowStone,ammoArrowGlass,ammoArrowThunder,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding</set>
 
-  <append xpath="/items/item[@name='meleeToolPickaxeIron']">
-    <property name="DeathForceMultiplier" value="100" />
-  </append>
-
-  <append xpath="/items/item[@name='gunRocketLauncher']">
+  <append xpath="/items/item[@name='meleeClubBaseballBat']">
     <property name="DeathForceMultiplier" value="3" />
   </append>
   
@@ -116,8 +112,62 @@
         <passive_effect name="ProjectileStickChance" operation="perc_set" value="0" />
       </effect_group>
       <effect_group tiered="false">
-        <requirement name="RandomRoll" seed_type="Random" min_max="10,100" operation="LTE" value="100" />
+        <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20" />
         <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding" />
+      </effect_group>
+    </item>
+
+    <item name="ammoArrowThunder">
+      <property name="Extends" value="ammoArrowStone"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="EconomicValue" value="25"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property name="Group" value="Ammo/Weapons"/>
+      <property name="DeathForceMultiplier" value="20" />
+
+      <property class="Action1">
+        <property name="Gravity" value="-3.5"/>
+        <property name="Explosion.ParticleIndex" value="20"/>
+        <property name="Explosion.RadiusBlocks" value="3"/>
+        <property name="Explosion.RadiusEntities" value="4"/>
+        <property name="Explosion.DamageBonus.stone" value=".3"/>
+        <property name="Explosion.DamageBonus.metal" value=".1"/>
+        <property name="Explosion.DamageBonus.earth" value="0"/>
+        <!-- should work? -->
+        <property name="Explosion.DamageBonus.wood" value=".5"/>
+        <property name="Explosion.DamageBonus.water" value="0"/>
+      </property>
+
+      <effect_group name="ammoArrowThunder" tiered="false">
+        <!-- ammoArrowIron -->
+        <passive_effect name="EntityDamage" operation="base_set" value="28"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="3"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+        <passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
+      </effect_group>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShockwave" />
+        <!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+        <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+          <requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+          <requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+        </triggered_effect>
+        <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" target_tags="!player" buff="buffInjuryKnockdown01"/>
+      </effect_group>
+      <effect_group tiered="false">
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+        </passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+        </passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+        </passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/>
+        </passive_effect>
       </effect_group>
     </item>
 
@@ -509,4 +559,4 @@
       </effect_group>
     </item>
   </append>
-</houseofgrey>
+</configs>

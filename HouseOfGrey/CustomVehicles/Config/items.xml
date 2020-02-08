@@ -1,10 +1,10 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/items">
     <item name="vehicleSemiTruck">
       <property name="Extends" value="vehicleMinibikePlaceable" />
       <property name="CustomIcon" value="vehicleSemiTruck" />
       <property name="DescriptionKey" value="Once used to transport goods is now only useful to drive around and loot with!" />
-      <property name="Meshfile" value="#@modfolder:Resources/SemiTruck.unity3d?SemiTruck.prefab" />
+      <property name="Meshfile" value="#@modfolder:Resources/HoGVehicles.unity3d?SemiTruck" />
       <property name="EconomicValue" value="10000" />
       <property class="Action1">
         <property name="Vehicle" value="vehicleSemiTruck" />
@@ -14,5 +14,22 @@
         <passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,120" />
       </effect_group>
     </item>
+
+    <item name="vehicleGeneralLeePlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="DescriptionKey" value="vehicleGeneralLeePlaceableDesc"/>
+      <property name="CustomIcon" value="vehicleGeneralLee" />
+      <property name="Meshfile" value="#@modfolder:Resources/HoGVehicles.unity3d?GeneralLee"/>
+      <property name="EconomicValue" value="30000"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleGeneralLee"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleGeneralLeePlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="4"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
   </append>
-</houseofgrey>
+</configs>

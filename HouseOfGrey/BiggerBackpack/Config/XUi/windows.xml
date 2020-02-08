@@ -1,4 +1,4 @@
-<houseofgrey> 
+<configs> 
   <setattribute xpath="/windows/window[@name='emptyInfoPanel']" name="width">807</setattribute>
   <setattribute xpath="/windows/window[@name='emptyInfoPanel']/panel[@name='header']" name="pos">0,76</setattribute>
   <setattribute xpath="/windows/window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']" name="pos">0,36</setattribute>
@@ -373,4 +373,4 @@
       </panel>
     </window>
   </append>
-</houseofgrey>
+</configs>

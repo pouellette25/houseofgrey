@@ -1,0 +1,7 @@
+﻿Key,Source,Context,Changes,English
+vehicleGeneralLee,vehicles,vehicle,,General Lee,,,,,
+vehicleGeneralLeePlaceable,vehicles,vehicle,,General Lee,,,,,
+vehicleGeneralLeePlaceableDesc,vehicles,vehicle,,Ride around in style like the good ole boys used to!
+
+vehicleSemiTruck,vehicles,vehicle,,Semi Truck,,,,,
+vehicleSemiTruckPlaceable,vehicles,vehicle,,Semi Truck,,,,,

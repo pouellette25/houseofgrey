@@ -1,4 +1,4 @@
-﻿<houseofgrey>
+﻿<configs>
   <append xpath="/xui/ruleset">
     <window_group name="workstation_EntitySemiTruck_workbench" controller="XUiC_VehicleWorkbenchWindowGroup, Mods">
       <window name="windowCraftingList"/>
@@ -9,4 +9,4 @@
       <!-- <window name="windowCombine" /> -->
     </window_group>
   </append>
-</houseofgrey>
+</configs>
