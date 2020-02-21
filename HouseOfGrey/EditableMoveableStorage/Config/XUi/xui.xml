@@ -1,7 +1,0 @@
-﻿<configs>
-  <append xpath="/xui/ruleset">
-    <window_group name="storage_box">
-      <window name="windowStorageEdit" />
-    </window_group>
-  </append>
-</configs>

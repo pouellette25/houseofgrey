@@ -1,0 +1,29 @@
+﻿Key,Source,Context,Changes,English
+meleeToolUncleSamHammerSchematic,items,Melee,newKey,Uncle Sam Hammer Schematic,,,,,
+meleeToolUncleSamHammer,items,Melee,newKey,Uncle Sam Hammer,,,,,
+meleeToolUncleSamHammerDesc,items,Melee,newKey,"I wanna be, your sledge hammer.\nBe FANCY like that UncleSam guy and let the PUNishment Begin!\n\nRepair with a Repair Kit.\nScrap to Steel Sledgehammer parts.",,,,,
+
+meleeToolBroadswordSchematic,items,Melee,newKey,Broadsword Schematic,,,,,
+meleeToolBroadsword,items,Melee,newKey,Broadsword,,,,,
+meleeToolBroadswordDesc,items,Melee,newKey,Put the pointy end into the other guy.,,,,,
+
+resourceScrapZinc,items,Item,--,Zinc
+resourceScrapZincDesc,items,Item,--,Zinc is acquired from stone and other ores. Mixed with copper to make brass.
+
+resourceScrapCopper,items,Item,--,Copper
+resourceScrapCopperDesc,items,Item,--,Copper is acquired from stone. Mixed with Zinc to make brass.
+
+ammoArrowGlass,items,Ammo,--,Glass Arrows
+ammoArrowGlassDesc,items,Ammo,--,"Put that broken glass to good use!\nGlass arrows do a bit more damage than stone ones, but always break and cause bleed damage"
+
+wizardStaffWood,items,Melee,--,Wood Wizard Staff
+wizardStaffWoodDesc,items,Melee,--,Wood Wizard Staff
+
+ammoIceBall,items,Ammo,--,Ice Ball
+ammoIceBallDesc,items,Ammo,--,It's a ball of ice you fire at your enemies
+
+ammoFireBall,items,Ammo,--,Fire Ball
+ammoFireBallDesc,items,Ammo,--,"Goodness, gracious, great balls of Fire!"
+
+ammoArrowThunder,items,Ammo,--,Thunder Arrows
+ammoArrowThunderDesc,items,Ammo,--,Thunder Arrows

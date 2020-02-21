@@ -1,0 +1,50 @@
+<greysprophecy>
+	 <!--Reduce wheel bounce sounds -->
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/MaxRepeatRate/@value">10</set>
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/Noise[@ID='0']/@noise">0</set>
+  
+   <!--Remove the annoying shuffle sound that's constantly played--> 
+	<remove xpath="/Sounds/SoundDataNode[@name='vwheel_slide']"></remove>
+  <append xpath="/Sounds">
+    <SoundDataNode name="vwheel_slide">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="2" noise=".05" time="3" muffled_when_crouched="0.5"/>
+      <AudioClip ClipName="Sounds/Step/crawlerstepsand2"/>
+      <AudioClip ClipName="Sounds/Step/crawlerstepsand4"/>
+      <AudioClip ClipName="Sounds/Step/stepsand4"/>
+      <MaxVoices value="2"/>
+      <MaxRepeatRate value="10"/>
+    </SoundDataNode>
+
+    <SoundDataNode name="dixieHorn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <NetworkAudioSource name="Sounds/AudioSource_Vehicle"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPVehicles.unity3d?dixie-horn-sound"/>
+      <LocalCrouchVolumeScale value="0.25"/>
+      <CrouchNoiseScale value="0.05"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="1"/>
+      <MaxRepeatRate value="0.01"/>
+    </SoundDataNode>
+
+    <!--Firetruck horn sounds from Daniel Simion-->
+    <SoundDataNode name="truckHorn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <!--<Noise ID="2" noise="30" time="3" muffled_when_crouched="0.5"/>-->
+      <AudioClip ClipName="#@modfolder:Resources/GPVehicles.unity3d?fire-truck-1"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPVehicles.unity3d?fire-truck-3"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="1"/>
+      <MaxRepeatRate value="2"/>
+    </SoundDataNode>
+
+    <SoundDataNode name="jeepHorn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <!--<Noise ID="2" noise="30" time="3" muffled_when_crouched="0.5"/>-->
+      <AudioClip ClipName="#@modfolder:Resources/GPVehicles.unity3d?fire-truck-2"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="1"/>
+      <MaxRepeatRate value="2"/>
+    </SoundDataNode>
+  </append>
+</greysprophecy>

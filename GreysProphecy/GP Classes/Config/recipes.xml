@@ -1,0 +1,10 @@
+﻿<greysprophecy>
+  <append xpath="/recipes">
+    <recipe name="drinkJarCola" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceVanilla" count="10"/>
+      <ingredient name="resourceCinnamon" count="10"/>
+    </recipe>
+  </append>
+</greysprophecy>

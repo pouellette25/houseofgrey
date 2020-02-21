@@ -1,0 +1,14 @@
+﻿<greysprophecy>
+  <append xpath="/Sounds">
+    <SoundDataNode name="bat_HomeRun">
+      <AudioSource name="Sounds/AudioSource_Melee"/>
+      <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+      <AudioClip ClipName="#@modfolder:Resources/Homerun.unity3d?BallHitCheer"/>
+      <LocalCrouchVolumeScale value="0.25"/>
+      <CrouchNoiseScale value="0.05"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxRepeatRate value="0.01"/>
+    </SoundDataNode>
+  </append>
+</greysprophecy>
