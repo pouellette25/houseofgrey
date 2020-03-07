@@ -1,5 +1,0 @@
-<greysprophecy>
-  <setattribute xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@depth='1']/grid[@name='categories']" name="cols">11</setattribute>
-  <setattribute xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@depth='1']/grid[@name='categories']" name="cell_width">36</setattribute>  
-  <setattribute xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@depth='1']/grid[@name='categories']" name="cell_height">36</setattribute>  
-</greysprophecy>

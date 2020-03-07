@@ -1,0 +1,40 @@
+﻿<greysprophecy>
+  <append xpath="/Sounds">
+    <SoundDataNode name="zombieRektRoam">
+      <AudioSource name="Sounds/AudioSource_Creatures"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_20"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_26"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_27"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_32"/>
+      <Channel name="Mouth"/>
+      <Priority name="5"/>
+      <maxVoicesPerEntity value="1"/>
+      <!--<LowestPitch name="0.95"/>
+      <HighestPitch name="1.05"/>-->
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="0.5"/>
+      <NoiseScale value="5"/>
+      <Noise ID="0" noise="35"/>
+      <MaxVoices value="10"/>
+      <MaxRepeatRate value="3"/>
+    </SoundDataNode>
+    <SoundDataNode name="zombieRektAlert">
+      <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_10"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_11"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_15"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPZombieSounds.unity3d?trader_male_dislike_greeting_24"/>
+      <Channel name="Mouth"/>
+      <Priority name="5"/>
+      <maxVoicesPerEntity value="1"/>
+      <!--<LowestPitch name="0.95"/>
+      <HighestPitch name="1.05"/>-->
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="0.5"/>
+      <NoiseScale value="20"/>
+      <Noise ID="0" noise="50"/>
+      <MaxVoices value="10"/>
+      <MaxRepeatRate value="3"/>
+    </SoundDataNode>
+  </append>
+</greysprophecy>

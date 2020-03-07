@@ -1,0 +1,657 @@
+﻿Key,Source,Context,Changes,English
+attfortitude,progression,Attribute,New,Warrior,,,,,
+attWarriorName,progression,Attribute,New,Attribute: Warrior,,,,,
+attWarriorDesc,progression,Attribute,New,"The warrior focuses on strength and beating the tar out of their enemies with clubs, axes, sledgehammers, or just their bare fists!"\nPower attacks increase melee damage by 100% but are not efficient for harvesting.,,,,,
+attWarriorRank01Desc,progression,Attribute,New,Weakling,,,,,
+attWarriorRank01LongDesc,progression,Attribute,New,"Everyone wants to be a bodybuilder but nobody wants to lift those heavy ass weights. Deal 200% head shot damage and have a 5% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank02Desc,progression,Attribute,New,Scrawny,,,,,
+attWarriorRank02LongDesc,progression,Attribute,New,"You might be scrawny but you have a fire inside to get big and strong. Deal 210% head shot damage and have a 10% chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank03Desc,progression,Attribute,New,Milk Drinker,,,,,
+attWarriorRank03LongDesc,progression,Attribute,New,"What is a milk drinker like you doing in the zombie apocalypse? Deal 220% head shot damage and have a 15% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank04Desc,progression,Attribute,New,Softie,,,,,
+attWarriorRank04LongDesc,progression,Attribute,New,"Your spare tire might keep you from starving but isn't helping you swing a sledgehammer. Deal 230% head shot damage and have a 20% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank05Desc,progression,Attribute,New,Fit,,,,,
+attWarriorRank05LongDesc,progression,Attribute,New,"You are fit and able to deal 240% head shot damage and have a 25% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank06Desc,progression,Attribute,New,Strong,,,,,
+attWarriorRank06LongDesc,progression,Attribute,New,"You are very strong and all the normies at the gym are envious. Deal 250% head shot damage and have a 30% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank07Desc,progression,Attribute,New,Body Builder,,,,,
+attWarriorRank07LongDesc,progression,Attribute,New,"Pumping clubs and sledgehammers has gave you some gains bro. Deal 260% head shot damage and have a 35% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank08Desc,progression,Attribute,New,Power Lifter,,,,,
+attWarriorRank08LongDesc,progression,Attribute,New,"Your massive strength is legendary. Deal 270% head shot damage and have a 40% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank09Desc,progression,Attribute,New,Beast Mode,,,,,
+attWarriorRank09LongDesc,progression,Attribute,New,"Size, strength and power are all champion level now. Deal 285% head shot damage and have a 45% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+attWarriorRank10Desc,progression,Attribute,New,Olympic Champion,,,,,
+attWarriorRank10LongDesc,progression,Attribute,New,"You could be an Olympic champion if the apocalypse hadn't crushed that dream. Now you can just crush zombies. Deal 300% head shot damage and have a 50% greater chance to dismember with fists, clubs, axes, and sledgehammers.",,,,,
+
+perkGPPummelPeteRank1LongDesc,progression,Perk,--,"You might not pack a punch, but as a roughneck you can swing a club! Craft quality 2 poor clubs, deal 10% more damage, regular and power attacks do 40% more damage to stunned enemies, and have a 60% chance for power attacks to knock foes back down.\nUnlocks iron club crafting."
+perkGPPummelPeteRank2LongDesc,progression,Perk,--,"You are making a name for yourself as a dangerous thug.  Craft quality 3 fair clubs, deal 20% more damage, attacks do 80% more damage to stunned enemies, and have a 70% chance for power attacks to knock foes back down."
+perkGPPummelPeteRank3LongDesc,progression,Perk,--,"You hit hard enough to be in the big leagues now. Craft quality 4 good clubs, deal 30% more damage, attacks do 120% more damage to stunned enemies, and have a 80% chance for power attacks to knock foes back down.\n5 successive hits in a short time causes the last blow to do 100% extra damage."
+perkGPPummelPeteRank4LongDesc,progression,Perk,--,"When you said stay down you meant it. Craft quality 5 great clubs, deal 40% more damage, attacks do 160% more damage to stunned enemies, and have a 90% chance for power attacks to knock foes back down.\n4 successive hits in a short time causes the last blow to do 100% extra damage."
+perkGPPummelPeteRank5LongDesc,progression,Perk,--,"Pummel Pete once took on 50 zombies with just a club, and he would be proud of you. Craft quality 6 epic clubs, deal 50% more damage, attacks do 200% more damage to stunned enemies, and have a 100% chance for power attacks to knock foes back down.\n3 successive hits in a short time causes the last blow to do 100% extra damage.\nUnlocks Baseball Bat crafting"
+
+perkGPPackMuleRank1LongDesc,progression,Perk,--,"Who has time to organize their stuff perfectly? Carry eight more items without being encumbered."
+perkGPPackMuleRank2LongDesc,progression,Perk,--,"You know it's in there somewhere. Carry an additional nine more items without being encumbered."
+perkGPPackMuleRank3LongDesc,progression,Perk,--,"You know exactly where everything is. Carry four ten items without being encumbered."
+perkGPPackMuleRank4LongDesc,progression,Perk,--,"You just passed inspection private.  Carry twelve more items without being encumbered."
+perkGPPackMuleRank5LongDesc,progression,Perk,--,"Now you are just showing off, you are either part mule or a strongman. Carry eighteen more items without being encumbered."
+
+perkGPFlurryOfBlowsRank1LongDesc,progression,Perk,--,"You have developed quick hands. One-handed melee attack speeds are increased by 5%.\n\nThis perk applies to clubs, brawling, and stun batons."
+
+perkGPBrawlerRank5LongDesc,progression,Perk,--,"You are now a complete mixed martial artist and are a registered lethal weapon. Deal 50% more damage and have a chance to explode heads with punches. Craft quality 6 epic knuckle weapons."
+
+perkGPHeavyArmorRank5LongDesc,progression,Perk,--,"You are now a walking tank. Reduce heavy armor movement and stamina penalty by 25%. Improve durability by 100%. Craft quality 6 epic heavy armor."
+
+atthunter,progression,Attribute,New,Hunter,,,,,
+attHunterName,progression,Attribute,New,Attribute: Hunter,,,,,
+attHunterDesc,progression,Attribute,New,"The Hunter uses their keen sight and deft accuracy to strike at the weaknesses of their foes to devastating effect. When using bows or spears, the Hunter skill increases the bonus damage from headshots and increases the chance to dismember and decapitate.",,,,,
+attHunterRank01Desc,progression,Attribute,New,Oblivious,,,,,
+attHunterRank01LongDesc,progression,Attribute,New,"You are pretty oblivious in the perception department. Deal 200% head shot damage and have a 5% chance to dismember with bows, and spears.",,,,,
+attHunterRank02Desc,progression,Attribute,New,Unaware,,,,,
+attHunterRank02LongDesc,progression,Attribute,New,"You are still unaware to most things around you. Deal 210% head shot damage and have a 10% chance to dismember with bows, and spears.",,,,,
+attHunterRank03Desc,progression,Attribute,New,Unobservant,,,,,
+attHunterRank03LongDesc,progression,Attribute,New,"You are sometimes unobservant but getting better. Deal 220% head shot damage and have a 15% chance to dismember with bows, and spears.",,,,,
+attHunterRank04Desc,progression,Attribute,New,Incognizant,,,,,
+attHunterRank04LongDesc,progression,Attribute,New,"Your incognizant perception is usually just a small setback. Deal 230% head shot damage and have a 20% chance to dismember with bows, and spears.",,,,,
+attHunterRank05Desc,progression,Attribute,New,Observant,,,,,
+attHunterRank05LongDesc,progression,Attribute,New,"You are observant and notice just enough to make a big difference. Deal 240% head shot damage and have a 26% chance to dismember with bows, and spears.",,,,,
+attHunterRank06Desc,progression,Attribute,New,Attentive,,,,,
+attHunterRank06LongDesc,progression,Attribute,New,"Your attention to detail is clearly aiding you in combat. Deal 250% head shot damage and have a 30% chance to dismember with bows, and spears.",,,,,
+attHunterRank07Desc,progression,Attribute,New,Discerning,,,,,
+attHunterRank07LongDesc,progression,Attribute,New,"You can discern weak points in enemies with ease now. Deal 260% head shot damage and have a 35% chance to dismember with bows, and spears.",,,,,
+attHunterRank08Desc,progression,Attribute,New,Perceptive,,,,,
+attHunterRank08LongDesc,progression,Attribute,New,"Your perception is astounding. Deal 270% head shot damage and have a 40% chance to dismember with bows, and spears.",,,,,
+attHunterRank09Desc,progression,Attribute,New,Astute awareness,,,,,
+attHunterRank09LongDesc,progression,Attribute,New,"Your awareness is astute. Deal 285% head shot damage and have a 45% chance to dismember with bows, and spears.",,,,,
+attHunterRank10Desc,progression,Attribute,New,Boom Headshot,,,,,
+attHunterRank10LongDesc,progression,Attribute,New,"You are unrivaled at making heads go boom.  Deal 300% head shot damage and have a 50% chance to dismember with bows, and spears.",,,,,
+
+perkGPJavelinMasterRank5LongDesc,progression,Perk,--,"You are now a Javelin Master and if this wasn't the apocalypse you could be in the Olympics. Craft quality 6 epic spears. Spears do 50% more damage and have 50% more range."
+
+perkLegolasName,progression,Perk,--,"Call Me Legolas"
+perkLegolasDesc,progression,Perk,--,"Master the use of bows and crossbows."
+perkLegolasRank1Desc,progression,Perk,--,"Amateur Bowman"
+perkLegolasRank2Desc,progression,Perk,--,"Master Archer"
+perkLegolasRank3Desc,progression,Perk,--,"Generic Elf"
+perkLegolasRank4Desc,progression,Perk,--,"Legolas"
+perkLegolasRank5Desc,progression,Perk,--,"Legendary Master of the Bow"
+perkLegolasRank1LongDesc,progression,Perk,--,"Sure, you could probably hit the broad side of that barn, but you don't want to show off. \nCraft quality 2 poor bows, deal 10% more damage, 10% faster aim, draw and reload with bows. \nUnlocks wooden bow and iron crossbow crafting."
+perkLegolasRank2LongDesc,progression,Perk,--,"Broad side of a barn? Pah! You can hit the broad side of an outhouse! \nCraft quality 3 fair bows, deal 20% more damage, 20% faster aim, draw and reload with bows."
+perkLegolasRank3LongDesc,progression,Perk,--,"You could swear your ears are getting pointier. \nCraft quality 4 good bows, deal 30% more damage, 30% faster aim, draw and reload with bows."
+perkLegolasRank4LongDesc,progression,Perk,--,"You could beat a dwarf in an orc killing contest, but friendship is the greater prize. \nCraft quality 5 great bows, deal 40% more damage, 40% faster aim, draw and reload with bows."
+perkLegolasRank5LongDesc,progression,Perk,--,"Legolas? Never heard of her. Your mastery of archery now borders on the supernatural. \nCraft quality 6 epic bows, deal 50% more damage, 50% faster aim, draw and reload with bows."
+
+perkGreenArrowName,progression,Perk,--,"I Am The Green Arrow"
+perkGreenArrowDesc,progression,Perk,--,"Improve your hip fire accuracy and run faster while reloading bows."
+perkGreenArrowRank1Desc,progression,Perk,--,"Whoops!"
+perkGreenArrowRank2Desc,progression,Perk,--,"Empty Quiver"
+perkGreenArrowRank3Desc,progression,Perk,--,"Trick Shooter"
+perkGreenArrowRank4Desc,progression,Perk,--,"The Green Arrow"
+perkGreenArrowRank5Desc,progression,Perk,--,"Freerunning Toxomancer"
+perkGreenArrowRank1LongDesc,progression,Perk,--,"Your friends had better take cover if they don't want to pull arrows out of their rear ends. \nHip fire accuracy is improved by 5% and movement penalty when reloading is reduced 20%."
+perkGreenArrowRank2LongDesc,progression,Perk,--,"Your friend would have liked that arrow outline of a zombie more if the zombie hadn't killed them. \nHip fire accuracy is improved by 10% and movement penalty when reloading is reduced 40%."
+perkGreenArrowRank3LongDesc,progression,Perk,--,"Bouncing a running shot off your friend's helmet and into that zombie's eye might look like an accident, but you know better. \nHip fire accuracy is improved by 15% and movement penalty when reloading is reduced 60%."
+perkGreenArrowRank4LongDesc,progression,Perk,--,"Your ability to quickly fire arrows on the run with uncanny accuracy will put you in the hall of heroes. \nHip fire accuracy is improved by 20% and movement penalty when reloading is reduced 80%."
+perkGreenArrowRank5LongDesc,progression,Perk,--,"You can't be sure because you don't even look at your targets any more, but you think that last arrow just phased through your friend.  \nHip fire accuracy is improved by 25% and have no movement penalty when reloading."
+
+perkGPLightArmorRank5LongDesc,progression,Perk,--,"You are now fit to be called commander of battle and your ability to use light armor is exceeded by none. Craft quality 6 epic light armor, reduce light armor movement penalty by 75% and stamina penalty by 50%. Improve durability by 100%."
+
+attgunslinger,progression,Attribute,New,Gunslinger,,,,,
+attGunSlingerName,progression,Attribute,New,Attribute: Gunslinger,,,,,
+attGunSlingerDesc,progression,Attribute,New,The Gunslinger is proficient with all types of firearms.,,,,,
+attGunSlingerRank01Desc,progression,Attribute,New,Oblivious,,,,,
+attGunSlingerRank01LongDesc,progression,Attribute,New,"You are pretty oblivious in the perception department. Deal 200% head shot damage and have a 5% chance to dismember with guns.",,,,,
+attGunSlingerRank02Desc,progression,Attribute,New,Unaware,,,,,
+attGunSlingerRank02LongDesc,progression,Attribute,New,"You are still unaware to most things around you. Deal 210% head shot damage and have a 10% chance to dismember with guns.",,,,,
+attGunSlingerRank03Desc,progression,Attribute,New,Unobservant,,,,,
+attGunSlingerRank03LongDesc,progression,Attribute,New,"You are sometimes unobservant but getting better. Deal 220% head shot damage and have a 15% chance to dismember with guns.",,,,,
+attGunSlingerRank04Desc,progression,Attribute,New,Incognizant,,,,,
+attGunSlingerRank04LongDesc,progression,Attribute,New,"Your incognizant perception is usually just a small setback. Deal 230% head shot damage and have a 20% chance to dismember with guns.",,,,,
+attGunSlingerRank05Desc,progression,Attribute,New,Observant,,,,,
+attGunSlingerRank05LongDesc,progression,Attribute,New,"You are observant and notice just enough to make a big difference. Deal 240% head shot damage and have a 26% chance to dismember with guns.",,,,,
+attGunSlingerRank06Desc,progression,Attribute,New,Attentive,,,,,
+attGunSlingerRank06LongDesc,progression,Attribute,New,"Your attention to detail is clearly aiding you in combat. Deal 250% head shot damage and have a 30% chance to dismember with guns.",,,,,
+attGunSlingerRank07Desc,progression,Attribute,New,Discerning,,,,,
+attGunSlingerRank07LongDesc,progression,Attribute,New,"You can discern weak points in enemies with ease now. Deal 260% head shot damage and have a 35% chance to dismember with guns.",,,,,
+attGunSlingerRank08Desc,progression,Attribute,New,Perceptive,,,,,
+attGunSlingerRank08LongDesc,progression,Attribute,New,"Your perception is astounding. Deal 270% head shot damage and have a 40% chance to dismember with guns.",,,,,
+attGunSlingerRank09Desc,progression,Attribute,New,Astute awareness,,,,,
+attGunSlingerRank09LongDesc,progression,Attribute,New,"Your awareness is astute. Deal 285% head shot damage and have a 45% chance to dismember with guns.",,,,,
+attGunSlingerRank10Desc,progression,Attribute,New,Boom Headshot,,,,,
+attGunSlingerRank10LongDesc,progression,Attribute,New,"You are unrivaled at making heads go boom.  Deal 300% head shot damage and have a 50% chance to dismember with guns.",,,,,
+
+perkGPDeadEyeRank5LongDesc,progression,Attribute,New,"Dead Eye: Through all the hard training and countless shooting, you are now a dead eye sniper. Craft quality 5 great rifles. Deal 50% more damage, aim 60% faster, reload 30% faster, and use 30% less stamina aiming with rifles.\nKill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum of 50%.",,,,,
+
+perkGPBoomstickDesc,progression,Attribute,New,"This is my BOOMSTICK!\nSpecialize with shotguns and send your enemies to meet their maker. Do more damage, blow limbs off, shoot and reload faster.",,,,,
+
+perkGPBoomstickRank4LongDesc,progression,Attribute,New,"You are now very deadly with a shotgun and considered a shotgun master. Craft quality 5 great shotguns, deal 40% more damage, 40% faster fire rate, and 25% faster reload.\nHas a greater chance to stun enemies.",,,,,
+perkGPBoomstickRank5LongDesc,progression,Attribute,New,"You've ascended to the legendary status of Shotgun Messiah, as you are the last thing they see before meeting their maker. Craft quality 6 epic shotguns, deal 50% more damage, 50% faster fire rate, and a 30% faster reload.\nLegs shots cripple opponents.",,,,,
+
+perkGPMachineGunnerRank5LongDesc,progression,Attribute,New,"You are now the ultimate machine gunner. Craft quality 6 epic machine guns, deal 50% more damage, 25% faster fire rate and reload 30% faster. Commando Adrenaline: Each shot scored with automatic weapons gives you 6 stamina.",,,,,
+
+perkKaName,progression,Perk,--,"Ka"
+perkKaDesc,progression,Perk,--,"Settle your disputes the old way and be a gunslinger in the apocalypse. Master the use of handguns. Unlocks pistol crafting."
+
+perkKaRank1Desc,progression,Perk,--,"Natural"
+perkKaRank2Desc,progression,Perk,--,"Adept"
+perkKaRank3Desc,progression,Perk,--,"Apprentice"
+perkKaRank4Desc,progression,Perk,--,"Gunslinger"
+perkKaRank5Desc,progression,Perk,--,"Roland"
+
+perkKaRank1LongDesc,progression,Perk,--,"You have forgotten the face of your father.\nCraft quality 2 poor handguns, deal 10% more damage, 5% faster fire rate, and 10% faster reload with handguns.\nUnlocks pistol crafting."
+perkKaRank2LongDesc,progression,Perk,--,"You vaguely recall the face of your father. Or is that your cousin?\nCraft quality 3 fair handguns, deal 20% more damage, 10% faster fire rate, and reload 15% faster with handguns."
+perkKaRank3LongDesc,progression,Perk,--,"You almost remember the face of your father. The skills of your ancestors return to you.\nCraft quality 4 good handguns, deal 30% more damage, 15% faster fire rate, and reload 20% faster. Critical Damage: 5 successive hits in a short time cause critical damage."
+perkKaRank4LongDesc,progression,Perk,--,"You remember the face of your father, and remember it well.\nCraft quality 5 great handguns, deal 40% more damage, 20% faster fire rate, and reload 25% faster. Critical Damage: 4 successive hits in a short time cause the last shot to do 100% extra damage."
+perkKaRank5LongDesc,progression,Perk,--,"You're the last Gunslinger left in a world that has moved on.\nCraft quality 6 epic handguns, deal 50% more damage, 25% faster fire rate, and 30% faster reload with handguns. Critical Damage: 3 successive hits in a short time cause the last shot to do 100% extra damage.\nUnlocks magnum crafting."
+
+perkGPRunandGunDesc,progression,Perk,--,"Improve your hip fire accuracy and run faster while reloading any gun."
+
+attblacksmith,progression,Attribute,New,Blacksmith,,,,,
+attBlacksmithName,progression,Attribute,New,Attribute: Blacksmith,,,,,
+attBlacksmithDesc,progression,Attribute,New,The Blacksmith is adept at crafting weapons and tools used against the zombie hordes.,,,,,
+attBlacksmithRank1Desc,progression,Perk,New,Couch Potato,,,,,
+attBlacksmithRank1LongDesc,progression,Perk,New,"Ok so you are not a total couch potato any more, but not deserving of the title athlete yet either. Reduces melee and tool stamina use by 5%.",,,,,
+attBlacksmithRank2Desc,progression,Perk,New,Bench Warmer,,,,,
+attBlacksmithRank2LongDesc,progression,Perk,New,You have graduated to bench warmer. Reduce melee and tool stamina usage by 10%.,,,,,
+attBlacksmithRank3Desc,progression,Perk,New,Athlete,,,,,
+attBlacksmithRank3LongDesc,progression,Perk,New,You are now a bonafide athlete and getting winded doing nothing is a thing of the past. Reduce melee and tool stamina usage by 15%.\nKilling blows grant 5 stamina.,,,,,
+attBlacksmithRank4Desc,progression,Perk,New,Warrior,,,,,
+attBlacksmithRank4LongDesc,progression,Perk,New,Nobody will disrespect a warrior. Reduce melee and tool stamina usage by 20%.\nKilling blows grant 10 stamina.,,,,,
+attBlacksmithRank5Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank5LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 25%.\nKilling blows grant 15 stamina.,,,,,
+attBlacksmithRank6Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank6LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 30%.\nKilling blows grant 20 stamina.,,,,,
+attBlacksmithRank7Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank7LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 35%.\nKilling blows grant 25 stamina.,,,,,
+attBlacksmithRank8Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank8LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 40%.\nKilling blows grant 30 stamina.,,,,,
+attBlacksmithRank9Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank9LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 45%.\nKilling blows grant 35 stamina.,,,,,
+attBlacksmithRank10Desc,progression,Perk,New,Cage Gladiator,,,,,
+attBlacksmithRank10LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 50%.\nKilling blows grant 40 stamina.,,,,,
+
+perkToolsOfTheTradeName,progression,Perk,--,"Tools of the Trade"
+perkToolsOfTheTradeDesc,progression,Perk,--,"A finely crafted tool makes a job easier. Let's create some ease."
+perkToolsOfTheTradeRank1Desc,progression,Perk,--,"Early Hominid"
+perkToolsOfTheTradeRank2Desc,progression,Perk,--,"Toolsmith"
+perkToolsOfTheTradeRank3Desc,progression,Perk,--,"Machinist"
+perkToolsOfTheTradeRank4Desc,progression,Perk,--,"Master Dwarven Craftsman"
+perkToolsOfTheTradeRank5Desc,progression,Perk,--,"The All-Hammer"
+perkToolsOfTheTradeRank1LongDesc,progression,Perk,--,"In a previous life, you were the clever soul that figured out how to bang two rocks together. Now, you have outdone yourself by adding a handle. No more smashed fingers!\nCraft quality 2 poor tools."
+perkToolsOfTheTradeRank2LongDesc,progression,Perk,--,"You have become handy at creating solid tools from scavenged parts and materials. \nCraft quality 3 fair tools."
+perkToolsOfTheTradeRank3LongDesc,progression,Perk,--,"Your experience with creating tools from lesser materials and scavenged parts has given you insights into crafting your own parts.\nCraft quality 4 good tools.\nYou can now craft tool parts and melee weapon parts."
+perkToolsOfTheTradeRank4LongDesc,progression,Perk,--,"Every tool you craft is a worthy offering to the All-Hammer.\nCraft quality 5 great tools."
+perkToolsOfTheTradeRank5LongDesc,progression,Perk,--,"Moradin, dwarven god of craftsmanship respects you as an equal.\nCraft quality 6 epic tools."
+
+perkGPMiner69rRank1Desc,progression,Perk,--,"Caveman"
+perkGPMiner69rRank2Desc,progression,Perk,--,"Professional Miner"
+perkGPMiner69rRank3Desc,progression,Perk,--,"Dwarf"
+perkGPMiner69rRank4Desc,progression,Perk,--,"Balrog Chow"
+perkGPMiner69rRank5Desc,progression,Perk,--,"Diggy Diggy Hole"
+perkGPMiner69rRank1LongDesc,progression,Perk,--,"Your lack of technique is outshone by your passion, you mighty rocksmasher you! Increase tool damage by 10% and block damage by 30%."
+perkGPMiner69rRank2LongDesc,progression,Perk,--,"You know which end of the pick is which. Still, it's fun to whack the stone with the handle to annoy your friends.\nIncrease tool damage by 20% and block damage by 60%."
+perkGPMiner69rRank3LongDesc,progression,Perk,--,"Your skill at seeking out valuable ore and your steady commitment to the dig leaves you standing head and shoulders below your allies.\nIncrease tool damage by 30% and block damage by 90%.\nCraft quality 4 good tools."
+perkGPMiner69rRank4LongDesc,progression,Perk,--,"Your zeal for mining and your greed for ore has you plunging deep into the earth.\nIncrease tool damage by 40% and block damage by 120%."
+perkGPMiner69rRank5LongDesc,progression,Perk,--,"You are no mere dwarf. You are an entire city of dwarves with a catchy theme song.\nIncrease tool damage by 50% and block damage by 150%."
+
+attengineer,progression,Attribute,New,Engineer,,,,,
+attEngineerName,progression,Attribute,New,Attribute: Engineer,,,,,
+attEngineerDesc,progression,Attribute,New,Engineers are essential for making transportation item modifications and explosive weapons.\nThey can also create powered traps and are handy with a wrench.,,,,,
+attEngineerRank01Desc,progression,Attribute,New,Oblivious,,,,,
+attEngineerRank01LongDesc,progression,Attribute,New,"You are pretty oblivious in the perception department. Deal 200% head shot damage and have a 5% chance to dismember with explosives.",,,,,
+attEngineerRank02Desc,progression,Attribute,New,Unaware,,,,,
+attEngineerRank02LongDesc,progression,Attribute,New,"You are still unaware to most things around you. Deal 210% head shot damage and have a 10% chance to dismember with explosives.",,,,,
+attEngineerRank03Desc,progression,Attribute,New,Unobservant,,,,,
+attEngineerRank03LongDesc,progression,Attribute,New,"You are sometimes unobservant but getting better. Deal 220% head shot damage and have a 15% chance to dismember with explosives.",,,,,
+attEngineerRank04Desc,progression,Attribute,New,Incognizant,,,,,
+attEngineerRank04LongDesc,progression,Attribute,New,"Your incognizant perception is usually just a small setback. Deal 230% head shot damage and have a 20% chance to dismember with explosives.",,,,,
+attEngineerRank05Desc,progression,Attribute,New,Observant,,,,,
+attEngineerRank05LongDesc,progression,Attribute,New,"You are observant and notice just enough to make a big difference. Deal 240% head shot damage and have a 26% chance to dismember with explosives.",,,,,
+attEngineerRank06Desc,progression,Attribute,New,Attentive,,,,,
+attEngineerRank06LongDesc,progression,Attribute,New,"Your attention to detail is clearly aiding you in combat. Deal 250% head shot damage and have a 30% chance to dismember with explosives.",,,,,
+attEngineerRank07Desc,progression,Attribute,New,Discerning,,,,,
+attEngineerRank07LongDesc,progression,Attribute,New,"You can discern weak points in enemies with ease now. Deal 260% head shot damage and have a 35% chance to dismember with explosives.",,,,,
+attEngineerRank08Desc,progression,Attribute,New,Perceptive,,,,,
+attEngineerRank08LongDesc,progression,Attribute,New,"Your perception is astounding. Deal 270% head shot damage and have a 40% chance to dismember with explosives.",,,,,
+attEngineerRank09Desc,progression,Attribute,New,Astute awareness,,,,,
+attEngineerRank09LongDesc,progression,Attribute,New,"Your awareness is astute. Deal 285% head shot damage and have a 45% chance to dismember with explosives.",,,,,
+attEngineerRank10Desc,progression,Attribute,New,Boom Headshot,,,,,
+attEngineerRank10LongDesc,progression,Attribute,New,"You are unrivaled at making heads go boom.  Deal 300% head shot damage and have a 50% chance to dismember with explosives.",,,,,
+
+perkGPSalvageOperationsRank5LongDesc,progression,Attribute,New,"You are king of the junk dealers and envy of the grease monkeys of the apocalypse. Craft quality 6 epic wrenches, deal 50% more damage, harvest 100% faster and gains 100% more resources when salvaging with wrenches.",,,,,
+
+perkGPElectrocutionerRank5LongDesc,progression,Attribute,New,"You are the last thing they see coming and are now an executioner with stun batons. Craft quality 6 epic stun batons, deal 50% more damage and stun victims 100% longer.",,,,,
+
+perkGPTurretsRank5LongDesc,progression,Attribute,New,"You are now a top expert in robotics. Craft quality 6 epic turrets, reload turrets 20% faster and reload an extra 50 rounds. Turret active range is 18 meters.\nTwo deployed turrets can be active at once",,,,,
+
+attthief,progression,Attribute,New,Thief,,,,,
+attThiefName,progression,Attribute,New,Attribute: Thief,,,,,
+attThiefDesc,progression,Attribute,New,Quick on their feet and known for haggling prices with traders.,,,,,
+attThiefRank1Desc,progression,Perk,New,Slim Jim,,,,,
+attThiefRank1LongDesc,progression,Perk,New,"Slim Jim. You are just getting the hang of this but someday you are going to be somebody. You can craft lock picks, pick locks 5% faster and have a 5% lower chance to break lockpicks. ",,,,,
+attThiefRank2Desc,progression,Perk,New,Burglar,,,,,
+attThiefRank2LongDesc,progression,Perk,New,Burglar. You are starting to make a name for yourself. You can pick locks 10% faster and have a 10% lower chance to break lockpicks.,,,,,
+attThiefRank3Desc,progression,Perk,New,Thief,,,,,
+attThiefRank3LongDesc,progression,Perk,New,You are now a professional thief. You can pick locks 15% faster and have a 15% less chance to break lockpicks.,,,,,
+attThiefRank4Desc,progression,Perk,New,Lock Smith,,,,,
+attThiefRank4LongDesc,progression,Perk,New,You are now a lock smith and few locks will keep you out. You can pick locks 20% faster and have a 20% lower chance to break lockpicks.,,,,,
+attThiefRank5Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank5LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 25% faster and have a 25% lower chance to break lockpicks.,,,,,
+attThiefRank6Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank6LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 30% faster and have a 30% lower chance to break lockpicks.,,,,,
+attThiefRank7Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank7LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 35% faster and have a 35% lower chance to break lockpicks.,,,,,
+attThiefRank8Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank8LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 40% faster and have a 40% lower chance to break lockpicks.,,,,,
+attThiefRank9Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank9LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 45% faster and have a 45% lower chance to break lockpicks.,,,,,
+attThiefRank10Desc,progression,Perk,New,Safe Cracker,,,,,
+attThiefRank10LongDesc,progression,Perk,New,You are now a world class safe cracker. Pick locks 50% faster and have a 50% lower chance to break lockpicks.,,,,,
+
+attassassin,progression,Attribute,New,Assassin,,,,,
+attAssassinName,progression,Attribute,New,Attribute: Assassin,,,,,
+attAssassinDesc,progression,Attribute,New,Assassins hide in the shadows waiting for the right moment to strike down their enemies.\nThey prefer light blades to keep their presence hidden.,,,,,
+attAssassinRank01Desc,progression,Attribute,New,Clumsy,,,,,
+attAssassinRank01LongDesc,progression,Attribute,New,"You are as clumsy as they come but you still do 200% head shot damage and have a 5% chance to dismember with knives.",,,,,
+attAssassinRank02Desc,progression,Attribute,New,Fumbling,,,,,
+attAssassinRank02LongDesc,progression,Attribute,New,"You didn't make the football team but that didn't stop you from practicing. Deal 210% head shot damage and have a 10% chance to dismember with knives.",,,,,
+attAssassinRank03Desc,progression,Attribute,New,Clunky,,,,,
+attAssassinRank03LongDesc,progression,Attribute,New,"You are still loud and clunky but can deal 220% head shot damage and have a 15% chance to dismember with knives.",,,,,
+attAssassinRank04Desc,progression,Attribute,New,Inept,,,,,
+attAssassinRank04LongDesc,progression,Attribute,New,"Your dexterity is a bit inept, but you can deal 230% head shot damage and have a 20% chance to dismember with knives.",,,,,
+attAssassinRank05Desc,progression,Attribute,New,Agile,,,,,
+attAssassinRank05LongDesc,progression,Attribute,New,"You are now agile and deal 240% head shot damage and have a 25% chance to dismember with knives.",,,,,
+attAssassinRank06Desc,progression,Attribute,New,Nimble,,,,,
+attAssassinRank06LongDesc,progression,Attribute,New,"Your movement is now very nimble and deal 250% head shot damage and have a 30% chance to dismember with knives.",,,,,
+attAssassinRank07Desc,progression,Attribute,New,Dexterous,,,,,
+attAssassinRank07LongDesc,progression,Attribute,New,"Your dexterity is very impressive. Deal 260% head shot damage and have a 35% chance to dismember with knives.",,,,,
+attAssassinRank08Desc,progression,Attribute,New,Gymnast,,,,,
+attAssassinRank08LongDesc,progression,Attribute,New,"Moving fluid and landing on your feet are second nature for you. Deal 270% head shot damage and have a 40% chance to dismember with knives.",,,,,
+attAssassinRank09Desc,progression,Attribute,New,Professional Athlete,,,,,
+attAssassinRank09LongDesc,progression,Attribute,New,"Your agility is good enough you could be a professional athlete. Deal 285% head shot damage and have a 45% chance to dismember with knives.",,,,,
+attAssassinRank10Desc,progression,Attribute,New,Parkour Master,,,,,
+attAssassinRank10LongDesc,progression,Attribute,New,"Your dexterity is unmatched. Deal 300% head shot damage and have a 50% chance to dismember with knives.",,,,,
+
+perkGPDeepCutsRank5LongDesc,progression,Attribute,New,"You are a samurai and can make sushi out of your foes. Craft quality 6 epic knives, and deal 50% more damage.  Regular attacks have a 50% higher chance to inflict a bleeding wound. You can inflict up to 6 Bleeding Wounds on an enemy and a power attack inflicts 6.",,,,,
+
+perkFanOfKnivesName,progression,Perk,--,"Fan of Knives"
+perkFanOfKnivesDesc,progression,Perk,--,"Specialize in one-handed melee weapons and beating the tar out of your opponents in a furious flurry of quick strikes."
+perkFanOfKnivesRank1Desc,progression,Perk,--,"Quick Hands"
+perkFanOfKnivesRank2Desc,progression,Perk,--,"Rapid Attacks"
+perkFanOfKnivesRank3Desc,progression,Perk,--,"Sudden Strike"
+perkFanOfKnivesRank4Desc,progression,Perk,--,"Devastating Speed"
+perkFanOfKnivesRank5Desc,progression,Perk,--,"Fan of Knives"
+perkFanOfKnivesRank1LongDesc,progression,Perk,--,"You have developed quick hands. One-handed melee attack speeds are increased by 5%.\n\nThis perk applies to knives, and machetes ."
+perkFanOfKnivesRank2LongDesc,progression,Perk,--,"Your training allows you to perform rapid attacks. One-handed melee attack speeds are increased by 10%."
+perkFanOfKnivesRank3LongDesc,progression,Perk,--,"You have developed the sudden strike. One-handed melee attack speeds are increased by 15%."
+perkFanOfKnivesRank4LongDesc,progression,Perk,--,"You now perform attacks at devastating speeds. One-handed melee attack speeds are increased by 20%."
+perkFanOfKnivesRank5LongDesc,progression,Perk,--,"You have mastered the fan of knives. One-handed melee attack speeds are increased by 25%."
+
+attalchemist,progression,Attribute,New,Alchemist,,,,,
+attAlchemistName,progression,Attribute,New,Attribute: Alchemist,,,,,
+attAlchemistDesc,progression,Attribute,New,Masters of potions.,,,,,
+attAlchemistRank1Desc,progression,Perk,New,Quack,,,,,
+attAlchemistRank1LongDesc,progression,Perk,New,"Healing items heal 5% more health and heal over time 10% faster. All healing you perform is 5% more effective. Gain 20% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank2Desc,progression,Perk,New,Intern,,,,,
+attAlchemistRank2LongDesc,progression,Perk,New,"Healing items heal 10% more health and heal over time 20% faster. All healing you perform is 10% more effective. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank3Desc,progression,Perk,New,Doctor,,,,,
+attAlchemistRank3LongDesc,progression,Perk,New,"Healing items heal 15% more health and heal over time 30% faster. All healing you perform is 15% more effective. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank4Desc,progression,Perk,New,Surgeon,,,,,
+attAlchemistRank4LongDesc,progression,Perk,New,"Healing items heal 20% more health and heal over time 40% faster. All healing you perform is 20% more effective. Gain 80% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank5Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank5LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 25% more health and heal over time 50% faster. All healing you perform is 25% more effective. When healing others you gain half the benefits. Gain 100% more XP using bandages, first aid bandages, first aid kits and splints.",,,,,
+attAlchemistRank6Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank6LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 30% more health and heal over time 60% faster. All healing you perform is 30% more effective. Add potions and things here",,,,,
+attAlchemistRank7Desc,progression,Perk,New,Miracle Worker,,,,,	
+attAlchemistRank7LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 35% more health and heal over time 70% faster. All healing you perform is 35% more effective. Add potions and things here",,,,,
+attAlchemistRank8Desc,progression,Perk,New,Miracle Worker,,,,,	
+attAlchemistRank8LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 40% more health and heal over time 80% faster. All healing you perform is 40% more effective. Add potions and things here",,,,,
+attAlchemistRank9Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank9LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 45% more health and heal over time 90% faster. All healing you perform is 45% more effective. Add potions and things here",,,,,
+attAlchemistRank10Desc,progression,Perk,New,Miracle Worker,,,,,
+attAlchemistRank10LongDesc,progression,Perk,New,"Miracle worker. Healing items heal 50% more health and heal over time 100% faster. All healing you perform is 50% more effective. Add potions and things here",,,,,
+
+attwizard,progression,Attribute,New,Wizard
+attWizardName,progression,Attribute,New,Attribute: Wizard
+attWizardDesc,progression,Attribute,New,A wizard is never late nor is he early. He arrives precisely when he means to.\n...It's when?! Gotta go.
+attWizardRank1Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank1LongDesc,progression,Perk,New,"5% Faster aiming with magic weapons, and cast times are 10% faster".
+attWizardRank2Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank2LongDesc,progression,Perk,New,"10% Faster aiming with magic weapons, and cast times are 15% faster".
+attWizardRank3Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank3LongDesc,progression,Perk,New,"15% Faster aiming with magic weapons, and cast times are 20% faster".
+attWizardRank4Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank4LongDesc,progression,Perk,New,"20% Faster aiming with magic weapons, and cast times are 25% faster".
+attWizardRank5Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank5LongDesc,progression,Perk,New,"25% Faster aiming with magic weapons, and cast times are 30% faster".
+attWizardRank6Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank6LongDesc,progression,Perk,New,"30% Faster aiming with magic weapons, and cast times are 35% faster".
+attWizardRank7Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank7LongDesc,progression,Perk,New,"35% Faster aiming with magic weapons, and cast times are 40% faster".
+attWizardRank8Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank8LongDesc,progression,Perk,New,"40% Faster aiming with magic weapons, and cast times are 45% faster".
+attWizardRank9Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank9LongDesc,progression,Perk,New,"45% Faster aiming with magic weapons, and cast times are 45% faster".
+attWizardRank10Desc,progression,Perk,New,You're a wizard Harry!
+attWizardRank10LongDesc,progression,Perk,New,"Gandalf would be proud! 50% Faster aiming with magic weapons, and cast times are 50% faster."
+
+bookSavagesNonsenseEncumbered,items,perk book,newKey,Savage's Nonsense Vol 1: Tight Package,,,,,
+bookSavagesNonsenseSneakCrossbow,items,perk book,newKey,Savage's Nonsense Vol 2: Telepoker,,,,,
+bookSavagesNonsenseLightArmor,items,perk book,newKey,Savage's Nonsense Vol 3: Honky Honky,,,,,
+bookSavagesNonsenseBrokenGlass,items,perk book,newKey,Savage's Nonsense Vol 4,,,,,
+bookSavagesNonsenseMoreAmmo,items,perk book,newKey,Savage's Nonsense Vol 5: Pointy Bits,,,,,
+bookSavagesNonsenseCola,items,perk book,newKey,Savage's Nonsense Vol 6: Cola Fiend,,,,,
+bookSavagesNonsenseAccuracy,items,perk book,newKey,Savage's Nonsense Vol 7: Embrace Your Fate,,,,,
+perkSavagesNonsense0Desc,progression,PerkBook,newKey,"Learn from loot hoarder extrodinaire Savage Harbinger on how to carry all the things and embrace your fate.",,,,,
+perkSavagesNonsense0Name,progression,PerkBook,newKey,"Savage's Books Of Nonsense",,,,,
+
+perkSavagesNonsenseEncumberedDesc,progression,PerkBook,newKey,"Your encumbered running speed is increased by 20%",,,,,
+perkSavagesNonsenseEncumberedLongDesc,progression,PerkBook,newKey,"Tight Package: Here's a trick I learned to keep my legs clear while carrying a full load. Think of your pack like a Tetris board...\n\nEncumbrance has a lessened effect on your run speed. Your run speed increases by 20% while encumbered.",,,,,
+
+perkSavagesNonsenseSneakCrossbowDesc,progression,PerkBook,newKey,"Sneak attacks with a crossbow deal 50% more damage.",,,,,
+perkSavagesNonsenseSneakCrossbowLongDesc,progression,PerkBook,newKey,"Telepoker: Reach out and poke someone! In the eye. From across the room. With a crossbow bolt.\n\nSneak attacks with a crossbow deal 50% more damage.",,,,,
+
+perkSavagesNonsenseLightArmorDesc,progression,PerkBook,newKey,"Sneak faster in light armor by 20%.",,,,,
+perkSavagesNonsenseLightArmorLongDesc,progression,PerkBook,newKey,"Honky Honky: Move aside, slowpoke! Get on point and stay on point before your slow and noisy friends wake the whole place up.\n\nWhile wearing a full array of light armor, your movement speed while sneaking is increased by 20%.",,,,,
+
+perkSavagesNonsenseBrokenGlassDesc,progression,PerkBook,newKey,"Walking with Broken Glass",,,,,
+perkSavagesNonsenseBrokenGlassLongDesc,progression,PerkBook,newKey,"Deal extra damage while carrying broken glass.",,,,,
+
+perkSavagesNonsenseMoreAmmoDesc,progression,PerkBook,newKey,"Find more bolts and arrows in loot.",,,,,
+perkSavagesNonsenseMoreAmmoLongDesc,progression,PerkBook,newKey,"Pointy Bits: Many scavengers leave bolts and arrows behind in the search for more bullets. Take advantage of their foolishness! Check their leavings. You will find more arrows and bolts in loot.",,,,,
+
+perkSavagesNonsenseColaDesc,progression,PerkBook,newKey,"Learn the secret of crafting cola.",,,,,
+perkSavagesNonsenseColaLongDesc,progression,PerkBook,newKey,"Cola Fiend: Sweet nectar of life! My first quest as a survivor of the apocalypse was to locate the secret to creating the world's most delicious cola. Heed me, fellow survivor. This potion will invigorate you and give you the fast hands you need in a moment of panic.",,,,,
+
+perkSavagesNonsenseAccuracyDesc,progression,PerkBook,newKey,"After being struck, your ranged accuracy increases for a time.",,,,,
+perkSavagesNonsenseAccuracyLongDesc,progression,PerkBook,newKey,"Embrace Your Fate: Those who survive know the secret: you must push beyond the panic. When pushed to the edge, a wellspring of calm fills you. In the finest tradition of action heroes, your aim drastically improves when you desperately need to hit. Your ranged accuracy increases after taking damage from a zombie.",,,,,
+buffEmbraceYourFateName,buffs,Buff,newKey,Embrace Your Fate
+buffEmbraceYourFateDesc,buffs,Buff,newKey,Your ranged accuracy is increased for a short time
+buffEmbraceYourFateTooltip,buffs,Buff,newKey,Your ranged accuracy is increased 
+
+perkSavagesNonsenseCompleteDesc,progression,PerkBook,newKey,Increased Regeneration.,,,,,
+perkSavagesNonsenseCompleteLongDesc,progression,PerkBook,newKey,Embrace Your Fate: Increased regeneration for 2 minutes after a bleed finishes naturally.,,,,,
+
+drinkJarCola,items,Food,--,Cola
+drinkJarColaDesc,items,Food,--,"Everyone's favorite cola in its classic glass... jar? Eh, close enough.\n\nIncreases reload speed by 30% for 4 minutes"
+
+resourceVanilla,items,Item,--,Vanilla
+resourceVanillaDesc,items,Item,--,Vanilla is acquired from destroying grass & small plants. Typically used to craft cola or potions.
+
+resourceCinnamon,items,Item,--,Cinnamon
+resourceCinnamonDesc,items,Item,--,Cinnamon can be acquired by harvesting woody plants. It's in the bark..
+
+reqWarrior01,progression,Perk,--,Warrior Level 1
+
+reqPummelPete02,progression,Perk,--,Pummel Pete Level 1
+reqPummelPete03,progression,Perk,--,Pummel Pete Level 2
+reqPummelPete04,progression,Perk,--,Pummel Pete Level 3
+reqPummelPete05,progression,Perk,--,Pummel Pete Level 4
+
+reqSkullCrusher02,progression,Perk,--,Skull Crusher Level 1
+reqSkullCrusher03,progression,Perk,--,Skull Crusher Level 2
+reqSkullCrusher04,progression,Perk,--,Skull Crusher Level 3
+reqSkullCrusher05,progression,Perk,--,Skull Crusher Level 4
+
+reqPackMule02,progression,Perk,--,Pack Mule Level 1
+reqPackMule03,progression,Perk,--,Pack Mule Level 2
+reqPackMule04,progression,Perk,--,Pack Mule Level 3
+reqPackMule05,progression,Perk,--,Pack Mule Level 4
+
+reqBrawler01,progression,Perk,--,Brawler Level 1
+reqBrawler02,progression,Perk,--,Brawler Level 2
+reqBrawler03,progression,Perk,--,Brawler Level 3
+reqBrawler04,progression,Perk,--,Brawler Level 4
+
+reqHeavyArmor01,progression,Perk,--,Heavy Armor Level 1
+reqHeavyArmor02,progression,Perk,--,Heavy Armor Level 2
+reqHeavyArmor03,progression,Perk,--,Heavy Armor Level 3
+reqHeavyArmor04,progression,Perk,--,Heavy Armor Level 4
+
+reqPainTolerance01,progression,Perk,--,Pain Tolerance Level 1
+reqPainTolerance02,progression,Perk,--,Pain Tolerance Level 2
+reqPainTolerance03,progression,Perk,--,Pain Tolerance Level 3
+reqPainTolerance04,progression,Perk,--,Pain Tolerance Level 4
+
+reqFlurryOfBlows01,progression,Perk,--,Flurry Of Blows Level 1
+reqFlurryOfBlows02,progression,Perk,--,Flurry Of Blows Level 2
+reqFlurryOfBlows03,progression,Perk,--,Flurry Of Blows Level 3
+reqFlurryOfBlows04,progression,Perk,--,Flurry Of Blows Level 4
+
+reqHunterLevel01,progression,Perk,--,Hunter Level 1
+
+reqJavelinMaster01,progression,Perk,--,Javelin Master Level 1
+reqJavelinMaster02,progression,Perk,--,Javelin Master Level 2
+reqJavelinMaster03,progression,Perk,--,Javelin Master Level 3
+reqJavelinMaster04,progression,Perk,--,Javelin Master Level 4
+
+reqAnimalTracker01,progression,Perk,--,Animal Tracker Level 1
+reqAnimalTracker02,progression,Perk,--,Animal Tracker Level 2
+reqAnimalTracker03,progression,Perk,--,Animal Tracker Level 3
+reqAnimalTracker04,progression,Perk,--,Animal Tracker Level 4
+
+reqTheHuntsman01,progression,Perk,--,The Huntsman Level 1
+reqTheHuntsman02,progression,Perk,--,The Huntsman Level 2
+reqTheHuntsman03,progression,Perk,--,The Huntsman Level 3
+reqTheHuntsman04,progression,Perk,--,The Huntsman Level 4
+
+reqLivingOffTheLand01,progression,Perk,--,Living Off The Land Level 1
+reqLivingOffTheLand02,progression,Perk,--,Living Off The Land Level 2
+reqLivingOffTheLand03,progression,Perk,--,Living Off The Land Level 3
+reqLivingOffTheLand04,progression,Perk,--,Living Off The Land Level 4
+
+reqArchery01,progression,Perk,--,Call Me Legolas Level 1
+reqArchery02,progression,Perk,--,Call Me Legolas Level 2
+reqArchery03,progression,Perk,--,Call Me Legolas Level 3
+reqArchery04,progression,Perk,--,Call Me Legolas Level 4
+
+reqGreenArrow01,progression,Perk,--,I Am The Green Arrow Level 1
+reqGreenArrow02,progression,Perk,--,I Am The Green Arrow Level 2
+reqGreenArrow03,progression,Perk,--,I Am The Green Arrow Level 3
+reqGreenArrow04,progression,Perk,--,I Am The Green Arrow Level 4
+
+reqLightArmor01,progression,Perk,--,Light Armor Level 1
+reqLightArmor02,progression,Perk,--,Light Armor Level 2
+reqLightArmor03,progression,Perk,--,Light Armor Level 3
+reqLightArmor04,progression,Perk,--,Light Armor Level 4
+
+reqGunslingerLevel01,progression,Perk,--,Gunslinger Level 1
+
+reqDeadEye01,progression,Perk,--,Dead Eye Level 1
+reqDeadEye02,progression,Perk,--,Dead Eye Level 2
+reqDeadEye03,progression,Perk,--,Dead Eye Level 3
+reqDeadEye04,progression,Perk,--,Dead Eye Level 4
+
+reqPenetrator01,progression,Perk,--,The Penetrator Level 1
+reqPenetrator02,progression,Perk,--,The Penetrator Level 2
+reqPenetrator03,progression,Perk,--,The Penetrator Level 3
+reqPenetrator04,progression,Perk,--,The Penetrator Level 4
+
+reqBoomstick01,progression,Perk,--,Boomstick Level 1
+reqBoomstick02,progression,Perk,--,Boomstick Level 2
+reqBoomstick03,progression,Perk,--,Boomstick Level 3
+reqBoomstick04,progression,Perk,--,Boomstick Level 4
+
+reqMachineGunner01,progression,Perk,--,Machine Gunner Level 1
+reqMachineGunner02,progression,Perk,--,Machine Gunner Level 2
+reqMachineGunner03,progression,Perk,--,Machine Gunner Level 3
+reqMachineGunner04,progression,Perk,--,Machine Gunner Level 4
+
+reqKa01,progression,Perk,--,Ka Level 1
+reqKa02,progression,Perk,--,Ka Level 2
+reqKa03,progression,Perk,--,Ka Level 3
+reqKa04,progression,Perk,--,Ka Level 4
+
+reqRunAndGun01,progression,Perk,--,Run And Gun Level 1
+reqRunAndGun02,progression,Perk,--,Run And Gun Level 2
+reqRunAndGun03,progression,Perk,--,Run And Gun Level 3
+reqRunAndGun04,progression,Perk,--,Run And Gun Level 4
+
+reqBlacksmithLevel01,progression,Perk,--,Blacksmith Level 1
+
+reqToolsOfTheTrade01,progression,Perk,--,Tools Of The Trade Level 1
+reqToolsOfTheTrade02,progression,Perk,--,Tools Of The Trade Level 2
+reqToolsOfTheTrade03,progression,Perk,--,Tools Of The Trade Level 3
+reqToolsOfTheTrade04,progression,Perk,--,Tools Of The Trade Level 4
+
+reqMiner69r01,progression,Perk,--,Miner 69'er Level 1
+reqMiner69r02,progression,Perk,--,Miner 69'er Level 2
+reqMiner69r03,progression,Perk,--,Miner 69'er Level 3
+reqMiner69r04,progression,Perk,--,Miner 69'er Level 4
+
+reqMotherLode01,progression,Perk,--,Mother Lode Level 1
+reqMotherLode02,progression,Perk,--,Mother Lode Level 2
+reqMotherLode03,progression,Perk,--,Mother Lode Level 3
+reqMotherLode04,progression,Perk,--,Mother Lode Level 4
+
+reqEngineer01,progression,Perk,--,Engineer Level 1
+
+reqDemolitionsExpert01,progression,Perk,--,Demolitions Expert Level 1
+reqDemolitionsExpert02,progression,Perk,--,Demolitions Expert Level 2
+reqDemolitionsExpert03,progression,Perk,--,Demolitions Expert Level 3
+reqDemolitionsExpert04,progression,Perk,--,Demolitions Expert Level 4
+
+reqSalvageOperations01,progression,Perk,--,Salvage Operations Level 1
+reqSalvageOperations02,progression,Perk,--,Salvage Operations Level 2
+reqSalvageOperations03,progression,Perk,--,Salvage Operations Level 3
+reqSalvageOperations04,progression,Perk,--,Salvage Operations Level 4
+
+reqElectrocutioner01,progression,Perk,--,Electrocutioner Level 1
+reqElectrocutioner02,progression,Perk,--,Electrocutioner Level 2
+reqElectrocutioner03,progression,Perk,--,Electrocutioner Level 3
+reqElectrocutioner04,progression,Perk,--,Electrocutioner Level 4
+
+reqTurrets01,progression,Perk,--,Turrets Level 1
+reqTurrets02,progression,Perk,--,Turrets Level 2
+reqTurrets03,progression,Perk,--,Turrets Level 3
+reqTurrets04,progression,Perk,--,Turrets Level 4
+
+reqAdvancedEngineering01,progression,Perk,--,Advanced Engineering Level 1
+reqAdvancedEngineering02,progression,Perk,--,Advanced Engineering Level 2
+reqAdvancedEngineering03,progression,Perk,--,Advanced Engineering Level 3
+reqAdvancedEngineering04,progression,Perk,--,Advanced Engineering Level 4
+
+reqGreaseMonkey01,progression,Perk,--,Grease Monkey Level 1
+reqGreaseMonkey02,progression,Perk,--,Grease Monkey Level 2
+reqGreaseMonkey03,progression,Perk,--,Grease Monkey Level 3
+reqGreaseMonkey04,progression,Perk,--,Grease Monkey Level 4
+
+reqYeahScience01,progression,Perk,--,Yeah Science Level 1
+reqYeahScience02,progression,Perk,--,Yeah Science Level 2
+reqYeahScience03,progression,Perk,--,Yeah Science Level 3
+reqYeahScience04,progression,Perk,--,Yeah Science Level 4
+
+reqThief01,progression,Perk,--,Thief Level 1
+
+reqLuckyLooter01,progression,Perk,--,Lucky Looter Level 1
+reqLuckyLooter02,progression,Perk,--,Lucky Looter Level 2
+reqLuckyLooter03,progression,Perk,--,Lucky Looter Level 3
+reqLuckyLooter04,progression,Perk,--,Lucky Looter Level 4
+
+reqRuleOneCardio01,progression,Perk,--,Rule One Cardio Level 1
+reqRuleOneCardio02,progression,Perk,--,Rule One Cardio Level 2
+reqRuleOneCardio03,progression,Perk,--,Rule One Cardio Level 3
+reqRuleOneCardio04,progression,Perk,--,Rule One Cardio Level 4
+
+reqBetterBarter01,progression,Perk,--,Better Barter Level 1
+reqBetterBarter02,progression,Perk,--,Better Barter Level 2
+reqBetterBarter03,progression,Perk,--,Better Barter Level 3
+reqBetterBarter04,progression,Perk,--,Better Barter Level 4
+
+reqDaringAdventurer01,progression,Perk,--,Daring Adventurer Level 1
+reqDaringAdventurer02,progression,Perk,--,Daring Adventurer Level 2
+reqDaringAdventurer03,progression,Perk,--,Daring Adventurer Level 3
+reqDaringAdventurer04,progression,Perk,--,Daring Adventurer Level 4
+
+reqCharismaticNature01,progression,Perk,--,Charismatic Nature Level 1
+reqCharismaticNature02,progression,Perk,--,Charismatic Nature Level 2
+reqCharismaticNature03,progression,Perk,--,Charismatic Nature Level 3
+reqCharismaticNature04,progression,Perk,--,Charismatic Nature Level 4
+
+reqAssassin01,progression,Perk,--,Assassin Level 1
+
+reqInfiltrator01,progression,Perk,--,Infiltrator Level 1
+reqInfiltrator02,progression,Perk,--,Infiltrator Level 2
+reqInfiltrator03,progression,Perk,--,Infiltrator Level 3
+reqInfiltrator04,progression,Perk,--,Infiltrator Level 4
+
+reqDeepCuts01,progression,Perk,--,Deep Cuts Level 1
+reqDeepCuts02,progression,Perk,--,Deep Cuts Level 2
+reqDeepCuts03,progression,Perk,--,Deep Cuts Level 3
+reqDeepCuts04,progression,Perk,--,Deep Cuts Level 4
+
+reqFanOfKnives01,progression,Perk,--,Fan Of Knives Level 1
+reqFanOfKnives02,progression,Perk,--,Fan Of Knives Level 2
+reqFanOfKnives03,progression,Perk,--,Fan Of Knives Level 3
+reqFanOfKnives04,progression,Perk,--,Fan Of Knives Level 4
+
+reqParkour01,progression,Perk,--,Parkour Level 1
+reqParkour02,progression,Perk,--,Parkour Level 2
+reqParkour03,progression,Perk,--,Parkour Level 3
+reqParkour04,progression,Perk,--,Parkour Level 4
+
+reqHiddenStrike01,progression,Perk,--,Hidden Strike Level 1
+reqHiddenStrike02,progression,Perk,--,Hidden Strike Level 2
+reqHiddenStrike03,progression,Perk,--,Hidden Strike Level 3
+reqHiddenStrike04,progression,Perk,--,Hidden Strike Level 4
+
+reqFromTheShadows01,progression,Perk,--,From The Shadows Level 1
+reqFromTheShadows02,progression,Perk,--,From The Shadows Level 2
+reqFromTheShadows03,progression,Perk,--,From The Shadows Level 3
+reqFromTheShadows04,progression,Perk,--,From The Shadows Level 4
+
+reqAlchemist01,progression,Perk,--,Alchemist Level 1
+
+reqMasterChef01,progression,Perk,--,Master Chef Level 1
+reqMasterChef02,progression,Perk,--,Master Chef Level 2
+reqMasterChef03,progression,Perk,--,Master Chef Level 3
+reqMasterChef04,progression,Perk,--,Master Chef Level 4
+
+reqWellInsulated01,progression,Perk,--,Well Insulated Level 1
+reqWellInsulated02,progression,Perk,--,Well Insulated Level 2
+reqWellInsulated03,progression,Perk,--,Well Insulated Level 3
+reqWellInsulated04,progression,Perk,--,Well Insulated Level 4
+
+reqHealingFactor01,progression,Perk,--,Healing Factor 1
+reqHealingFactor02,progression,Perk,--,Healing Factor 2
+reqHealingFactor03,progression,Perk,--,Healing Factor 3
+reqHealingFactor04,progression,Perk,--,Healing Factor 4
+
+reqSlowMetabolism01,progression,Perk,--,Slow Metabolism 1
+reqSlowMetabolism02,progression,Perk,--,Slow Metabolism 2
+reqSlowMetabolism03,progression,Perk,--,Slow Metabolism 3
+reqSlowMetabolism04,progression,Perk,--,Slow Metabolism 4
+
+meleeToolUncleSamHammerSchematic,items,Melee,newKey,Uncle Sam Hammer Schematic,,,,,
+meleeToolUncleSamHammer,items,Melee,newKey,Uncle Sam Hammer,,,,,
+meleeToolUncleSamHammerDesc,items,Melee,newKey,"I wanna be, your sledge hammer.\nBe FANCY like that UncleSam guy and let the PUNishment Begin!\n\nRepair with a Repair Kit.\nScrap to Steel Sledgehammer parts.",,,,,
+
+meleeToolBroadswordSchematic,items,Melee,newKey,Broadsword Schematic,,,,,
+meleeToolBroadsword,items,Melee,newKey,Broadsword,,,,,
+meleeToolBroadswordDesc,items,Melee,newKey,Be like a midieval knight in the apocolypse! Make sure to put the pointy end into the other guy.,,,,,
+
+meleeToolBroadswordBlade,items,Melee,--,Broadsword Blade
+meleeToolBroadswordBladeDesc,items,Melee,--,"The blade for the broadsword, duh!"
+
+resourceScrapZinc,items,Item,--,Zinc
+resourceScrapZincDesc,items,Item,--,Zinc is acquired from stone and other ores. Mixed with copper to make Brass.
+
+resourceScrapCopper,items,Item,--,Copper
+resourceScrapCopperDesc,items,Item,--,Copper is acquired from stone. Mixed with Zinc to make Brass.
+
+resourceScrapCarbon,items,Item,--,Carbon
+resourceScrapCarbonDesc,items,Item,--,Carbon is acquired from stone, and is used to make Steel.
+
+ammoArrowGlass,items,Ammo,--,Glass Arrows
+ammoArrowGlassDesc,items,Ammo,--,"Put that broken glass to good use!\nGlass arrows do a bit more damage than stone ones, but always break and cause bleed damage"
+
+wizardStaffWood,items,Melee,--,Wood Wizard Staff
+wizardStaffWoodDesc,items,Melee,--,I'm a wizard with this wood.
+
+ammoIceBall,items,Ammo,--,Ice Ball
+ammoIceBallDesc,items,Ammo,--,Cold, hard... balls?
+
+ammoFireBall,items,Ammo,--,Fire Ball
+ammoFireBallDesc,items,Ammo,--,"Goodness, gracious, great balls of Fire!"
+
+ammoArrowThunder,items,Ammo,--,Thunder Arrows
+ammoArrowThunderDesc,items,Ammo,--,Thunder arrows make a loud boom when they strike your target. You've never *heard* any complaints from your allies. Heh heh.

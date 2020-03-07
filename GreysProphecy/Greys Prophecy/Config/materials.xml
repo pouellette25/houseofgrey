@@ -1,0 +1,39 @@
+﻿<greysprophecy>
+  <append xpath="/materials">
+    <material id="Mcopper">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="copper"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="20"/>
+      <property name="MaxDamage" value="200"/>
+      <property name="Experience" value="2"/>
+    </material>
+
+    <material id="Mzinc">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="zinc"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="20"/>
+      <property name="MaxDamage" value="200"/>
+      <property name="Experience" value="2"/>
+    </material>
+    
+    <material id="Mcarbon">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="carbon"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="20"/>
+      <property name="MaxDamage" value="200"/>
+      <property name="Experience" value="2"/>
+    </material>
+  </append>
+</greysprophecy>

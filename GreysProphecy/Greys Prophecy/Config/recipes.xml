@@ -1,0 +1,86 @@
+﻿<greysprophecy>
+  <!-- remove the increase of parts for recipes -->
+  <setattribute xpath="/recipes/recipe" name="use_ingredient_modifier">false</setattribute>
+  <append xpath="/recipes/recipe[@name='resourceForgedSteel']">
+    <ingredient name="unit_carbon" count="10"/>
+  </append>
+
+  <append xpath="/recipes">
+    <recipe name="drinkJarCola" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="resourceCropCoffeeBeans" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceVanilla" count="10"/>
+      <ingredient name="resourceCinnamon" count="10"/>
+    </recipe>
+
+    <recipe name="ammoArrowStone" count="1">
+      <ingredient name="resourceRockSmall" count="1"/>
+      <ingredient name="resourceWood" count="1"/>
+      <ingredient name="resourceScrapPolymers" count="1"/>
+    </recipe>
+    <recipe name="ammoArrowGlass" count="1">
+      <ingredient name="resourceBrokenGlass" count="1"/>
+      <ingredient name="resourceWood" count="1"/>
+      <ingredient name="resourceFeather" count="1"/>
+    </recipe>
+    <recipe name="ammoArrowGlass" count="1">
+      <ingredient name="resourceBrokenGlass" count="1"/>
+      <ingredient name="resourceWood" count="1"/>
+      <ingredient name="resourceScrapPolymers" count="1"/>
+    </recipe>
+
+    <recipe name="meleeClubShugg" count="1" tags="learnable,perkPummelPete">
+      <ingredient name="resourceScrapIron" count="100"/>
+      <ingredient name="resourceWood" count="10"/>
+      <ingredient name="resourceLeather" count="1"/>
+      <ingredient name="resourceDuctTape" count="1"/>
+      <ingredient name="resourceForgedIron" count="5"/>
+      <ingredient name="resourceGlue" count="5"/>
+      <ingredient name="resourceMechanicalParts" count="5"/>
+      <ingredient name="resourceSpring" count="10"/>
+    </recipe>
+
+    <recipe name="drinkJarFramersCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="5"/>
+      <ingredient name="drinkJarBoiledWater" count="2"/>
+    </recipe>
+
+    <recipe name="meleeToolUncleSamHammer" count="1" craft_area="workbench" tags="learnable,perkSkullCrusher">
+      <ingredient name="meleeToolSledgehammerSteelParts" count="5"/>
+      <ingredient name="resourceForgedSteel" count="10"/>
+      <ingredient name="resourceWood" count="10"/>
+      <ingredient name="resourceLeather" count="3"/>
+      <ingredient name="resourceDuctTape" count="3"/>
+    </recipe>
+
+    <recipe name="meleeToolBroadsword" count="1" craft_area="workbench" tags="learnable">
+      <ingredient name="meleeToolBroadswordBlade" count="1"/>
+      <ingredient name="resourceLeather" count="3"/>
+      <ingredient name="resourceDuctTape" count="3"/>
+    </recipe>
+
+    <recipe name="meleeToolBroadswordBlade" count="1" material_based="true" craft_area="blacksmithForge">
+      <ingredient name="unit_iron" count="200"/>
+      <ingredient name="unit_carbon" count="50"/>
+      <ingredient name="unit_clay" count="100"/>
+    </recipe>
+
+    <recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="blacksmithForge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_copper" count="15"/>
+      <ingredient name="unit_zinc" count="3"/>
+      <ingredient name="unit_clay" count="1"/>
+    </recipe>
+
+    <recipe name="resourceScrapZinc" count="1" material_based="true" craft_area="blacksmithForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+      <ingredient name="unit_zinc" count="1"/>
+    </recipe>
+
+    <recipe name="resourceScrapCopper" count="1" material_based="true" craft_area="blacksmithForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+      <ingredient name="unit_copper" count="1"/>
+    </recipe>
+
+    <recipe name="resourceScrapCarbon" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+      <ingredient name="unit_carbon" count="1"/>
+    </recipe>
+  </append>
+</greysprophecy>

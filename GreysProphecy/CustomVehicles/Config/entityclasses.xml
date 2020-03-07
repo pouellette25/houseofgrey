@@ -2,7 +2,7 @@
   <append xpath="/entity_classes">
     <entity_class name="vehicleSemiTruck">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntitySemiTruck, Mods"/>
+      <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
       <property name="Prefab" value="#@modfolder:Resources/GPVehicles.unity3d?SemiTruck"/>
       <property name="ModelType" value="Standard"/>

@@ -1,0 +1,26 @@
+﻿<greysprophecy>
+  <remove xpath="/Sounds/SoundDataNode[@name='junkturret_fire']" /> 
+  <append xpath="/Sounds">
+    <SoundDataNode name="junkturret_fire">
+      <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+      <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+      <Noise ID="0" noise="35" time="2" heat_map_strength="0.25" heat_map_time="180"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPSounds.unity3d?junkturret_fire1"/>
+      <LocalCrouchVolumeScale value="1"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="5"/>
+      <MaxRepeatRate value="0.001"/>
+    </SoundDataNode>
+    <SoundDataNode name="bat_HomeRun">
+      <AudioSource name="Sounds/AudioSource_Melee"/>
+      <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+      <AudioClip ClipName="#@modfolder:Resources/GPSounds.unity3d?BallHitCheer"/>
+      <LocalCrouchVolumeScale value="0.25"/>
+      <CrouchNoiseScale value="0.05"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxRepeatRate value="0.01"/>
+    </SoundDataNode>
+  </append>
+</greysprophecy>

@@ -1,0 +1,67 @@
+﻿<greysprophecy>
+  <append xpath="/item_modifiers">
+    <item_modifier name="modThorns" installable_tags="armorChest,armorLegs" modifier_tags="resistance" type="attachment">
+      <property name="CustomIcon" value="modThorns"/>
+      <property name="UnlockedBy" value="bookTheWizardsToolkitThorns"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Group" value="Mods"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+      <effect_group tiered="false">
+        <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+        <triggered_effect trigger="onOtherAttackedSelf" target="other" action="AddBuff" buff="buffInjuryBleedingZombie" />
+      </effect_group>
+    </item_modifier>
+
+    <item_modifier name="modShockArmor" installable_tags="armorChest" modifier_tags="resistance" type="attachment">
+      <property name="CustomIcon" value="modShockRobe"/>
+      <property name="UnlockedBy" value="perkEnchanting"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Group" value="Mods"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+      <effect_group tiered="false">
+        <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+        <triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" buff="buffShocked" />
+      </effect_group>
+    </item_modifier>
+
+    <item_modifier name="modIceWeapon" installable_tags="melee" modifier_tags="damage" type="attachment">
+      <property name="CustomIcon" value="modIceWeapon"/>
+      <property name="UnlockedBy" value="bookTheWizardsToolkitIceWeapon"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Group" value="Mods"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+      <effect_group tiered="false">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+        <triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffChilled"/>
+      </effect_group>
+      <effect_group tiered="false" name="Power Attack">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="40"/>
+        <triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffChilled"/>
+      </effect_group>
+      <effect_group tiered="false" name="Always extend bleeding">
+        <requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
+        <triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffChilled"/>
+        <triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffChilled"/>
+      </effect_group>
+    </item_modifier>
+
+    <item_modifier name="modShockArrows" installable_tags="perkArchery" modifier_tags="damage" type="attachment">
+      <property name="CustomIcon" value="modShockArrow"/>
+      <property name="UnlockedBy" value="bookTheWizardsToolkitShockArrows"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Group" value="Mods"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+      <effect_group tiered="false">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked" />
+      </effect_group>
+
+    </item_modifier>
+  </append>
+</greysprophecy>
