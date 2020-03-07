@@ -1,0 +1,8 @@
+﻿<greysprophecy>
+  <append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesRare']">
+    <item name="vehicleSemiTruckChassisSchematic"/>
+    <item name="vehicleSemiTruckAccessoriesSchematic"/>
+    <item name="vehicleGeneralLeeChassisSchematic"/>
+    <item name="vehicleGeneralLeeAccessoriesSchematic"/>
+  </append>
+</greysprophecy>

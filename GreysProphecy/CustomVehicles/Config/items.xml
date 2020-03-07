@@ -1,5 +1,41 @@
 ﻿<greysprophecy>
   <append xpath="/items">
+    <item name="vehicleSemiTruckChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="UnlockedBy" value="vehicleSemiTruckChassisSchematic"/>
+    </item>
+
+    <item name="vehicleSemiTruckAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="UnlockedBy" value="vehicleSemiTruckAccessoriesSchematic"/>
+    </item>
+
+    <item name="vehicleSemiTruckChassisSchematic">
+      <property name="Extends" value="schematicNoQualityMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="vehicleSemiTruckChassis"/>
+      <property name="Unlocks" value="vehicleSemiTruckChassis"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleSemiTruckChassis" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+      </effect_group>
+    </item>
+
+    <item name="vehicleSemiTruckAccessoriesSchematic">
+      <property name="Extends" value="schematicNoQualityMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="vehicleSemiTruckAccessories"/>
+      <property name="Unlocks" value="vehicleSemiTruckAccessories"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleSemiTruckAccessories" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+      </effect_group>
+    </item>
+    
     <item name="vehicleSemiTruck">
       <property name="Extends" value="vehicleMinibikePlaceable" />
       <property name="CustomIcon" value="vehicleSemiTruck" />
@@ -12,6 +48,42 @@
       </property>
       <effect_group name="Base Effects">
         <passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,120" />
+      </effect_group>
+    </item>
+
+    <item name="vehicleGeneralLeeChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="UnlockedBy" value="vehicleGeneralLeeSchematicChassisSchematic"/>
+    </item>
+
+    <item name="vehicleGeneralLeeAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="UnlockedBy" value="vehicleGeneralLeeSchematicAccessoriesSchematic"/>
+    </item>
+
+    <item name="vehicleGeneralLeeChassisSchematic">
+      <property name="Extends" value="schematicNoQualityMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="vehicleGeneralLeeChassis"/>
+      <property name="Unlocks" value="vehicleGeneralLeeChassis"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGeneralLeeChassis" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+      </effect_group>
+    </item>
+
+    <item name="vehicleGeneralLeeAccessoriesSchematic">
+      <property name="Extends" value="schematicNoQualityMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="vehicleGeneralLeeAccessories"/>
+      <property name="Unlocks" value="vehicleGeneralLeeAccessories"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGeneralLeeAccessories" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
       </effect_group>
     </item>
 
