@@ -1,7 +1,15 @@
-﻿Key,Source,Context,Changes,English
-vehicleGeneralLee,vehicles,vehicle,,General Lee,,,,,
-vehicleGeneralLeePlaceable,vehicles,vehicle,,General Lee,,,,,
-vehicleGeneralLeePlaceableDesc,vehicles,vehicle,,Ride around in style like the good ole boys used to!
+﻿Key,Source,Context,English
+vehicleGeneralLee,vehicles,vehicle,General Lee
+vehicleGeneralLeePlaceable,vehicles,vehicle,General Lee
+vehicleGeneralLeePlaceableDesc,vehicles,vehicle,Ride around in style like the good ole boys used to!
+vehicleGeneralLeeAccessories,vehicles,vehicle,General Lee Accessories
+vehicleGeneralLeeChassis,vehicles,vehicle,General Lee Chassis
+vehicleGeneralLeeChassisSchematic,vehicles,vehicle,General Lee Chassis Schematic
+vehicleGeneralLeeAccessoriesSchematic,vehicles,vehicle,General Lee Accessories Schematic
 
-vehicleSemiTruck,vehicles,vehicle,,Semi Truck,,,,,
-vehicleSemiTruckPlaceable,vehicles,vehicle,,Semi Truck,,,,,
+vehicleSemiTruck,vehicles,vehicle,Semi Truck
+vehicleSemiTruckPlaceable,vehicles,vehicle,Semi Truck
+vehicleSemiTruckAccessories,vehicles,vehicle,Semi Truck Accessories
+vehicleSemiTruckChassis,vehicles,vehicle,Semi Truck Chassis
+vehicleSemiTruckChassisSchematic,vehicles,vehicle,Semi Truck Chassis Schematic
+vehicleSemiTruckAccessoriesSchematic,vehicles,vehicle,Semi Truck Accessories Schematic

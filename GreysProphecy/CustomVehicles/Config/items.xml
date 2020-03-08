@@ -36,7 +36,7 @@
       </effect_group>
     </item>
     
-    <item name="vehicleSemiTruck">
+    <item name="vehicleSemiTruckPlaceable">
       <property name="Extends" value="vehicleMinibikePlaceable" />
       <property name="CustomIcon" value="vehicleSemiTruck" />
       <property name="DescriptionKey" value="Once used to transport goods is now only useful to drive around and loot with!" />
@@ -54,13 +54,13 @@
     <item name="vehicleGeneralLeeChassis">
       <property name="Extends" value="vehicleWheels"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="UnlockedBy" value="vehicleGeneralLeeSchematicChassisSchematic"/>
+      <property name="UnlockedBy" value="vehicleGeneralLeeChassisSchematic"/>
     </item>
 
     <item name="vehicleGeneralLeeAccessories">
       <property name="Extends" value="vehicleBicycleHandlebars"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="UnlockedBy" value="vehicleGeneralLeeSchematicAccessoriesSchematic"/>
+      <property name="UnlockedBy" value="vehicleGeneralLeeAccessoriesSchematic"/>
     </item>
 
     <item name="vehicleGeneralLeeChassisSchematic">

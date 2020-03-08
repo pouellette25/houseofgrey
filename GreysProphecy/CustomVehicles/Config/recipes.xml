@@ -1,0 +1,51 @@
+﻿<greysprophecy>
+  <append xpath="/recipes">
+    <recipe name="vehicleSemiTruckAccessories" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="33"/>
+      <ingredient name="resourceHeadlight" count="4"/>
+      <ingredient name="resourceMetalPipe" count="50"/>
+      <ingredient name="resourceSpring" count="4"/>
+      <ingredient name="resourceMechanicalParts" count="16"/>
+    </recipe>
+
+    <recipe name="vehicleSemiTruckChassis" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="250"/>
+      <ingredient name="resourceMechanicalParts" count="40"/>
+      <ingredient name="resourceDuctTape" count="20"/>
+      <ingredient name="resourceLeather" count="40"/>
+      <ingredient name="resourceElectricParts" count="16"/>
+    </recipe>
+
+    <recipe name="vehicleSemiTruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleWheels" count="6"/>
+      <ingredient name="vehicleSemiTruckChassis" count="1"/>
+      <ingredient name="vehicleSemiTruckAccessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+
+    <recipe name="vehicleGeneralLeeAccessories" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="33"/>
+      <ingredient name="resourceHeadlight" count="4"/>
+      <ingredient name="resourceMetalPipe" count="50"/>
+      <ingredient name="resourceSpring" count="4"/>
+      <ingredient name="resourceMechanicalParts" count="16"/>
+    </recipe>
+
+    <recipe name="vehicleGeneralLeeChassis" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="250"/>
+      <ingredient name="resourceMechanicalParts" count="40"/>
+      <ingredient name="resourceDuctTape" count="20"/>
+      <ingredient name="resourceLeather" count="40"/>
+      <ingredient name="resourceElectricParts" count="16"/>
+    </recipe>
+
+    <recipe name="vehicleGeneralLeePlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleWheels" count="4"/>
+      <ingredient name="vehicleGeneralLeeChassis" count="1"/>
+      <ingredient name="vehicleGeneralLeeAccessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+  </append>
+</greysprophecy>
