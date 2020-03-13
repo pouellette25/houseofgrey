@@ -1305,6 +1305,37 @@
     <!-- End Gunslinger-->
 
     <!-- Blacksmith -->
+    <perk name="perkAdvancedBlacksmithing" parent="attBlacksmith" name_key="perkAdvancedBlacksmithingName" desc_key="perkAdvancedBlacksmithingDesc" icon="ui_game_symbol_tool">
+      <level_requirements level="1">
+        <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqBlacksmithLevel01"/>
+      </level_requirements>
+      <level_requirements level="2">
+        <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqAdvancedBlacksmithing01"/>
+      </level_requirements>
+      <!--<level_requirements level="3">
+        <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqAdvancedBlacksmithing02"/>
+      </level_requirements>
+      <level_requirements level="4">
+        <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqAdvancedBlacksmithing03"/>
+      </level_requirements>
+      <level_requirements level="5">
+        <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqAdvancedBlacksmithing04"/>
+      </level_requirements>-->
+
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="blacksmithForge"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="meleeToolPBsPickaxe"/>
+      </effect_group>
+
+      <effect_group>
+        <effect_description level="1" desc_key="perkAdvancedBlacksmithingRank1Desc" long_desc_key="perkAdvancedBlacksmithingRank1LongDesc"/>
+        <effect_description level="2" desc_key="perkAdvancedBlacksmithingRank2Desc" long_desc_key="perkAdvancedBlacksmithingRank2LongDesc"/>
+        <!--<effect_description level="3" desc_key="perkAdvancedBlacksmithingRank3Desc" long_desc_key="perkAdvancedBlacksmithingRank3LongDesc"/>
+        <effect_description level="4" desc_key="perkAdvancedBlacksmithingRank4Desc" long_desc_key="perkAdvancedBlacksmithingRank4LongDesc"/>
+        <effect_description level="5" desc_key="perkAdvancedBlacksmithingRank5Desc" long_desc_key="perkAdvancedBlacksmithingRank5LongDesc"/>-->
+      </effect_group>
+    </perk>
+    
     <perk name="perkToolsOfTheTrade" parent="attBlacksmith" name_key="perkToolsOfTheTradeName" desc_key="perkToolsOfTheTradeDesc" icon="ui_game_symbol_tool">
       <level_requirements level="1">
         <requirement name="ProgressionLevel" progression_name="attBlacksmith" operation="GTE" value="1" desc_key="reqBlacksmithLevel01"/>
@@ -3261,6 +3292,7 @@
     <!-- Embrace your fate -->
     <perk name="perkSavagesNonsenseEncumbered" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseEncumberedDesc" long_desc_key="perkSavagesNonsenseEncumberedLongDesc">
       <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseEncumbered" operation="Equals" value="1"/>
         <requirement name="HasBuff" buff="buffEncumberedInv"/>
         <passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
         <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
@@ -3268,6 +3300,7 @@
     </perk>
     <perk name="perkSavagesNonsenseSneakCrossbow" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseSneakCrossbowDesc" long_desc_key="perkSavagesNonsenseSneakCrossbowLongDesc">
       <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseSneakCrossbow" operation="Equals" value="1"/>
         <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
         <requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
         <requirement name="HoldingItemHasTags" tags="perkArchery"/>
@@ -3277,16 +3310,16 @@
     </perk>
     <perk name="perkSavagesNonsenseLightArmor" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseLightArmorDesc" long_desc_key="perkSavagesNonsenseLightArmorLongDesc">
       <effect_group>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseLightArmor" operation="Equals" value="1"/>
         <requirement name="WornItems" tags="lightArmorPenalty" operation="Equals" value="5"/>
         <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
         <passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
         <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
       </effect_group>
     </perk>
-    <perk name="perkSavagesNonsenseBrokenGlass" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsBrokenGlass" desc_key="perkSavagesNonsenseBrokenGlassDesc" long_desc_key="perkSavagesNonsenseBrokenGlassLongDesc">
+    <perk name="perkSavagesNonsenseGoingDeep" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" name_key="bookSavagesNonsenseGoingDeep" desc_key="perkSavagesNonsenseGoingDeepDesc" long_desc_key="perkSavagesNonsenseGoingDeepLongDesc">
       <effect_group>
-        <triggered_effect trigger="onSelfItemLooted" action="LogMessage" message="STuff and things are happening"/>
-        <triggered_effect trigger="onSelfItemGained" action="LogMessage" message="Gained Something"/>
+        <passive_effect name="BlockDamage" operation="perc_add" level="1" value=".1" tags="digdeep"/>
       </effect_group>
     </perk>
     <perk name="perkSavagesNonsenseMoreAmmo" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseMoreAmmoDesc" long_desc_key="perkSavagesNonsenseMoreAmmoLongDesc">
@@ -3308,7 +3341,25 @@
       </effect_group>
     </perk>
     <perk name="perkSavagesNonsenseComplete" parent="skillSavagesNonsense" max_level="1" base_skill_point_cost="0" desc_key="perkSavagesNonsenseCompleteDesc" long_desc_key="perkSavagesNonsenseCompleteLongDesc">
-
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkArchery"/>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseComplete" operation="Equals" value="1"/>
+        <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="5" />
+        <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="maxHealthIncrease" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffProcessConsumables" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkArchery"/>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseComplete" operation="Equals" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalHealthAmount" operation="add" value="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healthIncrease" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffProcessConsumables" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HoldingItemHasTags" tags="perkArchery"/>
+        <requirement name="ProgressionLevel" progression_name="perkSavagesNonsenseComplete" operation="Equals" value="1"/>
+        <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+      </effect_group>
     </perk>
 
     <!-- The Wizards Toolkit -->

@@ -52,7 +52,7 @@
       <property name="DescriptionKey" value="perkSavagesNonsenseLightArmorLongDesc"/>
       <property name="Unlocks" value="perkSavagesNonsenseLightArmor"/>
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="bookSavagesNonsenseLightArmor" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseLightArmor" level="-1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
           <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
@@ -62,12 +62,12 @@
         </triggered_effect>
       </effect_group>
     </item>
-    <item name="bookSavagesNonsenseBrokenGlass">
+    <item name="bookSavagesNonsenseGoingDeep">
       <property name="Extends" value="bookSavagesNonsenseEncumbered"/>
-      <property name="DescriptionKey" value="perkSavagesNonsenseBrokenGlassLongDesc"/>
-      <property name="Unlocks" value="perkSavagesNonsenseBrokenGlass"/>
+      <property name="DescriptionKey" value="perkSavagesNonsenseGoingDeepLongDesc"/>
+      <property name="Unlocks" value="perkSavagesNonsenseGoingDeep"/>
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseBrokenGlass" level="-1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseGoingDeep" level="-1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSavagesNonsenseComplete" level="-1">
           <requirement name="PerksUnlocked" skill_name="skillSavagesNonsense" operation="GTE" value="7"/>
@@ -499,6 +499,84 @@
         <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
         <passive_effect name="StaminaLoss" operation="base_add" value="55.2" tags="secondary"/>
         <passive_effect name="DismemberChance" operation="base_add" value=".5" tags="secondary"/>
+      </effect_group>
+    </item>
+
+    <item name="meleeToolPBsPickaxe">
+      <property name="Extends" value="meleeToolPickaxeSteel" />
+      <property name="CustomIcon" value="meleeToolPBsPickaxe" />
+      <property name="DisplayType" value="melee"/>
+      <property name="HoldType" value="63"/>
+      <property name="CreativeMode" value="Player" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPWeapons.unity3d?PBsPickaxe.prefab"/>
+      <property name="RepairTools" value="resourceRepairKit"/>
+      <property name="EconomicValue" value="700"/>
+      <property name="Material" value="MmeleeToolAllSteel"/>
+      <property name="Weight" value="6"/>
+      <property name="UnlockedBy" value="perkAdvancedBlacksmithing"/>
+      <property class="Action0">
+        <property name="GrazeStart" value=".5"/>
+        <property name="GrazeEnd" value=".6"/>
+        <property name="SwingDegrees" value="65"/>
+        <property name="SwingAngle" value="180"/>
+        <property name="UseGrazingHits" value="true"/>
+        <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+        <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      </property>
+      <property class="Action1">
+        <property name="UsePowerAttackAnimation" value="true"/>
+        <property name="UseGrazingHits" value="true"/>
+        <property name="GrazeStart" value=".4"/>
+        <property name="GrazeEnd" value=".48"/>
+        <property name="SwingDegrees" value="110"/>
+        <property name="SwingAngle" value="90"/>
+        <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+        <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      </property>
+      <property name="Group" value="Tools/Traps"/>
+      <effect_group name="meleeToolPickaxeSteel">
+        <passive_effect name="EntityDamage" operation="base_set" value="23.2"/>
+        <!-- meleeToolPickaxeSteel -->
+        <passive_effect name="BlockDamage" operation="base_set" value="62.8"/>
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+        <!-- Gazz change 47 to 55 -->
+        <passive_effect name="StaminaLoss" operation="base_set" value="17" tags="primary"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="350,1287" tier="1,6" tags="perkMiner69r"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+        <passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+        <passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+        <passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+        <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/>
+        <!-- random EntityDmg -->
+        <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+        <!-- tier bonus -->
+        <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/>
+        <!-- random BlockDmg -->
+        <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+        <!-- tier bonus -->
+        <passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/>
+        <!-- random DegMax -->
+        <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/>
+        <!-- random APM -->
+        <passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/>
+        <!-- random StamLoss -->
+
+        <!--<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="earth"/>-->
+        <passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+      </effect_group>
+
+      <effect_group name="Power Attack">
+        <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+        <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+        <passive_effect name="StaminaLoss" operation="base_add" value="34.1" tags="secondary"/>
       </effect_group>
     </item>
     

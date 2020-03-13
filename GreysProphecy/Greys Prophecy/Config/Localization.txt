@@ -169,6 +169,19 @@ attBlacksmithRank9LongDesc,progression,Perk,New,You are now a cage gladiator and
 attBlacksmithRank10Desc,progression,Perk,New,Cage Gladiator,,,,,
 attBlacksmithRank10LongDesc,progression,Perk,New,You are now a cage gladiator and have risen to the highest athletic prowess possible. Reduce melee and tool stamina usage by 50%.\nKilling blows grant 40 stamina.,,,,,
 
+perkAdvancedBlacksmithingName,progression,Perk,--,"Advanced Blacksmith"
+perkAdvancedBlacksmithingDesc,progression,Perk,--,"A finely crafted tool makes a job easier. Let's create some ease."
+perkAdvancedBlacksmithingRank1Desc,progression,Perk,--,"Blacksmith Forge"
+perkAdvancedBlacksmithingRank2Desc,progression,Perk,--,"PB's Spartan Pickaxe"
+perkAdvancedBlacksmithingRank3Desc,progression,Perk,--,"Machinist"
+perkAdvancedBlacksmithingRank4Desc,progression,Perk,--,"Master Dwarven Craftsman"
+perkAdvancedBlacksmithingRank5Desc,progression,Perk,--,"The All-Hammer"
+perkAdvancedBlacksmithingRank1LongDesc,progression,Perk,--,"Unlocks the Blacksmith forge"
+perkAdvancedBlacksmithingRank2LongDesc,progression,Perk,--,"You can now craft PBs Spartan Pickaxe"
+perkAdvancedBlacksmithingRank3LongDesc,progression,Perk,--,"Your experience with creating tools from lesser materials and scavenged parts has given you insights into crafting your own parts.\nCraft quality 4 good tools.\nYou can now craft tool parts and melee weapon parts."
+perkAdvancedBlacksmithingRank4LongDesc,progression,Perk,--,"Every tool you craft is a worthy offering to the All-Hammer.\nCraft quality 5 great tools."
+perkAdvancedBlacksmithingRank5LongDesc,progression,Perk,--,"Moradin, dwarven god of craftsmanship respects you as an equal.\nCraft quality 6 epic tools."
+
 perkToolsOfTheTradeName,progression,Perk,--,"Tools of the Trade"
 perkToolsOfTheTradeDesc,progression,Perk,--,"A finely crafted tool makes a job easier. Let's create some ease."
 perkToolsOfTheTradeRank1Desc,progression,Perk,--,"Early Hominid"
@@ -337,7 +350,7 @@ attWizardRank10LongDesc,progression,Perk,New,"Gandalf would be proud! 50% Faster
 bookSavagesNonsenseEncumbered,items,perk book,newKey,Savage's Nonsense Vol 1: Tight Package,,,,,
 bookSavagesNonsenseSneakCrossbow,items,perk book,newKey,Savage's Nonsense Vol 2: Telepoker,,,,,
 bookSavagesNonsenseLightArmor,items,perk book,newKey,Savage's Nonsense Vol 3: Honky Honky,,,,,
-bookSavagesNonsenseBrokenGlass,items,perk book,newKey,Savage's Nonsense Vol 4,,,,,
+bookSavagesNonsenseGoingDeep,items,perk book,newKey,Savage's Nonsense Vol 4: Going Deep,,,,,
 bookSavagesNonsenseMoreAmmo,items,perk book,newKey,Savage's Nonsense Vol 5: Pointy Bits,,,,,
 bookSavagesNonsenseCola,items,perk book,newKey,Savage's Nonsense Vol 6: Cola Fiend,,,,,
 bookSavagesNonsenseAccuracy,items,perk book,newKey,Savage's Nonsense Vol 7: Embrace Your Fate,,,,,
@@ -353,8 +366,8 @@ perkSavagesNonsenseSneakCrossbowLongDesc,progression,PerkBook,newKey,"Telepoker:
 perkSavagesNonsenseLightArmorDesc,progression,PerkBook,newKey,"Sneak faster in light armor by 20%.",,,,,
 perkSavagesNonsenseLightArmorLongDesc,progression,PerkBook,newKey,"Honky Honky: Move aside, slowpoke! Get on point and stay on point before your slow and noisy friends wake the whole place up.\n\nWhile wearing a full array of light armor, your movement speed while sneaking is increased by 20%.",,,,,
 
-perkSavagesNonsenseBrokenGlassDesc,progression,PerkBook,newKey,"Walking with Broken Glass",,,,,
-perkSavagesNonsenseBrokenGlassLongDesc,progression,PerkBook,newKey,"Deal extra damage while carrying broken glass.",,,,,
+perkSavagesNonsenseGoingDeepDesc,progression,PerkBook,newKey,"Increased block damage to dirt and stone.",,,,,
+perkSavagesNonsenseGoingDeepLongDesc,progression,PerkBook,newKey,"Going Deep: A deep, wide trench is fundamental to every good base design. Here's my tip on making the earth move.\n\nYou deal increased (10%) block damage to dirt and stone.",,,,,
 
 perkSavagesNonsenseMoreAmmoDesc,progression,PerkBook,newKey,"Find more bolts and arrows in loot.",,,,,
 perkSavagesNonsenseMoreAmmoLongDesc,progression,PerkBook,newKey,"Pointy Bits: Many scavengers leave bolts and arrows behind in the search for more bullets. Take advantage of their foolishness! Check their leavings. You will find more arrows and bolts in loot.",,,,,
@@ -487,6 +500,11 @@ reqRunAndGun03,progression,Perk,--,Run And Gun Level 3
 reqRunAndGun04,progression,Perk,--,Run And Gun Level 4
 
 reqBlacksmithLevel01,progression,Perk,--,Blacksmith Level 1
+
+reqAdvancedBlacksmithing01,progression,Perk,--,Advanced Blacksmithing Level 1
+reqAdvancedBlacksmithing02,progression,Perk,--,Advanced Blacksmithing Level 2
+reqAdvancedBlacksmithing03,progression,Perk,--,Advanced Blacksmithing Level 3
+reqAdvancedBlacksmithing04,progression,Perk,--,Advanced Blacksmithing Level 4
 
 reqToolsOfTheTrade01,progression,Perk,--,Tools Of The Trade Level 1
 reqToolsOfTheTrade02,progression,Perk,--,Tools Of The Trade Level 2
@@ -655,3 +673,6 @@ ammoFireBallDesc,items,Ammo,--,"Goodness, gracious, great balls of Fire!"
 
 ammoArrowThunder,items,Ammo,--,Thunder Arrows
 ammoArrowThunderDesc,items,Ammo,--,Thunder arrows make a loud boom when they strike your target. You've never *heard* any complaints from your allies. Heh heh.
+
+meleeToolPBsPickaxe,items,Melee,--,"PB's Spartan Pickaxe"
+meleeToolPBsPickaxeDesc,items,Melee,--,"It slices, it dices, it pops zombie's heads off! It's the all-in-one tool every survivor needs!\n\nThis tool can be used to mine, dig, harvest bodies, and chop wood."

@@ -1,0 +1,4 @@
+C:\Users\Paul\Desktop\Repos\houseofgrey\GreysProphecy\obj\Debug\netcoreapp2.1\GreysProphecy.csprojAssemblyReference.cache
+C:\Users\Paul\Desktop\Repos\houseofgrey\GreysProphecy\obj\Debug\netcoreapp2.1\GreysProphecy.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Desktop\Repos\houseofgrey\GreysProphecy\obj\Debug\netcoreapp2.1\GreysProphecy.AssemblyInfoInputs.cache
+C:\Users\Paul\Desktop\Repos\houseofgrey\GreysProphecy\obj\Debug\netcoreapp2.1\GreysProphecy.AssemblyInfo.cs

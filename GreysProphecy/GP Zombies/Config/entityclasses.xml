@@ -17,6 +17,18 @@
       <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
       <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
       <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+
+      <property name="PainResistPerHit" value=".8"/>
+
+      <!-- Gameplay -->
+      <property name="HandItem" value="meleeHandZombieStrong"/>
+      <property name="ExperienceGain" value="750"/>
+      <!-- XP strong -->
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="300"/>
+        <passive_effect name="HealthMax" operation="perc_set" value="1"/>
+        <!-- Zombie HP scale -->
+      </effect_group>
     </entity_class>
   </append>
 </greysprophecy>

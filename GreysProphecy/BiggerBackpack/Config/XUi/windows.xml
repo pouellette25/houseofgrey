@@ -230,8 +230,8 @@
       <panel name="header" height="43" pos="0,76" depth="1" backgroundspritename="ui_game_panel_header">
         <sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{itemgroupicon}"/>
         <label depth="2" name="windowName" pos="39,-6" width="500" height="32" text="{itemname}" font_size="32" upper_case="true" />
-        <label depth="2" pos="350,-8" width="225" height="28" text="{pricelabel} {itemcost}{markup}" color="[lightGrey]" justify="right" />
-        <sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[white]" foregroundlayer="true" />
+        <label depth="2" pos="776,-8" width="225" height="28" text="{pricelabel} {itemcost}{markup}" color="[lightGrey]" pivot="topright" justify="right" />
+        <sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="778,-10" color="[white]" foregroundlayer="true" />
       </panel>
 
       <rect name="contentInfo" height="346" width="807" depth="1" pos="0,36" >
