@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\GreysProphecy\\GreysProphecy.csproj",
-      "projectName": "GreysProphecy",
-      "projectPath": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\GreysProphecy\\GreysProphecy.csproj",
+      "projectUniqueName": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\Mods\\Mods.csproj",
+      "projectName": "Mods",
+      "projectPath": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\Mods\\Mods.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\GreysProphecy\\obj\\",
+      "outputPath": "C:\\Users\\Paul\\Desktop\\Repos\\houseofgrey\\Mods\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
