@@ -67,6 +67,7 @@
 
   <append xpath="/blocks/block[@name='terrGravel']">
     <property name="Tags" value="digdeep" />
+    <drop event="Harvest" name="resourceRadiomanticCrystal" count="0,2" prob="0.2" tag="allHarvest"/>
   </append>
 
   <append xpath="/blocks/block[@name='terrForestGround']">
@@ -104,6 +105,43 @@
   <set xpath="/blocks/block[@name='forge']/property[@class='Workstation']/property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,carbon</set>
   <set xpath="/blocks/block[@name='spawnTrader']/property[@name='SpawnClass']/@value">npcTraderJoel,npcTraderHugh,npcTraderBob,npcTraderJen</set>
 
+  <append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']">
+    <property name="CanPickup" value="true" param1="resourceBrokenMicrowave"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='cntToaster']">
+    <property name="CanPickup" value="true" param1="resourceBrokenToaster"/>
+  </append>
+
+  <remove xpath="/blocks/block[@name='cntCoffeeMaker']/drop[@name='resourceElectricParts']" />
+  <remove xpath="/blocks/block[@name='cntCoffeeMaker']/drop[@name='resourceScrapIron' and @event='Harvest']" />
+  
+  <append xpath="/blocks/block[@name='cntCoffeeMaker']">
+    <drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0" tool_category="Disassemble" />
+    <drop event="Destroy" name="resourceBrokenCoffeeMaker" tool_category="Disassemble" count="1" />
+  </append> 
+  
+  <append xpath="/blocks/block[@name='cntCoffeeMakerCommercial']">
+    <drop event="Destroy" name="resourceBrokenCoffeeMakerCommercial" count="1" tool_category="Disassemble" />
+    <drop event="Destroy" name="resourceBrokenCoffeeMaker" count="0" tool_category="Disassemble" />
+  </append>
+
+  <append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Closed']">
+    <!--Wrench only gets the broken microwave-->
+    <drop event="Destroy" name="resourceScrapIron" count="0" tool_category="Disassemble" />
+    <drop event="Destroy" name="resourceBrokenMicrowave" count="1" tool_category="Disassemble" />
+    <drop event="Harvest" name="resourceMechanicalParts" count="0" tool_category="Disassemble" />
+    <drop event="Harvest" name="resourceElectricParts" count="0" tool_category="Disassemble"/>
+    <drop event="Harvest" name="resourceScrapPolymers" count="0" tool_category="Disassemble"/>
+    
+    <!--This should be what you get with a pick-->
+    <drop event="Harvest" name="resourceMechanicalParts" count="0,1" prob="0.1" tag="salvageHarvest"/>
+    <drop event="Harvest" name="resourceElectricParts" count="1,3" tag="salvageHarvest"/>
+    <drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+    <drop event="Harvest" name="resourceScrapPolymers" count="0,2" tag="salvageHarvest"/>
+  </append>
+
   <append xpath="/blocks">
     <block name="blacksmithForge">
       <property name="Class" value="Forge"/>
@@ -118,8 +156,8 @@
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="OnlySimpleRotations" value="true"/>
       <property name="IsTerrainDecoration" value="true"/>
-      <property name="ParticleName" value="forge"/>
-      <property name="ParticleOffset" value="0.5,0.8,0.1"/>
+      <!--<property name="ParticleName" value="forge"/>
+      <property name="ParticleOffset" value="0.5,0.8,0.1"/>-->
       <property name="ImposterDontBlock" value="true"/>
       <property name="Stacknumber" value="1"/>
       <property name="HeatMapStrength" value="6"/>
@@ -129,7 +167,7 @@
       <property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
 
       <property class="Workstation">
-        <property name="CraftingAreaRecipes" value="forge"/>
+        <property name="CraftingAreaRecipes" value="blacksmithForge"/>
         <property name="Modules" value="tools,output,fuel,material_input"/>
         <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
       </property>
@@ -155,7 +193,188 @@
       <property name="TakeDelay" value="5"/>
       <property name="Group" value="Building,advBuilding"/>
       <property name="DescriptionKey" value="forgeDesc"/>
-      <property name="EconomicValue" value="1000"/>
+      <property name="EconomicValue" value="200"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+    <block name="mortarAndPestle">
+      <property name="Class" value="Workstation"/>
+      <property name="Material" value="Mstone"/>
+      <property name="MaxDamage" value="800"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/GPBlocks.unity3d?Mortar"/>
+      <property name="UnlockedBy" value="perkAlchemy"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="2"/>
+      <property name="HeatMapTime" value="5000"/>
+      <property name="HeatMapFrequency" value="1000"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="10"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="mortar"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+      <property name="OpenSound" value="open_workbench"/>
+      <property name="CloseSound" value="close_workbench"/>
+      <property name="WorkstationJournalTip" value="workbenchTip"/>
+
+      <property class="RepairItems">
+        <property name="resourceRockSmall" value="50"/>
+        <property name="resourceClayLump" value="60"/>
+      </property>
+      <drop event="Harvest" name="resourceRockSmall" count="30" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="5"/>
+      <property name="DescriptionKey" value="mortarAndPestleDesc"/>
+      <property name="EconomicValue" value="50"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+    <block name="coffeeMaker">
+      <property name="ItemTypeIcon" value="intellect"/>
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="cntCoffeeMaker" />
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="800"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
+      <property name="UnlockedBy" value="attEngineer"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="1"/>
+      <property name="HeatMapTime" value="5000"/>
+      <property name="HeatMapFrequency" value="1000"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="10"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="coffeeMaker"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+      <property name="OpenSound" value="open_workbench"/>
+      <property name="CloseSound" value="close_workbench"/>
+      <property name="WorkstationJournalTip" value="workbenchTip"/>
+
+      <property class="RepairItems">
+        <property name="resourceScrapIron" value="5"/>
+        <property name="resourceElectricParts" value="5"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="5" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="5"/>
+      <property name="DescriptionKey" value="coffeeMakerDesc"/>
+      <property name="EconomicValue" value="100"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+    <block name="commercialCoffeeMaker">
+      <property name="Class" value="Workstation"/>
+      <property name="ItemTypeIcon" value="intellect"/>
+      <property name="CustomIcon" value="cntCoffeeMakerCommercial" />
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="800"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
+      <property name="UnlockedBy" value="attEngineer"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="1"/>
+      <property name="HeatMapTime" value="5000"/>
+      <property name="HeatMapFrequency" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="commercialCoffeeMaker"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+      <property name="OpenSound" value="open_workbench"/>
+      <property name="CloseSound" value="close_workbench"/>
+      <property name="WorkstationJournalTip" value="workbenchTip"/>
+
+      <property class="RepairItems">
+        <property name="resourceScrapIron" value="8"/>
+        <property name="resourceElectricParts" value="8"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="5" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="5"/>
+      <property name="DescriptionKey" value="commercialCoffeeMakerDesc"/>
+      <property name="EconomicValue" value="100"/>
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+    <block name="repairedMicrowave">
+      <property name="Class" value="Workstation"/>
+      <property name="ItemTypeIcon" value="intellect"/>
+      <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="800"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="Ext3dModel"/>
+      <property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh"/>
+      <property name="Texture" value="293"/>
+      <property name="Mesh" value="models"/>
+      <property name="UnlockedBy" value="attEngineer"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="1"/>
+      <property name="HeatMapTime" value="5000"/>
+      <property name="HeatMapFrequency" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="microwave"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+      <property name="OpenSound" value="open_workbench"/>
+      <property name="CloseSound" value="close_workbench"/>
+      <property name="WorkstationJournalTip" value="workbenchTip"/>
+
+      <property class="RepairItems">
+        <property name="resourceScrapIron" value="8"/>
+        <property name="resourceElectricParts" value="8"/>
+        <property name="resourceMechanicalParts" value="2"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="5" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="5"/>
+      <property name="DescriptionKey" value="repairedMicrowaveDesc"/>
+      <property name="EconomicValue" value="100"/>
+      <property name="Group" value="Building,advBuilding"/>
       <property name="FilterTags" value="fdecor,fother,ffurniture"/>
       <property name="SortOrder1" value="70i0"/>
     </block>

@@ -208,26 +208,26 @@ perkGPMiner69rRank5LongDesc,progression,Perk,--,"You are no mere dwarf. You are 
 
 attengineer,progression,Attribute,New,Engineer,,,,,
 attEngineerName,progression,Attribute,New,Attribute: Engineer,,,,,
-attEngineerDesc,progression,Attribute,New,Engineers are essential for making transportation item modifications and explosive weapons.\nThey can also create powered traps and are handy with a wrench.,,,,,
-attEngineerRank01Desc,progression,Attribute,New,Oblivious,,,,,
+attEngineerDesc,progression,Attribute,New,"Engineers use their gifts for design and innovation to create technological wonders. They are essential for making transportation, item modifications and explosive weapons.\nThey can also create powered traps and are handy with a wrench and a stun baton."
+attEngineerRank01Desc,progression,Attribute,New,Destroyer of Marvels,,,,,
 attEngineerRank01LongDesc,progression,Attribute,New,"You are pretty oblivious in the perception department. Deal 200% head shot damage and have a 5% chance to dismember with explosives.",,,,,
-attEngineerRank02Desc,progression,Attribute,New,Unaware,,,,,
+attEngineerRank02Desc,progression,Attribute,New,Dismantler,,,,,
 attEngineerRank02LongDesc,progression,Attribute,New,"You are still unaware to most things around you. Deal 210% head shot damage and have a 10% chance to dismember with explosives.",,,,,
-attEngineerRank03Desc,progression,Attribute,New,Unobservant,,,,,
+attEngineerRank03Desc,progression,Attribute,New,Wrench Monkey,,,,,
 attEngineerRank03LongDesc,progression,Attribute,New,"You are sometimes unobservant but getting better. Deal 220% head shot damage and have a 15% chance to dismember with explosives.",,,,,
-attEngineerRank04Desc,progression,Attribute,New,Incognizant,,,,,
+attEngineerRank04Desc,progression,Attribute,New,Assembler,,,,,
 attEngineerRank04LongDesc,progression,Attribute,New,"Your incognizant perception is usually just a small setback. Deal 230% head shot damage and have a 20% chance to dismember with explosives.",,,,,
-attEngineerRank05Desc,progression,Attribute,New,Observant,,,,,
+attEngineerRank05Desc,progression,Attribute,New,Handyman,,,,,
 attEngineerRank05LongDesc,progression,Attribute,New,"You are observant and notice just enough to make a big difference. Deal 240% head shot damage and have a 26% chance to dismember with explosives.",,,,,
-attEngineerRank06Desc,progression,Attribute,New,Attentive,,,,,
+attEngineerRank06Desc,progression,Attribute,New,Inventor,,,,,
 attEngineerRank06LongDesc,progression,Attribute,New,"Your attention to detail is clearly aiding you in combat. Deal 250% head shot damage and have a 30% chance to dismember with explosives.",,,,,
-attEngineerRank07Desc,progression,Attribute,New,Discerning,,,,,
+attEngineerRank07Desc,progression,Attribute,New,Innovator,,,,,
 attEngineerRank07LongDesc,progression,Attribute,New,"You can discern weak points in enemies with ease now. Deal 260% head shot damage and have a 35% chance to dismember with explosives.",,,,,
-attEngineerRank08Desc,progression,Attribute,New,Perceptive,,,,,
+attEngineerRank08Desc,progression,Attribute,New,Tech Guru,,,,,
 attEngineerRank08LongDesc,progression,Attribute,New,"Your perception is astounding. Deal 270% head shot damage and have a 40% chance to dismember with explosives.",,,,,
-attEngineerRank09Desc,progression,Attribute,New,Astute awareness,,,,,
+attEngineerRank09Desc,progression,Attribute,New,Furzian Fanatic,,,,,
 attEngineerRank09LongDesc,progression,Attribute,New,"Your awareness is astute. Deal 285% head shot damage and have a 45% chance to dismember with explosives.",,,,,
-attEngineerRank10Desc,progression,Attribute,New,Boom Headshot,,,,,
+attEngineerRank10Desc,progression,Attribute,New,Nanotech Cyberneticist,,,,,
 attEngineerRank10LongDesc,progression,Attribute,New,"You are unrivaled at making heads go boom.  Deal 300% head shot damage and have a 50% chance to dismember with explosives.",,,,,
 
 perkGPSalvageOperationsRank5LongDesc,progression,Attribute,New,"You are king of the junk dealers and envy of the grease monkeys of the apocalypse. Craft quality 6 epic wrenches, deal 50% more damage, harvest 100% faster and gains 100% more resources when salvaging with wrenches.",,,,,
@@ -676,3 +676,35 @@ ammoArrowThunderDesc,items,Ammo,--,Thunder arrows make a loud boom when they str
 
 meleeToolPBsPickaxe,items,Melee,--,"PB's Spartan Pickaxe"
 meleeToolPBsPickaxeDesc,items,Melee,--,"It slices, it dices, it pops zombie's heads off! It's the all-in-one tool every survivor needs!\n\nThis tool can be used to mine, dig, harvest bodies, and chop wood."
+
+resourceRadiomanticDust,items,Item,--,Radiomantic Dust
+resourceRadiomanticCrystal,items,Item,--,Radiomantic Crystal
+
+resourcePartsBundleSmall,items,Item,--,Parts Bundle Small
+resourcePartsBundleDescSmall,items,Item,--,A bundle of parts recovered from dismantling electrical items that you've recovered from your loot sprees
+resourcePartsBundleLarge,items,Item,--,Parts Bundle Large
+resourcePartsBundleDescLarge,items,Item,--,A bundle of parts recovered from dismantling electrical items that you've recovered from your loot sprees
+
+resourceBrokenMicrowave,items,Item,--,Broken Microwave
+resourceBrokenMicrowaveDesc,items,Item,--,"Can be dismantled by an engineer for parts, or repaired by a skilled engineer to make a working microwave used for cooking."
+
+resourceBrokenToaster,items,Item,--,Broken Toaster
+resourceBrokenToasterDesc,items,Item,--,Can be dismantled by an engineer for parts.
+
+resourceBrokenCoffeeMaker,items,Item,--,Broken Coffee Maker 
+resourceBrokenCoffeeMakerDesc,items,Item,--,"Can be dismantled by an engineer for parts, or repaired by a skilled engineer to make a working coffee maker used for brewing coffee and teas."
+
+resourceBrokenCommercialCoffeeMaker,items,Item,--,Broken Commercial Coffee Maker
+resourceBrokenCommercialCoffeeMakerToasterDesc,items,Item,--,"Can be dismantled by an engineer for parts, or repaired by a skilled engineer to make a working commercial coffee maker used for brewing coffee and teas."
+
+meleeClubShugg,items,Melee,--,"Shugg's Spikey Club"
+meleeClubShuggDesc,items,Melee,--,"Wakey wakey hand off your snakey.\nCatch me outside, how bout that?!"
+
+coffeeMaker,blocks,Workstation,--,Repaired Coffee Maker
+coffeeMakerDesc,blocks,Workstation,--,"Your very own coffee maker! Can be used to make, you guessed it, coffee... and teas.\nBrews 5 jars at a time"
+
+commercialCoffeeMaker,blocks,Workstation,--,Repaired Commercial Coffee Maker
+commercialCoffeeMakerDesc,blocks,Workstation,--,"Your very own commercial coffee maker! It's similar to the regular coffee maker, but fancier!\nBrews 10 jars at a time"
+
+repairedMicrowave,blocks,Workstation,--,Repaired Microwave
+repairedMicrowaveDesc,blocks,Workstation,--,"Heats up canned goods"

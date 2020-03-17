@@ -6,11 +6,16 @@
   <set xpath="/items/item[@name='gun44Magnum']/property[@name='UnlockedBy']/@value">gun44MagnumSchematic,perkKa</set>
 
   <append xpath="/items/item[@name='meleeClubBaseballBat']">
-    <property name="DeathForceMultiplier" value="3" />
+    <property name="DeathForceMultiplier" value="3,10" />
   </append>
 
   <append xpath="/items/item[@name='gunBowCompound']">
-    <property name="DeathForceMultiplier" value="10" />
+    <property name="DeathForceMultiplier" value="10,20" />
+  </append>
+
+  <append xpath="/items/item[@name='resourceElectricParts']">
+    <property name="Weight" value="5"/>
+    <property name="Material" value="Mcopper"/>
   </append>
 
   <append xpath="/items">
@@ -424,7 +429,7 @@
       <property name="Group" value="Ammo/Weapons"/>
       <property name="UnlockedBy" value="bookWizardsToolkitUncleSamHammer"/>
       <property name="ShowQuality" value="true"/>
-      <property name="DeathForceMultiplier" value="3" />
+      <property name="DeathForceMultiplier" value="3,10" />
 
       <property class="Action0">
         <property name="Class" value="DynamicMelee"/>
@@ -618,7 +623,7 @@
       <property name="RepairExpMultiplier" value="5.5"/>
       <property name="UnlockedBy" value="meleeToolBroadswordSchematic"/>
       <property name="ShowQuality" value="true"/>
-      <property name="DeathForceMultiplier" value="10" />
+      <property name="DeathForceMultiplier" value="3,10" />
 
       <property class="Action0">
         <property name="Class" value="DynamicMelee"/>
@@ -725,6 +730,105 @@
       <property name="CreativeMode" value="None"/>
     </item>
 
+    <item name="resourceRadiomanticDust">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mstone"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="6000"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="10"/>
+      <property name="EconomicBundleSize" value="10"/>
+      <property name="Group" value="Resources"/>
+      <property name="RepairTime" value=".5"/>
+      <property name="RepairAmount" value="20"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
+    <item name="resourceRadiomanticCrystal">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mstone"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="6000"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="10"/>
+      <property name="EconomicBundleSize" value="10"/>
+      <property name="Group" value="Resources"/>
+      <property name="RepairTime" value=".5"/>
+      <property name="RepairAmount" value="20"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
+    <item name="resourceBrokenMicrowave">
+      <property name="HoldType" value="45"/>
+      <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
+    <item name="resourceBrokenToaster">
+      <property name="HoldType" value="45"/>
+      <property name="CustomIcon" value="cntToaster" />
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
+    <item name="resourceBrokenCoffeeMaker">
+      <property name="HoldType" value="45"/>
+      <property name="CustomIcon" value="cntCoffeeMaker" />
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+    
+    <item name="resourceBrokenCoffeeMakerCommercial">
+      <property name="Extends" value="resourceBrokenCoffeeMaker"/>
+      <property name="CustomIcon" value="cntCoffeeMakerCommercial" />
+    </item>
+
+    <item name="resourcePartsBundleSmall">
+      <property name="ItemTypeIcon" value="treasure"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="UnlockedBy" value="attEngineer"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="Group" value="Resources"/>
+      <property class="Action0">
+        <property name="OutputCountMultiplier" value="attEngineer" param1="1,1,1,2,2,3,3,4,4,5" />
+        <property name="Class" value="OpenBundleExtended, Mods"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceElectricParts,resourceScrapIron"/>
+        <property name="Create_item_count" value="5,5"/>
+      </property>
+    </item>
+
+    <item name="resourcePartsBundleLarge">
+      <property name="Extends" value="resourcePartsBundleSmall"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceElectricParts,resourceMechanicalParts,resourceScrapPolymers,resourceScrapIron"/>
+        <property name="Create_item_count" value="10,5,2,2"/>
+      </property>
+    </item>
+
     <item name="resourceScrapCopper">
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -819,7 +923,7 @@
 
       <property name="Meshfile" value="#@modfolder:Resources/GPWeapons.unity3d?ironFistRight.prefab"/>
       <property name="UnlockedBy" value="bookWizardsToolkitMagicFists"/>
-      <property name="DeathForceMultiplier" value="20" />
+      <property name="DeathForceMultiplier" value="5,20" />
       <effect_group name="meleeKnucklesIronFist">
         <passive_effect name="EntityDamage" operation="base_set" value="13.6"/>
         <passive_effect name="BlockDamage" operation="base_set" value="5.2"/>

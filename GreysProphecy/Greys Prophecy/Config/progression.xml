@@ -263,6 +263,10 @@
         <requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/>
       </level_requirements>
       <effect_group>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="resourcePartsBundleSmall"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,10" value="1" tags="resourcePartsBundleLarge"/>
+      </effect_group>
+      <effect_group>
         <requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
         <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
         <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
@@ -2348,21 +2352,21 @@
       </effect_group>
     </perk>
 
-    <!--<perk name="perkAlchemy" parent="attAlchemist" name_key="perkAlchemyName" desc_key="perkAlchemyDesc" icon="ui_game_symbol_chemistry">
+    <perk name="perkAlchemy" parent="attAlchemist" name_key="perkAlchemyName" desc_key="perkAlchemyDesc" icon="ui_game_symbol_chemistry">
       <level_requirements level="1">
-        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/>
+        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqAlchemist01"/>
       </level_requirements>
       <level_requirements level="2">
-        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/>
+        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqperkAlchemyLevel03"/>
       </level_requirements>
       <level_requirements level="3">
-        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/>
+        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqperkAlchemyLevel05"/>
       </level_requirements>
       <level_requirements level="4">
-        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/>
+        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqperkAlchemyLevel07"/>
       </level_requirements>
       <level_requirements level="5">
-        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/>
+        <requirement name="ProgressionLevel" progression_name="attAlchemist" operation="GTE" value="1" desc_key="reqperkAlchemyLevel10"/>
       </level_requirements>
 
       <effect_group>
@@ -2373,7 +2377,7 @@
         <effect_description level="4" desc_key="perkAlchemyRank4Desc" long_desc_key="perkAlchemyRank4LongDesc"/>
         <effect_description level="5" desc_key="perkAlchemyRank5Desc" long_desc_key="perkAlchemyRank5LongDesc"/>
       </effect_group>
-    </perk>-->
+    </perk>
     <!--End Alchemist-->
 
     <!--Default Book Perks-->

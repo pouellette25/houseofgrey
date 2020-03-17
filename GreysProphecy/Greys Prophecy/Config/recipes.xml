@@ -13,6 +13,36 @@
       <ingredient name="resourceCinnamon" count="10"/>
     </recipe>
 
+    <recipe name="drinkJarCoffee" count="5" craft_area="coffeeMaker" tags="learnable,perkMasterChef">
+      <ingredient name="resourceCropCoffeeBeans" count="8"/>
+      <ingredient name="drinkJarBoiledWater" count="4"/>
+    </recipe>
+
+    <recipe name="drinkJarCoffee" count="10" craft_area="commercialCoffeeMaker" tags="learnable,perkMasterChef">
+      <ingredient name="resourceCropCoffeeBeans" count="16"/>
+      <ingredient name="drinkJarBoiledWater" count="6"/>
+    </recipe>
+
+    <recipe name="drinkJarGoldenRodTea" count="5" craft_area="coffeeMaker" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropGoldenrodPlant" count="4"/>
+      <ingredient name="drinkJarBoiledWater" count="3"/>
+    </recipe>
+
+    <recipe name="drinkJarGoldenRodTea" count="10" craft_area="commercialCoffeeMaker" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropGoldenrodPlant" count="8"/>
+      <ingredient name="drinkJarBoiledWater" count="6"/>
+    </recipe>
+
+    <recipe name="drinkJarRedTea" count="5" craft_area="coffeeMaker" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropChrysanthemumPlant" count="4"/>
+      <ingredient name="drinkJarBoiledWater" count="3"/>
+    </recipe>
+
+    <recipe name="drinkJarRedTea" count="10" craft_area="commercialCoffeeMaker" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropChrysanthemumPlant" count="8"/>
+      <ingredient name="drinkJarBoiledWater" count="6"/>
+    </recipe>
+
     <recipe name="ammoArrowStone" count="1">
       <ingredient name="resourceRockSmall" count="1"/>
       <ingredient name="resourceWood" count="1"/>
@@ -27,6 +57,53 @@
       <ingredient name="resourceBrokenGlass" count="1"/>
       <ingredient name="resourceWood" count="1"/>
       <ingredient name="resourceScrapPolymers" count="1"/>
+    </recipe>    
+    
+    <recipe name="resourceRadiomanticDust" count="5" craft_area="mortar">
+      <ingredient name="resourceAcid" count="1"/>
+      <ingredient name="resourceRadiomanticCrystal" count="1"/>
+    </recipe>
+
+    <recipe name="commercialCoffeeMaker" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenCoffeeMakerCommercial" count="1"/>
+      <ingredient name="resourceScrapIron" count="5"/>
+      <ingredient name="resourceElectricParts" count="5"/>
+    </recipe>
+
+    <recipe name="coffeeMaker" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenCoffeeMaker" count="1"/>
+      <ingredient name="resourceScrapIron" count="3"/>
+      <ingredient name="resourceElectricParts" count="3"/>
+    </recipe>
+
+    <recipe name="repairedMicrowave" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceScrapIron" count="8"/>
+      <ingredient name="resourceElectricParts" count="5"/>
+      <ingredient name="resourceMechanicalParts" count="3"/>
+      <ingredient name="resourceBrokenMicrowave" count="1"/>
+    </recipe>
+
+    <recipe name="resourcePartsBundleSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenToaster" count="1" />
+    </recipe>
+
+    <recipe name="resourcePartsBundleSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenCoffeeMaker" count="1" />
+    </recipe>
+
+    <recipe name="resourcePartsBundleSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenCoffeeMakerCommercial" count="1" />
+    </recipe>
+
+    <recipe name="resourcePartsBundleLarge" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceBrokenMicrowave" count="1" />
+    </recipe>
+
+    <recipe name="meleeKnucklesMagicFists" count="1" tags="learnable,perkBrawler">
+      <ingredient name="resourceLeather" count="10" />
+      <ingredient name="resourceRadiomanticDust" count="50" />
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceDuctTape" count="3"/>
     </recipe>
 
     <recipe name="meleeClubShugg" count="1" tags="learnable,perkPummelPete">
@@ -34,10 +111,7 @@
       <ingredient name="resourceWood" count="10"/>
       <ingredient name="resourceLeather" count="1"/>
       <ingredient name="resourceDuctTape" count="1"/>
-      <ingredient name="resourceForgedIron" count="5"/>
       <ingredient name="resourceGlue" count="5"/>
-      <ingredient name="resourceMechanicalParts" count="5"/>
-      <ingredient name="resourceSpring" count="10"/>
     </recipe>
 
     <recipe name="drinkJarFramersCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -85,6 +159,10 @@
 
     <recipe name="resourceScrapCopper" count="1" material_based="true" craft_area="blacksmithForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
       <ingredient name="unit_copper" count="1"/>
+    </recipe>
+
+    <recipe name="resourceScrapCopper" count="1" tooltip="ttScrapMetalCopper" always_unlocked="true" tags="salvageScrap">
+      <wildcard_forge_category />
     </recipe>
 
     <recipe name="resourceScrapCarbon" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
