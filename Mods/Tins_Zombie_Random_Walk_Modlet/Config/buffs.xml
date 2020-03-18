@@ -1,0 +1,97 @@
+<TinsBuffs>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk1">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType1">
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk2">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="1"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk2">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType2">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk3">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="2"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk3">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType3">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk5">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="3"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk5">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType5">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk3"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk6">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk6">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType6">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk5"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk7">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="6"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk7">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType7">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk6"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="ZombieWalk8">	
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,7" operation="GTE" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="7"/>
+		</effect_group>
+	</buff>
+	</append>
+	<append xpath="/buffs">
+	<buff name="ZombieWalk8">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType8">
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="ZombieWalk7"/>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="0.1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="8">
+			</triggered_effect>
+		</effect_group>
+	</buff>
+	</append>
+</TinsBuffs>

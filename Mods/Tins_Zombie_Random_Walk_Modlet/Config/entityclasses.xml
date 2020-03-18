@@ -1,0 +1,8 @@
+
+<Tins_Entityclasses>
+<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+	<effect_group name="RNDWalkStart">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ZombieWalk1"/>		
+	</effect_group>
+</append>
+</Tins_Entityclasses>

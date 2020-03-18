@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mod>
+  <info>
+    <author>Tin</author>
+    <name>Tins_Zombie_Random_Walk</name>
+    <description>Changes the walk type on spawn.</description>
+    <mod_version>1.0.0</mod_version>
+    <game_version>18.4</game_version>
+    <launcher_version>0.0.0</launcher_version>
+    <website>http://7daystodie.com</website>
+	</info>
+</mod>

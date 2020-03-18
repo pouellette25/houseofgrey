@@ -13,6 +13,11 @@
       <ingredient name="resourceCinnamon" count="10"/>
     </recipe>
 
+    <recipe name="drinkJarFramersCoffee" count="1" craft_area="cookingStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="5"/>
+      <ingredient name="drinkJarBoiledWater" count="2"/>
+    </recipe>
+
     <recipe name="drinkJarCoffee" count="5" craft_area="coffeeMaker" tags="learnable,perkMasterChef">
       <ingredient name="resourceCropCoffeeBeans" count="8"/>
       <ingredient name="drinkJarBoiledWater" count="4"/>
@@ -83,6 +88,14 @@
       <ingredient name="resourceBrokenMicrowave" count="1"/>
     </recipe>
 
+    <recipe name="cookingStove" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedIron" count="20"/>
+      <ingredient name="resourceMechanicalParts" count="6"/>
+      <ingredient name="resourceElectricParts" count="4"/>
+      <ingredient name="resourceOil" count="5"/>
+      <ingredient name="resourceSpring" count="5"/>
+    </recipe>
+
     <recipe name="resourcePartsBundleSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
       <ingredient name="resourceBrokenToaster" count="1" />
     </recipe>
@@ -112,11 +125,6 @@
       <ingredient name="resourceLeather" count="1"/>
       <ingredient name="resourceDuctTape" count="1"/>
       <ingredient name="resourceGlue" count="5"/>
-    </recipe>
-
-    <recipe name="drinkJarFramersCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-      <ingredient name="resourceCropCoffeeBeans" count="5"/>
-      <ingredient name="drinkJarBoiledWater" count="2"/>
     </recipe>
 
     <recipe name="meleeToolPBsPickaxe" count="1" craft_area="blacksmithForge" tags="learnable,perkAdvancedBlacksmithing">

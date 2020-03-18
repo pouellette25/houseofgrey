@@ -708,3 +708,15 @@ commercialCoffeeMakerDesc,blocks,Workstation,--,"Your very own commercial coffee
 
 repairedMicrowave,blocks,Workstation,--,Repaired Microwave
 repairedMicrowaveDesc,blocks,Workstation,--,"Heats up canned goods"
+
+cookingStove,blocks,Workstation,--,Cooking Stove
+cookingStoveDesc,blocks,Workstation,--,Cooking Stove
+
+resourcePropaneTank,items,Resources,--,Propane Tank
+resourcePropaneTankDesc,items,Resources,--,Propane Tank
+
+drinkJarFramersCoffee,items,Drink,--,Framer's Coffee
+drinkJarFramersCoffeeDesc,items,Drink,--,Because one jar just isn't enough!
+
+drinkTravelMugEmpty,items,Drink,--,Empty Travel Mug
+drinkTravelMugEmptyDescription,items,Drink,--,Empty Travel Mug

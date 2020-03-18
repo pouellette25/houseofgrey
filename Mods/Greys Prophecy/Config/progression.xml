@@ -264,7 +264,10 @@
       </level_requirements>
       <effect_group>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="resourcePartsBundleSmall"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,10" value="1" tags="coffeeMaker"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,10" value="1" tags="commercialCoffeeMaker"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,10" value="1" tags="resourcePartsBundleLarge"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,10" value="1" tags="repairedMicrowave"/>
       </effect_group>
       <effect_group>
         <requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>

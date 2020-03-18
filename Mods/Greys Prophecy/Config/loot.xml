@@ -1,0 +1,8 @@
+﻿<greysprophecy>
+  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+    <item name="drinkTravelMugEmpty" count="1,4"/>
+  </append>  
+  <append xpath="/lootcontainers/lootgroup[@name='junk']">
+    <item name="drinkTravelMugEmpty" count="1,4"/>
+  </append>
+</greysprophecy>

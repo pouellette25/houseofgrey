@@ -784,6 +784,17 @@
       <property name="CraftingIngredientTime" value=".2"/>
     </item>
 
+    <item name="drinkTravelMugEmpty">
+      <property name="HoldType" value="45"/>
+      <property name="CustomIcon" value="drinkJarFramersCoffee" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?TravelMug.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="1"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
     <item name="resourceBrokenCoffeeMaker">
       <property name="HoldType" value="45"/>
       <property name="CustomIcon" value="cntCoffeeMaker" />
@@ -880,7 +891,7 @@
     <item name="drinkJarFramersCoffee">
       <property name="HoldType" value="3"/>
       <property name="DisplayType" value="waterCoffee"/>
-      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?TravelMug.prefab"/>
       <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
       <property name="Material" value="Morganic"/>
       <property name="Weight" value="10"/>
@@ -898,13 +909,13 @@
       <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
       <effect_group tiered="false">
         <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="35"/>
         <display_value name="dStaminaRegen" value=".25"/>
         <display_value name="dHypothermalResist" value="5"/>
-        <display_value name="dDuration" value="366"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="366"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="1086">
-          <requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="1086"/>
+        <display_value name="dDuration" value="500"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="500"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="1200">
+          <requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="1200"/>
         </triggered_effect>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
       </effect_group>
@@ -970,6 +981,23 @@
         <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
         <passive_effect name="StaminaLoss" operation="base_add" value="13.8" tags="secondary"/>
       </effect_group>
+    </item>
+
+    <item name="resourcePropaneTank">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="20"/>
+      <property name="Stacknumber" value="6000"/>
+      <!-- STK resource -->
+      <property name="FuelValue" value="50"/>
+      <property name="EconomicValue" value="25"/>
+      <property name="EconomicBundleSize" value="50"/>
+      <property name="Group" value="Resources"/>
+      <property name="RepairAmount" value="100"/>
+      <property name="LootExpValue" value="1"/>
+      <property name="CraftingIngredientTime" value=".25"/>
     </item>
     
   </append>
