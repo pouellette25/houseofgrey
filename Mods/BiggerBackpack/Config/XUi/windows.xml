@@ -359,9 +359,11 @@
         <label depth="2" pos="670,-8" width="100" height="28" text="{currencyamount}" color="[mediumGrey]" justify="right" />
         <sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="775,-10" color="[white]" foregroundlayer="true" />
 
+        <!-- icons from Darkness falls, received permission from Khaine to use this-->
         <button depth="3" name="btnStashAll" style="icon30px, press, hover" pivot="center" pos="303,-21" sprite="manux_ui_game_symbol_basket" tooltip_key="lblStashAll" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
         <button depth="3" name="btnStashFillStacks" style="icon30px, press, hover" pivot="center" pos="370,-21" sprite="manux_ui_game_symbol_stash_all_but_first" tooltip_key="lblStashFillStacks" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
         <button depth="3" name="btnStashSmart" style="icon30px, press, hover" pivot="center" pos="437,-21" sprite="manux_ui_game_symbol_stash_all" tooltip_key="lblStashSmart" sound="[paging_click]" visible="{lootingorvehiclestorage}" />
+
         <combobox name="cbxLockedSlots" type="ComboBoxInt" pos="504,-6" width="140" height="30" value_min="0" value_max="96" value_wrap="true" value_increment="1" tooltip_key="xuiStashLockedSlots" visible="{lootingorvehiclestorage}" />
       </panel>
 
