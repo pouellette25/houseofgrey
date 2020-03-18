@@ -13,9 +13,10 @@
       <ingredient name="resourceCinnamon" count="10"/>
     </recipe>
 
-    <recipe name="drinkJarFramersCoffee" count="1" craft_area="cookingStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="drinkJarFramersCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="resourceCropCoffeeBeans" count="5"/>
       <ingredient name="drinkJarBoiledWater" count="2"/>
+      <ingredient name="drinkTravelMugEmpty" count="1"/>
     </recipe>
 
     <recipe name="drinkJarCoffee" count="5" craft_area="coffeeMaker" tags="learnable,perkMasterChef">
