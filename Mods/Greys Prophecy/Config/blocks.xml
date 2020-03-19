@@ -428,7 +428,7 @@
       <property name="EconomicValue" value="156"/>
       <property name="FilterTags" value="floot,ffurniture"/>
       <property name="TakeDelay" value="5"/>
-      <property name="Group" value="Food/Cooking,Building,advBuilding"/>
+      <property name="Group" value="Science,Medical,Basics"/>
       <property name="DescriptionKey" value="workingStoveRHDesc"/>
       <property name="EconomicBundleSize" value="1"/>
       <property name="SellableToTrader" value="false"/>

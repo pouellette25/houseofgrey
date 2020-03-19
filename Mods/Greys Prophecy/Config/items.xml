@@ -1000,6 +1000,134 @@
       <property name="CraftingIngredientTime" value=".25"/>
     </item>
     
-  </append>
+    <!-- Microwaved Items: Idea from playing Ravenhearst -->
+    <item name="foodCanBeefStew">
+      <property name="Tags" value="food"/>
+      <property name="ItemTypeIcon" value="canbeef"/>
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="HoldType" value="3"/>
+      <property name="DisplayType" value="food"/>
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Weight" value="5"/>
+      <property name="EconomicValue" value="60"/>
+      <property name="Stacknumber" value="10"/>
 
+      <!-- STK food -->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="resourceEmptyBowl"/>
+      </property>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+
+    <item name="foodCanChickenSoup">
+      <property name="Extends" value="foodCanBeef"/>
+      <property name="HoldType" value="3"/>
+      <property name="ItemTypeIcon" value="canchicken"/>
+      <property name="CustomIcon" value="foodVegetableStew" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="resourceEmptyBowl"/>
+      </property>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+
+    <item name="foodCanLambStew">
+      <property name="Extends" value="foodCanBeef"/>
+      <property name="HoldType" value="3"/>
+      <property name="ItemTypeIcon" value="canlamb"/>
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="resourceEmptyBowl"/>
+      </property>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+
+    <item name="foodCookedCanChili">
+      <property name="Extends" value="foodCanBeef"/>
+      <property name="ItemTypeIcon" value="canchili"/>
+      <property name="HoldType" value="3"/>
+      <property name="CustomIcon" value="foodHoboStew" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="resourceEmptyBowl"/>
+      </property>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+    
+    <item name="foodCookedCanPasta">
+      <property name="Extends" value="foodCanBeef"/>
+      <property name="ItemTypeIcon" value="canpasta"/>
+      <property name="HoldType" value="3"/>
+      <property name="CustomIcon" value="resourceEmptyBowl" />
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="resourceEmptyBowl"/>
+      </property>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+    <item name="resourceEmptyBowl">
+      <property name="HoldType" value="3"/>
+      <property name="Meshfile" value="#@modfolder:Resources/GPItems.unity3d?EmptyBowlHeld.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mstone"/>
+      <property name="Weight" value="20"/>
+      <property name="Stacknumber" value="500"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="25"/>
+      <property name="EconomicBundleSize" value="50"/>
+      <property name="Group" value="Resources"/>
+      <property name="RepairAmount" value="100"/>
+      <property name="LootExpValue" value="1"/>
+      <property name="CraftingIngredientTime" value=".25"/>
+    </item>
+  </append>
 </greysprophecy>

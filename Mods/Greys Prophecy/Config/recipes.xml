@@ -89,6 +89,37 @@
       <ingredient name="resourceBrokenMicrowave" count="1"/>
     </recipe>
 
+    <!-- Microwaved recipes: Idea from playing Ravenhearst -->
+    <recipe name="foodCanBeefStew" count="1" craft_area="microwave">
+      <ingredient name="foodCanBeef" count="1" />
+      <ingredient name="foodCanPeas" count="1" />
+      <ingredient name="foodCanStock" count="1" />
+      <ingredient name="resourceEmptyBowl" count="1" />
+    </recipe>
+
+    <recipe name="foodCanChickenSoup" count="1" craft_area="microwave">
+      <ingredient name="foodCanChicken" count="1" />
+      <ingredient name="foodCanStock" count="1" />
+      <ingredient name="resourceEmptyBowl" count="1" />
+    </recipe>
+
+    <recipe name="foodCanLambStew" count="1" craft_area="microwave">
+      <ingredient name="foodCanLamb" count="1" />
+      <ingredient name="foodCanPeas" count="1" />
+      <ingredient name="foodCanStock" count="1" />
+      <ingredient name="resourceEmptyBowl" count="1" />
+    </recipe>
+
+    <recipe name="foodCookedCanChili" count="1" craft_area="microwave">
+      <ingredient name="foodCanChili" count="1" />
+      <ingredient name="resourceEmptyBowl" count="1" />
+    </recipe>
+
+    <recipe name="foodCookedCanPasta" count="1" craft_area="microwave">
+      <ingredient name="foodCanPasta" count="1" />
+      <ingredient name="resourceEmptyBowl" count="1" />
+    </recipe>
+
     <recipe name="cookingStove" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
       <ingredient name="resourceForgedIron" count="20"/>
       <ingredient name="resourceMechanicalParts" count="6"/>
