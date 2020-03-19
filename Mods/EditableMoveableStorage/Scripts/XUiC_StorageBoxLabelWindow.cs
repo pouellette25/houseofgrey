@@ -33,8 +33,8 @@ class XUiC_StorageBoxLabelWindow : XUiController
         textInput.OnChangeHandler -= new XUiEvent_InputOnChangedEventHandler(TextInput_OnChangeHandler);
         textInput.OnChangeHandler += new XUiEvent_InputOnChangedEventHandler(TextInput_OnChangeHandler);
 
-        textInput.Text = _boxLabelTextService.ReadText(_tileEntity.GetHashCode());
-
+        textInput.Text = _boxLabelTextService.ReadText(_tileEntity.ToWorldPos().ToString());
+        Debug.Log(_tileEntity.ToWorldPos());
         if (PlayerInputManager.Instance.CurrentInputStyle == PlayerInputManager.InputStyle.Keyboard)
         {
             textInput.SetSelected(true);
@@ -72,25 +72,24 @@ class XUiC_StorageBoxLabelWindow : XUiController
         _tileEntity = tileEntity;
         var chunk = tileEntity.GetChunk();
         var blockEntityData = chunk != null ? chunk.GetBlockEntity(tileEntity.ToWorldPos()) : null;
-
         _blockEntityData = blockEntityData;
         _textMeshes = _blockEntityData.transform.GetComponentsInChildren<TextMesh>();
     }
 
-    public void OnBlockEntityTransformAfterActivated(int blockPosHash)
+    public void OnBlockEntityTransformAfterActivated(string tileEntityPos)
     {
-        var text = _boxLabelTextService.ReadText(blockPosHash);
+        var text = _boxLabelTextService.ReadText(tileEntityPos);
         SetText(text, false);
     }
 
-    public void OnBlockOnBlockDestroyedBy(int blockPosHash)
+    public void OnBlockOnBlockDestroyedBy(string tileEntityPos)
     {
-        _boxLabelTextService.RemoveNode(blockPosHash);
+        _boxLabelTextService.RemoveNode(tileEntityPos);
     }
 
-    public void OnBlockRemoved(int blockPosHash)
+    public void OnBlockRemoved(string tileEntityPos)
     {
-        _boxLabelTextService.RemoveNode(blockPosHash);
+        _boxLabelTextService.RemoveNode(tileEntityPos);
     }
 
     private void TextInput_OnInputAbortedHandler(XUiController _sender)
@@ -123,9 +122,7 @@ class XUiC_StorageBoxLabelWindow : XUiController
 
         if (saveText)
         {
-            Debug.Log(_tileEntity.ToWorldPos().GetHashCode());
-
-            _boxLabelTextService.WriteText(_tileEntity.ToWorldPos().GetHashCode(), text);
+            _boxLabelTextService.WriteText(_tileEntity.ToWorldPos().ToString(), text);
         }
     }
 }

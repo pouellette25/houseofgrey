@@ -82,9 +82,8 @@ class BlockEditableSecureLoot : BlockSecureLoot
         if(controller != null)
         {
             var tileEntity = _world.GetTileEntity(_cIdx, _blockPos);
-
             controller.SetTileEntity(tileEntity as TileEntitySecureLootContainer);
-            controller.OnBlockEntityTransformAfterActivated(_blockPos.GetHashCode());
+            controller.OnBlockEntityTransformAfterActivated(tileEntity.ToWorldPos().ToString());
         }
 
         base.OnBlockEntityTransformAfterActivated(_world, _blockPos, _cIdx, _blockValue, _ebcd);
@@ -96,7 +95,8 @@ class BlockEditableSecureLoot : BlockSecureLoot
 
         if(controller != null)
         {
-            controller.OnBlockOnBlockDestroyedBy(_blockPos.GetHashCode());
+            var tileEntity = _world.GetTileEntity(_clrIdx, _blockPos);
+            controller.OnBlockOnBlockDestroyedBy(tileEntity.ToWorldPos().ToString());
         }
 
         return base.OnBlockDestroyedBy(_world, _clrIdx, _blockPos, _blockValue, _entityId, _bUseHarvestTool);
@@ -107,7 +107,9 @@ class BlockEditableSecureLoot : BlockSecureLoot
         var controller = GetStorageWindowController();
         if (controller != null)
         {
-            controller.OnBlockRemoved(_blockPos.GetHashCode());
+            var tileEntity = _chunk.GetTileEntity(_blockPos);
+            Debug.Log(tileEntity);
+            //controller.OnBlockRemoved(tileEntity.ToWorldPos().ToString());
         }
 
         base.OnBlockRemoved(world, _chunk, _blockPos, _blockValue);

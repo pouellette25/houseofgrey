@@ -22,19 +22,20 @@ namespace HouseOfGrey.MoveableStorage.Scripts
             return File.Exists(GetFilePath());
         }
 
-        public void WriteText(int blockPosHash, string text)
+        public void WriteText(string tileEntityPos, string text)
         {
+            var cleanTileEntityPos = tileEntityPos.Replace(",", "").Replace(" ", "");
             var filePath = GetFilePath();
             if (!FileExtists())
             {
                 var xmlDoc = new XmlDocument();
-                var rootNode = xmlDoc.CreateElement("houseofgrey");
+                var rootNode = xmlDoc.CreateElement("greysprophecy");
                 xmlDoc.AppendChild(rootNode);
 
                 var boxLabelsNode = xmlDoc.CreateElement("boxlabels");
                 rootNode.AppendChild(boxLabelsNode);
 
-                boxLabelsNode.AppendChild(CreateLabelElement(xmlDoc, blockPosHash, text));
+                boxLabelsNode.AppendChild(CreateLabelElement(xmlDoc, cleanTileEntityPos, text));
 
                 xmlDoc.Save(filePath);
             }
@@ -43,7 +44,7 @@ namespace HouseOfGrey.MoveableStorage.Scripts
                 var xmlDoc = new XmlDocument();
                 xmlDoc.Load(filePath);
 
-                var boxLabelNode = xmlDoc.SelectSingleNode("/houseofgrey/boxlabels/boxlabel[@entity_id=" + blockPosHash + "]");
+                var boxLabelNode = xmlDoc.SelectSingleNode("/greysprophecy/boxlabels/boxlabel[@entity_id=" + cleanTileEntityPos + "]");
                 
                 if(boxLabelNode != null)
                 {
@@ -51,23 +52,25 @@ namespace HouseOfGrey.MoveableStorage.Scripts
                 }
                 else
                 {
-                    var boxLabelsNode = xmlDoc.SelectSingleNode("/houseofgrey/boxlabels");
-                    boxLabelsNode.AppendChild(CreateLabelElement(xmlDoc, blockPosHash, text));
+                    var boxLabelsNode = xmlDoc.SelectSingleNode("/greysprophecy/boxlabels");
+                    boxLabelsNode.AppendChild(CreateLabelElement(xmlDoc, cleanTileEntityPos, text));
                 }
 
                 xmlDoc.Save(filePath);
             }
         }
 
-        public string ReadText(int blockPosHash)
+        public string ReadText(string tileEntityPos)
         {
             if (FileExtists())
             {
+                var cleanTileEntityPos = tileEntityPos.Replace(",", "").Replace(" ", "");
+
                 var filePath = GetFilePath();
                 var xmlDoc = new XmlDocument();
                 xmlDoc.Load(filePath);
 
-                var boxLabelNode = xmlDoc.SelectSingleNode("/houseofgrey/boxlabels/boxlabel[@entity_id=" + blockPosHash + "]");
+                var boxLabelNode = xmlDoc.SelectSingleNode("/greysprophecy/boxlabels/boxlabel[@entity_id=" + cleanTileEntityPos + "]");
 
                 return boxLabelNode != null ? boxLabelNode.InnerText : "Storage";
             }
@@ -75,19 +78,21 @@ namespace HouseOfGrey.MoveableStorage.Scripts
             return "Storage";
         }
 
-        public void RemoveNode(int blockPosHash)
+        public void RemoveNode(string tileEntityPos)
         {
             if (FileExtists())
             {
+                var cleanTileEntityPos = tileEntityPos.Replace(",", "").Replace(" ", "");
+
                 var filePath = GetFilePath();
                 var xmlDoc = new XmlDocument();
                 xmlDoc.Load(filePath);
 
-                var boxLabelNode = xmlDoc.SelectSingleNode("/houseofgrey/boxlabels/boxlabel[@entity_id=" + blockPosHash + "]");
+                var boxLabelNode = xmlDoc.SelectSingleNode("/greysprophecy/boxlabels/boxlabel[@entity_id=" + cleanTileEntityPos + "]");
 
                 if(boxLabelNode != null)
                 {
-                    var boxLabelsNode = xmlDoc.SelectSingleNode("/houseofgrey/boxlabels");
+                    var boxLabelsNode = xmlDoc.SelectSingleNode("/greysprophecy/boxlabels");
                     boxLabelsNode.RemoveChild(boxLabelNode);
 
                     xmlDoc.Save(filePath);
@@ -95,12 +100,12 @@ namespace HouseOfGrey.MoveableStorage.Scripts
             }
         }
 
-        private XmlElement CreateLabelElement(XmlDocument xmlDoc, int entityHash, string text)
+        private XmlElement CreateLabelElement(XmlDocument xmlDoc, string tileEntityPos, string text)
         {
             var boxLabelNode = xmlDoc.CreateElement("boxlabel");
             var positionAttr = xmlDoc.CreateAttribute("position");
             var idAttr = xmlDoc.CreateAttribute("entity_id");
-            idAttr.Value = entityHash.ToString();
+            idAttr.Value = tileEntityPos;
             boxLabelNode.Attributes.Append(idAttr);
             boxLabelNode.InnerText = text;
 
